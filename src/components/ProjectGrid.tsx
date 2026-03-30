@@ -4,42 +4,42 @@ import { cn } from "../lib/utils";
 const PROJECTS = [
   {
     id: 1,
-    title: "Modern Residence C-32",
-    category: "Architectural Visualization",
-    image: "/images/gokalp-kilic-c-32-foto.jpg",
+    title: "Luxury Living Interior",
+    category: "Interior Design",
+    image: "/images/gokalp-kilic-day-interior-1.jpg",
     featured: true
   },
   {
     id: 2,
-    title: "Luxury Interior Study",
-    category: "Interior Design",
-    image: "/images/gokalp-kilic-day-interior-close-1.jpg",
+    title: "Modern Night Villa",
+    category: "Architectural Visualization",
+    image: "/images/gokalp-kilic-c-23-foto.jpg",
     featured: false
   },
   {
     id: 3,
-    title: "Urban Residential Complex Res02",
+    title: "High-rise Concept",
+    category: "3D Modeling",
+    image: "/images/gokalp-kilic-res02-r0.jpg",
+    featured: false
+  },
+  {
+    id: 4,
+    title: "Urban Residential Complex",
     category: "3D Modeling",
     image: "/images/gokalp-kilic-res02-r6.jpg",
     featured: false
   },
   {
-    id: 4,
-    title: "Digital Portrait Illustration",
-    category: "Digital Art",
-    image: "/images/gokalp-kilic-leonardo-dicaprio-by-gokalpon.jpg",
-    featured: false
-  },
-  {
     id: 5,
-    title: "Product Design: Coffee & Sand Bowl",
+    title: "Product Design: Sand Bowl",
     category: "3D Rendering",
     image: "/images/gokalp-kilic-sand-bowl-try8.jpg",
     featured: false
   },
   {
     id: 6,
-    title: "Concept Plane Visualization",
+    title: "Concept Plane",
     category: "3D Modeling",
     image: "/images/gokalp-kilic-plane-render-a1.jpg",
     featured: false
@@ -79,7 +79,7 @@ export function ProjectGrid() {
             <img 
               src={project.image} 
               alt={project.title}
-              className="absolute inset-0 w-full h-full object-cover hover-color"
+              className="absolute inset-0 w-full h-full object-cover opacity-70 saturate-50 group-hover:opacity-20 group-hover:saturate-0 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
 
