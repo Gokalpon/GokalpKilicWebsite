@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-[90rem] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-40">
           <div>
-            <h2 className="font-display font-black text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
+            <h2 className="font-display font-bold text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
               Gökalp <br /> Kılıç
             </h2>
             <p className="font-display font-bold text-sm uppercase tracking-[0.2em] text-white/40 max-w-sm">

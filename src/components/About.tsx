@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { cn } from "../lib/utils";
+import { AnimatedHeading } from "./AnimatedHeading";
 
 const EXPERIENCE = [
   {
@@ -38,7 +39,7 @@ export function About() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
         {/* Left: Bio */}
         <div>
-          <h2 className="font-display font-black text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
+          <h2 className="font-display font-bold text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
             About <br /> Me
           </h2>
           <div className="space-y-8 font-sans font-light text-xl text-white/60 leading-relaxed">
@@ -85,9 +86,10 @@ export function About() {
                 className="group border-b border-white/10 pb-12 last:border-0"
               >
                 <div className="flex justify-between items-start mb-4">
-                  <h4 className="font-display font-black text-3xl md:text-4xl uppercase tracking-tighter group-hover:text-accent-cyan transition-colors">
-                    {exp.company}
-                  </h4>
+                  <AnimatedHeading 
+                    text={exp.company} 
+                    className="text-3xl md:text-4xl uppercase tracking-tighter group-hover:text-accent-cyan transition-colors"
+                  />
                   <span className="font-display font-bold text-xs uppercase tracking-widest text-white/40">
                     {exp.period}
                   </span>

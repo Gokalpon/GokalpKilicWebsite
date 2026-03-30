@@ -9,7 +9,7 @@ export function Contact() {
 
       <div className="max-w-[90rem] mx-auto relative z-10">
         <div className="text-center">
-          <h2 className="font-display font-black text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
+          <h2 className="font-display font-bold text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
             Let's <br /> Build
           </h2>
           <p className="font-display font-bold text-sm uppercase tracking-[0.2em] text-white/40 mb-20">
@@ -19,7 +19,7 @@ export function Contact() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-10">
             <a 
               href="mailto:gokalpon@gmail.com"
-              className="px-12 py-6 rounded-full bg-white text-black font-display font-black text-sm uppercase tracking-[0.2em] hover:scale-105 transition-transform duration-300"
+              className="px-12 py-6 rounded-full bg-white text-black font-display font-bold text-sm uppercase tracking-[0.2em] hover:scale-105 transition-transform duration-300"
             >
               Send an Email
             </a>
@@ -27,7 +27,7 @@ export function Contact() {
               href="https://gokalpon.artstation.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-12 py-6 rounded-full border border-white/20 text-white font-display font-black text-sm uppercase tracking-[0.2em] hover:bg-white/10 transition-all duration-300"
+              className="px-12 py-6 rounded-full border border-white/20 text-white font-display font-bold text-sm uppercase tracking-[0.2em] hover:bg-white/10 transition-all duration-300"
             >
               View ArtStation
             </a>

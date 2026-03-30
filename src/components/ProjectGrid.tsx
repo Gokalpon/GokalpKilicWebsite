@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { cn } from "../lib/utils";
+import { AnimatedHeading } from "./AnimatedHeading";
 
 const PROJECTS = [
   {
@@ -50,7 +51,7 @@ export function ProjectGrid() {
   return (
     <section id="projects" className="py-20 md:py-40 px-6 md:px-10 max-w-[90rem] mx-auto">
       <div className="mb-20">
-        <h2 className="font-display font-black text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
+        <h2 className="font-display font-bold text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
           Case <br /> Studies
         </h2>
         <div className="h-px w-full bg-white/10" />
@@ -91,9 +92,10 @@ export function ProjectGrid() {
               <span className="font-display font-bold text-xs uppercase tracking-[0.2em] text-accent-cyan mb-2 block">
                 {project.category}
               </span>
-              <h3 className="font-display font-black text-2xl md:text-4xl uppercase tracking-tighter">
-                {project.title}
-              </h3>
+              <AnimatedHeading 
+                text={project.title} 
+                className="text-2xl md:text-4xl uppercase tracking-tighter"
+              />
             </div>
           </motion.div>
         ))}

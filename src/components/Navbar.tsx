@@ -9,8 +9,7 @@ export function Navbar() {
       className="fixed top-0 left-0 w-full z-50 p-6 md:p-10 flex justify-between items-center mix-blend-difference"
     >
       <div className="flex items-center gap-3">
-        <div className="w-3 h-3 rounded-full bg-red-500 animate-pulse" />
-        <span className="font-display font-black text-2xl tracking-tighter uppercase">Gökalp Kılıç</span>
+        <span className="font-display font-bold text-2xl tracking-tighter uppercase">Gökalp Kılıç</span>
       </div>
       
       <div className="hidden md:flex gap-12">

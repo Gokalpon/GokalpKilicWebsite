@@ -29,33 +29,29 @@ export function Hero() {
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
       {/* Background Text Cycling */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.08 }}
-          transition={{ duration: 2 }}
-          className="relative w-full text-center"
-        >
+        <div className="relative w-full text-center">
           {["ARCHITECTURE", "3D ARTIST", "RENDERING"].map((text, i) => (
             <motion.span
               key={text}
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, filter: "blur(20px)", scale: 0.8 }}
               animate={{ 
-                opacity: [0, 1, 1, 0, 0, 0],
-                y: [100, 0, 0, -100, -100, -100]
+                opacity: [0, 0.6, 0.6, 0, 0, 0],
+                filter: ["blur(20px)", "blur(0px)", "blur(0px)", "blur(20px)", "blur(20px)", "blur(20px)"],
+                scale: [0.8, 1, 1.05, 1.1, 1.1, 1.1]
               }}
               transition={{ 
-                duration: 12,
+                duration: 30,
                 repeat: Infinity,
-                delay: i * 4,
-                times: [0, 0.08, 0.25, 0.33, 0.34, 1],
+                delay: i * 10,
+                times: [0, 0.05, 0.28, 0.33, 0.34, 1],
                 ease: "easeInOut"
               }}
-              className="absolute inset-0 flex items-center justify-center font-display font-black text-[20vw] leading-none uppercase tracking-tighter text-white whitespace-nowrap"
+              className="absolute inset-0 flex items-center justify-center font-display font-bold text-[18vw] leading-none uppercase tracking-[-0.05em] text-white whitespace-nowrap pointer-events-none"
             >
               {text}
             </motion.span>
           ))}
-        </motion.div>
+        </div>
       </div>
 
       {/* Spherical Carousel */}
@@ -82,7 +78,7 @@ export function Hero() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
-                <h2 className="relative z-10 font-display font-black text-3xl md:text-4xl text-center px-6 tracking-[0.2em] uppercase">
+                <h2 className="relative z-10 font-display font-bold text-3xl md:text-4xl text-center px-6 tracking-[0.2em] uppercase">
                   {face.title}
                 </h2>
               </div>
