@@ -3,23 +3,23 @@ import { cn } from "../lib/utils";
 
 const CUBE_FACES = [
   {
-    title: "Modern Residence C-32",
-    image: "/images/gokalp-kilic-c-32-foto.jpg",
+    title: "Luxury Living Interior",
+    image: "/images/gokalp-kilic-day-interior-1.jpg",
     transform: "rotateX(0deg) translateZ(25vh)"
   },
   {
-    title: "Luxury Interior Study",
-    image: "/images/gokalp-kilic-day-interior-1.jpg",
+    title: "Modern Night Villa",
+    image: "/images/gokalp-kilic-c-23-foto.jpg",
     transform: "rotateX(-90deg) translateZ(25vh)"
   },
   {
-    title: "Urban Residential Complex Res02",
+    title: "High-rise Concept",
     image: "/images/gokalp-kilic-res02-r0.jpg",
     transform: "rotateX(-180deg) translateZ(25vh)"
   },
   {
-    title: "Digital Portrait Illustration",
-    image: "/images/gokalp-kilic-logan-hugh-jackman-drawing-by-gokalpon-by-gokalp.jpg",
+    title: "Urban Residential Complex",
+    image: "/images/gokalp-kilic-res02-r6.jpg",
     transform: "rotateX(90deg) translateZ(25vh)"
   }
 ];
