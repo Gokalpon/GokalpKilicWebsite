@@ -6,42 +6,42 @@ const PROJECTS = [
     id: 1,
     title: "Modern Residence C-32",
     category: "Architectural Visualization",
-    image: "https://picsum.photos/seed/arch-c32/1200/800",
+    image: "/images/gokalp-kilic-c-32-foto.jpg",
     featured: true
   },
   {
     id: 2,
     title: "Luxury Interior Study",
     category: "Interior Design",
-    image: "https://picsum.photos/seed/interior-lux/800/600",
+    image: "/images/gokalp-kilic-day-interior-close-1.jpg",
     featured: false
   },
   {
     id: 3,
     title: "Urban Residential Complex Res02",
     category: "3D Modeling",
-    image: "https://picsum.photos/seed/res02/800/600",
+    image: "/images/gokalp-kilic-res02-r6.jpg",
     featured: false
   },
   {
     id: 4,
     title: "Digital Portrait Illustration",
     category: "Digital Art",
-    image: "https://picsum.photos/seed/portrait-art/800/600",
+    image: "/images/gokalp-kilic-leonardo-dicaprio-by-gokalpon.jpg",
     featured: false
   },
   {
     id: 5,
     title: "Product Design: Coffee & Sand Bowl",
     category: "3D Rendering",
-    image: "https://picsum.photos/seed/product-viz/800/600",
+    image: "/images/gokalp-kilic-sand-bowl-try8.jpg",
     featured: false
   },
   {
     id: 6,
     title: "Concept Plane Visualization",
     category: "3D Modeling",
-    image: "https://picsum.photos/seed/plane-viz/800/600",
+    image: "/images/gokalp-kilic-plane-render-a1.jpg",
     featured: false
   }
 ];
@@ -64,7 +64,7 @@ export function ProjectGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className={cn(
-              "group relative overflow-hidden border border-white/10",
+              "group relative overflow-hidden border border-white/10 rounded-[32px]",
               project.featured ? "md:col-span-2 aspect-video" : "aspect-[4/3]"
             )}
           >

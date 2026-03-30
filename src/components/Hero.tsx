@@ -4,22 +4,22 @@ import { cn } from "../lib/utils";
 const CUBE_FACES = [
   {
     title: "Modern Residence C-32",
-    image: "https://picsum.photos/seed/arch-c32/1200/1200",
+    image: "/images/gokalp-kilic-c-32-foto.jpg",
     transform: "rotateX(0deg) translateZ(25vh)"
   },
   {
     title: "Luxury Interior Study",
-    image: "https://picsum.photos/seed/interior-lux/1200/1200",
+    image: "/images/gokalp-kilic-day-interior-1.jpg",
     transform: "rotateX(-90deg) translateZ(25vh)"
   },
   {
     title: "Urban Residential Complex Res02",
-    image: "https://picsum.photos/seed/res02/1200/1200",
+    image: "/images/gokalp-kilic-res02-r0.jpg",
     transform: "rotateX(-180deg) translateZ(25vh)"
   },
   {
     title: "Digital Portrait Illustration",
-    image: "https://picsum.photos/seed/portrait-art/1200/1200",
+    image: "/images/gokalp-kilic-logan-hugh-jackman-drawing-by-gokalpon-by-gokalp.jpg",
     transform: "rotateX(90deg) translateZ(25vh)"
   }
 ];
@@ -40,14 +40,14 @@ export function Hero() {
               key={text}
               initial={{ opacity: 0, y: 100 }}
               animate={{ 
-                opacity: [0, 1, 1, 0],
-                y: [100, 0, 0, -100]
+                opacity: [0, 1, 1, 0, 0, 0],
+                y: [100, 0, 0, -100, -100, -100]
               }}
               transition={{ 
-                duration: 4,
+                duration: 12,
                 repeat: Infinity,
                 delay: i * 4,
-                times: [0, 0.1, 0.9, 1],
+                times: [0, 0.08, 0.25, 0.33, 0.34, 1],
                 ease: "easeInOut"
               }}
               className="absolute inset-0 flex items-center justify-center font-display font-black text-[20vw] leading-none uppercase tracking-tighter text-white whitespace-nowrap"
