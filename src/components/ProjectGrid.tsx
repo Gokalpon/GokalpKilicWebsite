@@ -4,37 +4,44 @@ import { cn } from "../lib/utils";
 const PROJECTS = [
   {
     id: 1,
-    title: "Modern Villa Exterior",
+    title: "Modern Residence C-32",
     category: "Architectural Visualization",
-    image: "https://picsum.photos/seed/villa/1920/1080",
+    image: "https://picsum.photos/seed/arch-c32/1200/800",
     featured: true
   },
   {
     id: 2,
-    title: "Dark Living Room Interior",
+    title: "Luxury Interior Study",
     category: "Interior Design",
-    image: "https://picsum.photos/seed/interior/1200/900",
+    image: "https://picsum.photos/seed/interior-lux/800/600",
     featured: false
   },
   {
     id: 3,
-    title: "High-rise Building Concept",
+    title: "Urban Residential Complex Res02",
     category: "3D Modeling",
-    image: "https://picsum.photos/seed/building/1200/900",
+    image: "https://picsum.photos/seed/res02/800/600",
     featured: false
   },
   {
     id: 4,
-    title: "Modern House Daylight",
-    category: "Exterior Design",
-    image: "https://picsum.photos/seed/house/1200/900",
+    title: "Digital Portrait Illustration",
+    category: "Digital Art",
+    image: "https://picsum.photos/seed/portrait-art/800/600",
     featured: false
   },
   {
     id: 5,
-    title: "Minimalist Interior Visualization",
+    title: "Product Design: Coffee & Sand Bowl",
     category: "3D Rendering",
-    image: "https://picsum.photos/seed/minimal/1200/900",
+    image: "https://picsum.photos/seed/product-viz/800/600",
+    featured: false
+  },
+  {
+    id: 6,
+    title: "Concept Plane Visualization",
+    category: "3D Modeling",
+    image: "https://picsum.photos/seed/plane-viz/800/600",
     featured: false
   }
 ];

@@ -3,23 +3,23 @@ import { cn } from "../lib/utils";
 
 const CUBE_FACES = [
   {
-    title: "Modern Architecture",
-    image: "https://picsum.photos/seed/arch1/1200/1200",
+    title: "Modern Residence C-32",
+    image: "https://picsum.photos/seed/arch-c32/1200/1200",
     transform: "rotateX(0deg) translateZ(25vh)"
   },
   {
-    title: "Interior Design",
-    image: "https://picsum.photos/seed/arch2/1200/1200",
+    title: "Luxury Interior Study",
+    image: "https://picsum.photos/seed/interior-lux/1200/1200",
     transform: "rotateX(-90deg) translateZ(25vh)"
   },
   {
-    title: "Urban Landscapes",
-    image: "https://picsum.photos/seed/arch3/1200/1200",
+    title: "Urban Residential Complex Res02",
+    image: "https://picsum.photos/seed/res02/1200/1200",
     transform: "rotateX(-180deg) translateZ(25vh)"
   },
   {
-    title: "3D Visualization",
-    image: "https://picsum.photos/seed/arch4/1200/1200",
+    title: "Digital Portrait Illustration",
+    image: "https://picsum.photos/seed/portrait-art/1200/1200",
     transform: "rotateX(90deg) translateZ(25vh)"
   }
 ];
