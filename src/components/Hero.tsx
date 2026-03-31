@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { cn } from "../lib/utils";
 
 const CUBE_FACES = [
@@ -25,17 +26,27 @@ const CUBE_FACES = [
 ];
 
 export function Hero() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end start"]
+  });
+
+  const y1 = useTransform(scrollYProgress, [0, 1], [0, -200]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, 200]);
+
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
+    <section ref={container} className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Text Cycling */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden z-10">
         <div className="relative w-full text-center">
           {["ARCHITECTURE", "3D ARTIST", "RENDERING"].map((text, i) => (
             <motion.span
               key={text}
+              style={{ y: i % 2 === 0 ? y1 : y2 }}
               initial={{ opacity: 0, filter: "blur(20px)", scale: 0.8 }}
               animate={{ 
-                opacity: [0, 0.6, 0.6, 0, 0, 0],
+                opacity: [0, 0.4, 0.4, 0, 0, 0],
                 filter: ["blur(20px)", "blur(0px)", "blur(0px)", "blur(20px)", "blur(20px)", "blur(20px)"],
                 scale: [0.8, 1, 1.05, 1.1, 1.1, 1.1]
               }}
@@ -46,7 +57,7 @@ export function Hero() {
                 times: [0, 0.05, 0.28, 0.33, 0.34, 1],
                 ease: "easeInOut"
               }}
-              className="absolute inset-0 flex items-center justify-center font-display font-bold text-[18vw] leading-none uppercase tracking-[-0.05em] text-white whitespace-nowrap pointer-events-none"
+              className="absolute inset-0 flex items-center justify-center font-display font-bold text-[16vw] leading-none uppercase tracking-[-0.05em] text-white/10 whitespace-nowrap pointer-events-none"
             >
               {text}
             </motion.span>
@@ -55,7 +66,7 @@ export function Hero() {
       </div>
 
       {/* Spherical Carousel */}
-      <div className="relative w-full h-full flex items-center justify-center perspective-2000">
+      <div className="relative w-full h-full flex items-center justify-center perspective-2000 z-20">
         <motion.div 
           animate={{ rotateY: 360 }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}

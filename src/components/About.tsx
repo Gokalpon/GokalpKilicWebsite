@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { cn } from "../lib/utils";
 import { AnimatedHeading } from "./AnimatedHeading";
 
@@ -34,14 +35,25 @@ const SKILLS = [
 ];
 
 export function About() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+
   return (
-    <section id="about" className="py-20 md:py-40 px-6 md:px-10 max-w-[90rem] mx-auto">
+    <section ref={container} id="about" className="py-20 md:py-40 px-6 md:px-10 max-w-[90rem] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
         {/* Left: Bio */}
         <div>
-          <h2 className="font-display font-bold text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
+          <motion.h2 
+            style={{ y }}
+            className="font-display font-bold text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10"
+          >
             About <br /> Me
-          </h2>
+          </motion.h2>
           <div className="space-y-8 font-sans font-light text-xl text-white/60 leading-relaxed">
             <p>
               I am Gökalp Kılıç, an architect and 3D artist based in Ankara, Turkey. 
@@ -85,12 +97,14 @@ export function About() {
                 viewport={{ once: true }}
                 className="group border-b border-white/10 pb-12 last:border-0"
               >
-                <div className="flex justify-between items-start mb-4">
-                  <AnimatedHeading 
-                    text={exp.company} 
-                    className="text-3xl md:text-4xl uppercase tracking-tighter group-hover:text-accent-cyan transition-colors"
-                  />
-                  <span className="font-display font-bold text-xs uppercase tracking-widest text-white/40">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                  <div className="max-w-md">
+                    <AnimatedHeading 
+                      text={exp.company} 
+                      className="text-3xl md:text-4xl uppercase tracking-tighter group-hover:text-accent-cyan transition-colors"
+                    />
+                  </div>
+                  <span className="font-display font-bold text-xs uppercase tracking-widest text-white/40 whitespace-nowrap">
                     {exp.period}
                   </span>
                 </div>

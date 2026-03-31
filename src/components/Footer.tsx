@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
 import { cn } from "../lib/utils";
+import { Magnetic } from "./Magnetic";
 
 export function Footer() {
   return (
-    <footer className="py-20 md:py-40 px-6 md:px-10 bg-black border-t border-white/10">
+    <footer className="py-20 md:py-40 px-6 md:px-10 border-t border-white/10">
       <div className="max-w-[90rem] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-40">
           <div>
@@ -21,14 +22,22 @@ export function Footer() {
                 Socials
               </h3>
               <ul className="space-y-4">
-                {["ArtStation", "LinkedIn", "Instagram", "Behance"].map((item) => (
-                  <li key={item}>
-                    <a 
-                      href="#" 
-                      className="font-display font-bold text-sm uppercase tracking-widest hover:text-accent-cyan transition-colors"
-                    >
-                      {item}
-                    </a>
+                {[
+                  { name: "ArtStation", url: "https://gokalpon.artstation.com/" },
+                  { name: "LinkedIn", url: "https://tr.linkedin.com/in/gokalpkilic" },
+                  { name: "Instagram", url: "https://www.instagram.com/gokalpon/" }
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Magnetic strength={0.2}>
+                      <a 
+                        href={item.url} 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-display font-bold text-sm uppercase tracking-widest hover:text-accent-cyan transition-colors inline-block"
+                      >
+                        {item.name}
+                      </a>
+                    </Magnetic>
                   </li>
                 ))}
               </ul>
@@ -39,12 +48,14 @@ export function Footer() {
               </h3>
               <ul className="space-y-4">
                 <li>
-                  <a 
-                    href="mailto:gokalpon@gmail.com" 
-                    className="font-display font-bold text-sm uppercase tracking-widest hover:text-accent-cyan transition-colors"
-                  >
-                    gokalpon@gmail.com
-                  </a>
+                  <Magnetic strength={0.2}>
+                    <a 
+                      href="mailto:gokalpon@gmail.com" 
+                      className="font-display font-bold text-sm uppercase tracking-widest hover:text-accent-cyan transition-colors inline-block"
+                    >
+                      gokalpon@gmail.com
+                    </a>
+                  </Magnetic>
                 </li>
                 <li>
                   <span className="font-display font-bold text-sm uppercase tracking-widest text-white/40">

@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { cn } from "../lib/utils";
+import { Magnetic } from "./Magnetic";
 
 export function Navbar() {
   return (
@@ -24,12 +25,14 @@ export function Navbar() {
         ))}
       </div>
 
-      <a 
-        href="#contact"
-        className="px-6 py-2 rounded-full border border-white/20 font-display font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300"
-      >
-        Hire Me
-      </a>
+      <Magnetic strength={0.3}>
+        <a 
+          href="#contact"
+          className="px-6 py-2 rounded-full border border-white/20 font-display font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300"
+        >
+          Hire Me
+        </a>
+      </Magnetic>
     </motion.nav>
   );
 }

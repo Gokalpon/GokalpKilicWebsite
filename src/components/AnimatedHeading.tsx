@@ -8,7 +8,7 @@ interface AnimatedHeadingProps {
 }
 
 export function AnimatedHeading({ text, className, delay = 0 }: AnimatedHeadingProps) {
-  const letters = Array.from(text);
+  const words = text.split(" ");
 
   const container = {
     hidden: { opacity: 0 },
@@ -39,7 +39,7 @@ export function AnimatedHeading({ text, className, delay = 0 }: AnimatedHeadingP
   return (
     <motion.h3
       className={cn(
-        "font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white transition-colors duration-500 hover:text-accent-cyan",
+        "font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white transition-colors duration-500 hover:text-accent-cyan flex flex-wrap",
         className
       )}
       variants={container}
@@ -47,14 +47,18 @@ export function AnimatedHeading({ text, className, delay = 0 }: AnimatedHeadingP
       whileInView="visible"
       viewport={{ once: true }}
     >
-      {letters.map((letter, index) => (
-        <motion.span
-          key={index}
-          variants={child}
-          className="inline-block whitespace-pre"
-        >
-          {letter}
-        </motion.span>
+      {words.map((word, wordIndex) => (
+        <span key={wordIndex} className="inline-block whitespace-nowrap mr-[0.3em] mb-[0.1em]">
+          {Array.from(word).map((letter, letterIndex) => (
+            <motion.span
+              key={letterIndex}
+              variants={child}
+              className="inline-block"
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </span>
       ))}
     </motion.h3>
   );

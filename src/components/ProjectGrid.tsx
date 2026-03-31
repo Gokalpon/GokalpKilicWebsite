@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { cn } from "../lib/utils";
 import { AnimatedHeading } from "./AnimatedHeading";
 
@@ -48,12 +49,23 @@ const PROJECTS = [
 ];
 
 export function ProjectGrid() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+
   return (
-    <section id="projects" className="py-20 md:py-40 px-6 md:px-10 max-w-[90rem] mx-auto">
+    <section ref={container} id="projects" className="py-20 md:py-40 px-6 md:px-10 max-w-[90rem] mx-auto">
       <div className="mb-20">
-        <h2 className="font-display font-bold text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
+        <motion.h2 
+          style={{ y }}
+          className="font-display font-bold text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10"
+        >
           Case <br /> Studies
-        </h2>
+        </motion.h2>
         <div className="h-px w-full bg-white/10" />
       </div>
 
@@ -88,14 +100,16 @@ export function ProjectGrid() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
             {/* Content */}
-            <div className="absolute bottom-0 left-0 w-full p-6 md:p-10 translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
-              <span className="font-display font-bold text-xs uppercase tracking-[0.2em] text-accent-cyan mb-2 block">
+            <div className="absolute bottom-0 left-0 w-full p-6 md:p-10 translate-y-10 group-hover:translate-y-0 transition-transform duration-500 z-30">
+              <span className="font-display font-bold text-xs uppercase tracking-[0.2em] text-gradient mb-2 block">
                 {project.category}
               </span>
-              <AnimatedHeading 
-                text={project.title} 
-                className="text-2xl md:text-4xl uppercase tracking-tighter"
-              />
+              <div className="max-w-[90%]">
+                <AnimatedHeading 
+                  text={project.title} 
+                  className="text-2xl md:text-4xl uppercase tracking-tighter leading-tight"
+                />
+              </div>
             </div>
           </motion.div>
         ))}
