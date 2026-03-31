@@ -4,9 +4,10 @@ import { motion } from "motion/react";
 interface MagneticProps {
   children: ReactNode;
   strength?: number;
+  className?: string;
 }
 
-export function Magnetic({ children, strength = 0.5 }: MagneticProps) {
+export function Magnetic({ children, strength = 0.5, className }: MagneticProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -32,6 +33,7 @@ export function Magnetic({ children, strength = 0.5 }: MagneticProps) {
       onMouseLeave={handleMouseLeave}
       animate={{ x: position.x, y: position.y }}
       transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
+      className={className}
     >
       {children}
     </motion.div>

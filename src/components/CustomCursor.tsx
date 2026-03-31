@@ -8,7 +8,7 @@ export function CustomCursor() {
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
-  const springConfig = { damping: 40, stiffness: 500, mass: 0.5 };
+  const springConfig = { damping: 25, stiffness: 800, mass: 0.1 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
@@ -52,39 +52,46 @@ export function CustomCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 pointer-events-none z-[9999]"
+      className="fixed top-0 left-0 pointer-events-none z-[9999] will-change-transform"
       style={{
         x: cursorXSpring,
         y: cursorYSpring,
-        translateX: "-50%",
-        translateY: "-50%",
       }}
     >
-      {/* Single Premium Glass Orb */}
+      {/* Premium Frosted Arrow Cursor - Soft & Subtle */}
       <motion.div
-        className="relative flex items-center justify-center"
+        className="relative"
         animate={{
-          scale: isClicked ? 0.8 : isHovered ? 2.2 : 1,
+          scale: isClicked ? 0.9 : isHovered ? 1.2 : 1,
         }}
         transition={{ type: "spring", damping: 30, stiffness: 400 }}
       >
-        <motion.div
-          className="w-12 h-12 rounded-full border border-white/30 backdrop-blur-[4px] bg-white/10 mix-blend-difference shadow-[0_0_20px_rgba(255,255,255,0.1)]"
-          animate={{
-            backgroundColor: isHovered ? "rgba(255, 255, 255, 0.2)" : "rgba(255, 255, 255, 0.1)",
-            borderColor: isHovered ? "rgba(255, 255, 255, 0.6)" : "rgba(255, 255, 255, 0.3)",
+        {/* The Frosted Glass Body - Matches SVG Path */}
+        <div 
+          className="absolute top-0 left-0 w-[28px] h-[34px] bg-white/5 backdrop-blur-[10px]"
+          style={{ 
+            clipPath: "polygon(12% 10%, 88% 52%, 55% 60%, 42% 90%)",
           }}
         />
         
-        {/* Internal Dynamic Glow */}
-        <motion.div
-          className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/20 to-transparent opacity-0"
-          animate={{
-            opacity: isHovered ? 1 : 0,
-            rotate: isHovered ? 360 : 0,
-          }}
-          transition={{ rotate: { duration: 4, repeat: Infinity, ease: "linear" } }}
-        />
+        {/* The White Outline SVG - Softer & Thinner */}
+        <svg 
+          width="28" 
+          height="34" 
+          viewBox="0 0 28 34" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg"
+          className="relative z-10"
+        >
+          <path 
+            d="M4 4L24 18L15 21L12 30L4 4Z" 
+            fill="rgba(255, 255, 255, 0.02)"
+            stroke="rgba(255, 255, 255, 0.6)" 
+            strokeWidth="1.8" 
+            strokeLinejoin="round"
+            strokeLinecap="round"
+          />
+        </svg>
       </motion.div>
     </motion.div>
   );

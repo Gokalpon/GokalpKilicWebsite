@@ -2,31 +2,53 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { cn } from "../lib/utils";
 import { AnimatedHeading } from "./AnimatedHeading";
+import { useLanguage } from "../context/LanguageContext";
 
 const EXPERIENCE = [
   {
     company: "Freelance",
-    role: "Architect & 3D Modeler",
+    role: { en: "Architect & 3D Modeler", tr: "Mimar & 3D Modelleme Uzmanı" },
     period: "2022 - Present",
-    desc: "Architecture, Architectural Visualization & 3D Modeler."
+    desc: { 
+      en: "Architecture, Architectural Visualization & 3D Modeler.",
+      tr: "Mimarlık, Mimari Görselleştirme ve 3D Modelleme."
+    }
   },
   {
     company: "Tint Mimarlık",
-    role: "Architect",
+    role: { en: "Architect", tr: "Mimar" },
     period: "2021 - 2022",
-    desc: "Responsible for designing of 12 villa/office/residential projects as head designer and made renders."
+    desc: {
+      en: "Participated in office projects as architect. I was responsible of designing of 12 villa/office/residential project as head designer and made renders. also was in many different projects such as office buildings, mall projects, residance projects, goverment projects etc..",
+      tr: "Ofis projelerinde mimar olarak görev aldım. Baş tasarımcı olarak 12 villa/ofis/konut projesinin tasarımından ve renderlarından sorumluydum. Ayrıca ofis binaları, AVM projeleri, rezidans projeleri ve kamu projeleri gibi birçok farklı projede yer aldım."
+    }
   },
   {
     company: "Selda Gümüşdoğrayan Mimarlık",
-    role: "Architect",
+    role: { en: "Architect", tr: "Mimar" },
     period: "2020 - 2021",
-    desc: "Participated in City Hospital Projects such as Samsun Sehir Hastanesi, Ordu Sehir Hastanesi."
+    desc: {
+      en: "Participated in City Hospital Projects such as Samsun Sehir Hastanesi, Ordu Sehir Hastanesi, Denizli Sehir Hastanesi, Kocaeli Sehir Hastanesi, kindergarden project etc.. I was also responsible from visualization of projects and presentations.",
+      tr: "Samsun Şehir Hastanesi, Ordu Şehir Hastanesi, Denizli Şehir Hastanesi, Kocaeli Şehir Hastanesi ve anaokulu projesi gibi Şehir Hastanesi projelerinde yer aldım. Ayrıca projelerin görselleştirilmesinden ve sunumlarından sorumluydum."
+    }
   },
   {
     company: "Bek Proje",
-    role: "Architect",
+    role: { en: "Architect", tr: "Mimar" },
     period: "2017 - 2018",
-    desc: "Participated in office projects as architect on government projects."
+    desc: {
+      en: "Participated in office projects as architect on government projects.",
+      tr: "Kamu projelerinde mimar olarak ofis projelerinde yer aldım."
+    }
+  },
+  {
+    company: "Rönesans Holding",
+    role: { en: "Intern Architect", tr: "Stajyer Mimar" },
+    period: "2015",
+    desc: {
+      en: "Participated in office projects as intern architect. Gained experience of Hospitality Architecture.",
+      tr: "Stajyer mimar olarak ofis projelerinde yer aldım. Konaklama mimarisi konusunda deneyim kazandım."
+    }
   }
 ];
 
@@ -35,6 +57,7 @@ const SKILLS = [
 ];
 
 export function About() {
+  const { t } = useLanguage();
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -50,25 +73,60 @@ export function About() {
         <div>
           <motion.h2 
             style={{ y }}
-            className="font-display font-bold text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10"
+            className="font-display font-bold text-[15vw] md:text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10"
           >
-            About <br /> Me
+            {t("About", "Hakkımda")} <br /> {t("Me", "Ben")}
           </motion.h2>
-          <div className="space-y-8 font-sans font-light text-xl text-white/60 leading-relaxed">
+          <div className="space-y-8 font-sans font-light text-lg md:text-xl text-white/60 leading-relaxed">
+            <div className="space-y-2">
+              <h3 className="text-white font-display font-bold text-2xl uppercase tracking-tighter">Gökalp Kılıç</h3>
+              <p className="text-accent-cyan font-display font-bold text-sm uppercase tracking-widest">
+                {t("Architect & 3D Artist", "Mimar & 3D Sanatçısı")}
+              </p>
+            </div>
             <p>
-              I am Gökalp Kılıç, an architect and 3D artist based in Ankara, Turkey. 
-              My work focuses on the intersection of architecture and cinematic visualization.
+              {t(
+                "I graduated from the Architecture Department of Çankaya University in 2016. Following internships at İzka İnşaat and Rönesans Holding, I worked as an architect at Bek Proje, Selda Gümüşdoğrayan Architecture, and Tint Architecture, focusing on design, modeling, and visualization. My project experience ranges from individual villa designs to large-scale public developments, such as city hospitals.",
+                "2016 yılında Çankaya Üniversitesi Mimarlık Bölümü'nden mezun oldum. İzka İnşaat ve Rönesans Holding'deki stajlarımın ardından Bek Proje, Selda Gümüşdoğrayan Mimarlık ve Tint Mimarlık'ta mimar olarak çalıştım; tasarım, modelleme ve görselleştirme konularına odaklandım. Proje deneyimim, bireysel villa tasarımlarından şehir hastaneleri gibi büyük ölçekli kamu projelerine kadar uzanmaktadır."
+              )}
             </p>
-            <p>
-              With a background in architecture from Cankaya University, I have spent years 
-              refining my skills in 3D modeling and rendering, working on projects ranging 
-              from high-end residential villas to large-scale city hospitals.
-            </p>
+            
+            <div className="space-y-4">
+              <h4 className="text-white font-display font-bold text-lg uppercase tracking-tighter">
+                {t("Technical Skills & 3D Modeling", "Teknik Yetenekler & 3D Modelleme")}
+              </h4>
+              <p>
+                {t(
+                  "I specialize in 3D modeling and visualization, primarily utilizing Blender. My work spans two distinct areas:",
+                  "Blender kullanarak 3D modelleme ve görselleştirme konularında uzmanlaştım. Çalışmalarım iki farklı alanı kapsamaktadır:"
+                )}
+              </p>
+              <ul className="space-y-4 list-none">
+                <li>
+                  <span className="text-white font-bold">{t("Architectural:", "Mimari:")}</span> {t("Developing high-fidelity, technically accurate models and photorealistic renderings from the design phase onward.", "Tasarım aşamasından itibaren yüksek doğrulukta, teknik olarak hatasız modeller ve fotogerçekçi renderlar geliştirme.")}
+                </li>
+                <li>
+                  <span className="text-white font-bold">{t("Game & Character Art:", "Oyun & Karakter Sanatı:")}</span> {t("Producing optimized, game-ready assets and stylized models with a specific character-driven aesthetic.", "Belirli bir karakter odaklı estetiğe sahip, optimize edilmiş, oyuna hazır varlıklar ve stilize modeller üretme.")}
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="text-white font-display font-bold text-lg uppercase tracking-tighter">
+                {t("User Experience (UX)", "Kullanıcı Deneyimi (UX)")}
+              </h4>
+              <p>
+                {t(
+                  "To enhance my design workflow beyond aesthetics, I hold a Google UX Design Professional Certificate. This allows me to integrate user experience principles into both architectural and digital design, combining aesthetic sensibility with a solution-oriented approach.",
+                  "Tasarım sürecimi estetiğin ötesine taşımak için Google UX Tasarım Profesyonel Sertifikası'na sahibim. Bu, kullanıcı deneyimi ilkelerini hem mimari hem de dijital tasarıma entegre etmemi sağlayarak estetik duyarlılığı çözüm odaklı bir yaklaşımla birleştirmeme olanak tanıyor."
+                )}
+              </p>
+            </div>
           </div>
 
           <div className="mt-20">
             <h3 className="font-display font-bold text-xs uppercase tracking-[0.2em] mb-10 text-white/40">
-              Core Skills
+              {t("Core Skills", "Temel Yetenekler")}
             </h3>
             <div className="flex flex-wrap gap-4">
               {SKILLS.map((skill) => (
@@ -86,7 +144,7 @@ export function About() {
         {/* Right: Experience */}
         <div className="space-y-20">
           <h3 className="font-display font-bold text-xs uppercase tracking-[0.2em] mb-10 text-white/40">
-            Experience
+            {t("Experience", "Deneyim")}
           </h3>
           <div className="space-y-12">
             {EXPERIENCE.map((exp, index) => (
@@ -109,10 +167,10 @@ export function About() {
                   </span>
                 </div>
                 <p className="font-display font-bold text-sm uppercase tracking-widest mb-4 text-white/80">
-                  {exp.role}
+                  {t(exp.role.en, exp.role.tr)}
                 </p>
                 <p className="font-sans font-light text-lg text-white/40 max-w-lg">
-                  {exp.desc}
+                  {t(exp.desc.en, exp.desc.tr)}
                 </p>
               </motion.div>
             ))}

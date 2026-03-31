@@ -36,10 +36,10 @@ export function Preloader() {
                 animate={{ opacity: 1, y: 0 }}
                 className="flex flex-col"
               >
-                <span className="font-display font-bold text-4xl tracking-tighter uppercase text-white">
+                <span className="font-display font-bold text-2xl md:text-4xl tracking-tighter uppercase text-white">
                   Gökalp Kılıç
                 </span>
-                <span className="font-display font-bold text-[10px] tracking-[0.5em] uppercase text-white/40 mt-2">
+                <span className="font-display font-bold text-[8px] md:text-[10px] tracking-[0.3em] md:tracking-[0.5em] uppercase text-white/40 mt-2">
                   Architecture & 3D Artist
                 </span>
               </motion.div>
