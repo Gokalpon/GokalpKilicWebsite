@@ -28,6 +28,46 @@ export const PROJECTS = [
     ]
   },
   {
+    id: 3,
+    title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Beytepe-Living-Room-Day-1.jpg",
+    featured: false,
+    description: {
+      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
+      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
+    },
+    gallery: [
+      "/images/Beytepe-Living-Room-Day-1.jpg",
+      "/images/Beytepe-Living-Room-Day-2.jpg",
+      "/images/Beytepe-Living-Room-Day-3.jpg",
+      "/images/Beytepe-Living-Room-Day-4.jpg",
+      "/images/Beytepe-Living-Room-Day-5.jpg",
+      "/images/Beytepe-Living-Room-Day-6.jpg",
+      "/images/Beytepe-Living-Room-Day-7.jpg"
+    ]
+  },
+  {
+    id: 4,
+    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Beytepe-Living-Room-Night-1.jpg",
+    featured: false,
+    description: {
+      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
+      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
+    },
+    gallery: [
+      "/images/Beytepe-Living-Room-Night-1.jpg",
+      "/images/Beytepe-Living-Room-Night-2.jpg",
+      "/images/Beytepe-Living-Room-Night-3.jpg",
+      "/images/Beytepe-Living-Room-Night-4.jpg",
+      "/images/Beytepe-Living-Room-Night-5.jpg",
+      "/images/Beytepe-Living-Room-Night-6.jpg",
+      "/images/Beytepe-Living-Room-Night-7.jpg"
+    ]
+  },
+  {
     id: 10,
     title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
@@ -61,26 +101,6 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 3,
-    title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Beytepe-Living-Room-Day-1.jpg",
-    featured: false,
-    description: {
-      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
-      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
-    },
-    gallery: [
-      "/images/Beytepe-Living-Room-Day-1.jpg",
-      "/images/Beytepe-Living-Room-Day-2.jpg",
-      "/images/Beytepe-Living-Room-Day-3.jpg",
-      "/images/Beytepe-Living-Room-Day-4.jpg",
-      "/images/Beytepe-Living-Room-Day-5.jpg",
-      "/images/Beytepe-Living-Room-Day-6.jpg",
-      "/images/Beytepe-Living-Room-Day-7.jpg"
-    ]
-  },
-  {
     id: 2,
     title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
@@ -103,26 +123,6 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 4,
-    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Beytepe-Living-Room-Night-1.jpg",
-    featured: false,
-    description: {
-      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
-      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
-    },
-    gallery: [
-      "/images/Beytepe-Living-Room-Night-1.jpg",
-      "/images/Beytepe-Living-Room-Night-2.jpg",
-      "/images/Beytepe-Living-Room-Night-3.jpg",
-      "/images/Beytepe-Living-Room-Night-4.jpg",
-      "/images/Beytepe-Living-Room-Night-5.jpg",
-      "/images/Beytepe-Living-Room-Night-6.jpg",
-      "/images/Beytepe-Living-Room-Night-7.jpg"
-    ]
-  },
-  {
     id: 5,
     title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
@@ -138,6 +138,107 @@ export const PROJECTS = [
       "/images/Golbasi-Villa-2021-3.jpg",
       "/images/Golbasi-Villa-2021-4.jpg",
       "/images/Golbasi-Villa-2021-5.jpg"
+    ]
+  },
+  {
+    id: 6,
+    title: { en: "Product Visualization", tr: "Ürün Görselleştirme" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/Product-Visualizaton-1.jpg",
+    featured: false,
+    description: {
+      en: "A collection of high-fidelity product visualizations, focusing on material realism, studio lighting, and commercial aesthetics.",
+      tr: "Malzeme gerçekçiliği, stüdyo aydınlatması ve ticari estetiğe odaklanan yüksek doğrulukta ürün görselleştirmelerinden oluşan bir koleksiyon."
+    },
+    gallery: [
+      "/images/Product-Visualizaton-1.jpg",
+      "/images/Product-Visualizaton-2.jpg",
+      "/images/Product-Visualizaton-3.jpg",
+      "/images/Product-Visualizaton-4.jpg",
+      "/images/Product-Visualizaton-5.jpg",
+      "/images/Product-Visualizaton-6.jpg",
+      "/images/Product-Visualizaton-7.jpg",
+      "/images/Product-Visualizaton-8.jpg",
+      "/images/Product-Visualizaton-9.jpg",
+      "/images/Product-Visualizaton-11.jpg"
+    ]
+  },
+  {
+    id: 7,
+    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
+    category: { en: "3D Modeling", tr: "3D Modelleme" },
+    image: "/images/Low-Poly-Aircraft-1.jpg",
+    featured: false,
+    description: {
+      en: "A low-poly 3D model of a vintage aircraft, designed for game environments. Focuses on silhouette, efficient topology, and stylized textures.",
+      tr: "Oyun ortamları için tasarlanmış antika bir uçağın düşük poligonlu 3D modeli. Siluet, verimli topoloji ve stilize dokulara odaklanır."
+    },
+    gallery: [
+      "/images/Low-Poly-Aircraft-1.jpg",
+      "/images/Low-Poly-Aircraft-2.jpg",
+      "/images/Low-Poly-Aircraft-3.jpg"
+    ]
+  },
+  {
+    id: 8,
+    title: { en: "Digital Portrait Gallery", tr: "Dijital Portre Galerisi" },
+    category: { en: "Digital Art", tr: "Dijital Sanat" },
+    image: "/images/drawing-1.jpg",
+    featured: false,
+    description: {
+      en: "A series of digital portraits and character studies, exploring different styles from realistic to stylized character design.",
+      tr: "Gerçekçiden stilize karakter tasarımına kadar farklı stilleri araştıran bir dizi dijital portre ve karakter çalışması."
+    },
+    gallery: [
+      "/images/drawing-1.jpg",
+      "/images/drawing-2.jpg",
+      "/images/drawing-3.jpg",
+      "/images/drawing-4.jpg",
+      "/images/drawing-5.jpg"
+    ]
+  },
+  {
+    id: 9,
+    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/Sand-Bowl-Study-1.jpg",
+    featured: false,
+    description: {
+      en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
+      tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
+    },
+    gallery: [
+      "/images/Sand-Bowl-Study-1.jpg",
+      "/images/Sand-Bowl-Study-2.jpg"
+    ]
+  },
+  {
+    id: 11,
+    title: { en: "Character Head Design", tr: "Karakter Baş Tasarımı" },
+    category: { en: "Character Art", tr: "Karakter Sanatı" },
+    image: "/images/Character-Head-Design-1.jpg",
+    featured: false,
+    description: {
+      en: "A detailed character head study, focusing on facial anatomy, expression, and stylized character features.",
+      tr: "Yüz anatomisi, ifade ve stilize karakter özelliklerine odaklanan detaylı bir karakter başı çalışması."
+    },
+    gallery: [
+      "/images/Character-Head-Design-1.jpg",
+      "/images/Character-Head-Design-2.jpg"
+    ]
+  },
+  {
+    id: 12,
+    title: { en: "Donut Study", tr: "Donut Çalışması" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/Donut-1.jpg",
+    featured: false,
+    description: {
+      en: "A classic 3D modeling exercise, focusing on procedural textures, lighting, and rendering techniques.",
+      tr: "Prosedürel dokulara, aydınlatmaya ve render tekniklerine odaklanan klasik bir 3D modelleme egzersizi."
+    },
+    gallery: [
+      "/images/Donut-1.jpg"
     ]
   }
 ];

@@ -13,6 +13,10 @@ const CUBE_FACES = [
     image: "/images/Beytepe-Living-Room-Day-1.jpg",
   },
   {
+    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
+    image: "/images/Beytepe-Living-Room-Night-1.jpg",
+  },
+  {
     title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
     image: "/images/gokalp-kilic-res02-rn0.jpg",
   },
