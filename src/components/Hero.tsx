@@ -5,7 +5,7 @@ import { useLanguage } from "../context/LanguageContext";
 
 const CUBE_FACES = [
   {
-    title: { en: "İncek Villa Project", tr: "İncek Villa Proje" },
+    title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
     image: "/images/Incek-Villa-1.jpg",
   },
   {
@@ -17,8 +17,8 @@ const CUBE_FACES = [
     image: "/images/gokalp-kilic-res02-rn0.jpg",
   },
   {
-    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
-    image: "/images/Sand-Bowl-Study-1.jpg",
+    title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
+    image: "/images/Golbasi-Villa-2021-1.jpg",
   }
 ];
 
@@ -88,7 +88,7 @@ export function Hero() {
               >
                 <img 
                   src={face.image} 
-                  alt={t(face.title.en, face.title.tr)}
+                  alt=""
                   className="absolute inset-0 w-full h-full object-cover opacity-60 transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />

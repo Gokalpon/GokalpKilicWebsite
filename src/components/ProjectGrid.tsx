@@ -29,7 +29,7 @@ export const PROJECTS = [
   },
   {
     id: 10,
-    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Proje" },
+    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
     image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
     featured: false,
@@ -44,23 +44,8 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 13,
-    title: { en: "Character Head Design", tr: "Karakter Baş Tasarımı" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/Character-Head-Design-1.jpg",
-    featured: false,
-    description: {
-      en: "A stylized character head design focusing on expressive features and clean topology for animation and game art.",
-      tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
-    },
-    gallery: [
-      "/images/Character-Head-Design-1.jpg",
-      "/images/Character-Head-Design-2.jpg"
-    ]
-  },
-  {
     id: 14,
-    title: { en: "İncek Villa Project", tr: "İncek Villa Proje" },
+    title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
     image: "/images/Incek-Villa-1.jpg",
     featured: false,
@@ -118,21 +103,6 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 9,
-    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/Sand-Bowl-Study-1.jpg",
-    featured: false,
-    description: {
-      en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
-      tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
-    },
-    gallery: [
-      "/images/Sand-Bowl-Study-1.jpg",
-      "/images/Sand-Bowl-Study-2.jpg"
-    ]
-  },
-  {
     id: 4,
     title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
@@ -168,121 +138,6 @@ export const PROJECTS = [
       "/images/Golbasi-Villa-2021-3.jpg",
       "/images/Golbasi-Villa-2021-4.jpg",
       "/images/Golbasi-Villa-2021-5.jpg"
-    ]
-  },
-  {
-    id: 6,
-    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/Low-Poly-Aircraft-1.jpg",
-    featured: false,
-    description: {
-      en: "A detailed 3D model of a vintage aircraft, focused on technical accuracy and realistic material representation for real-time applications.",
-      tr: "Teknik doğruluk ve gerçek zamanlı uygulamalar için gerçekçi malzeme temsiline odaklanan, antika bir uçağın detaylı 3D modeli."
-    },
-    gallery: [
-      "/images/Low-Poly-Aircraft-1.jpg",
-      "/images/Low-Poly-Aircraft-2.jpg",
-      "/images/Low-Poly-Aircraft-3.jpg"
-    ]
-  },
-  {
-    id: 7,
-    title: { en: "Digital Portrait Gallery", tr: "Dijital Portre Galerisi" },
-    category: { en: "Digital Art", tr: "Dijital Sanat" },
-    image: "/images/drawing-1.jpg",
-    featured: false,
-    description: {
-      en: "A series of digital portraits and character studies, showcasing detailed sketching and shading techniques to capture the essence of iconic characters.",
-      tr: "İkonik karakterlerin özünü yakalamak için detaylı eskiz ve gölgeleme tekniklerini sergileyen bir dizi dijital portre ve karakter çalışması."
-    },
-    gallery: [
-      "/images/drawing-1.jpg",
-      "/images/drawing-2.jpg",
-      "/images/drawing-3.jpg",
-      "/images/drawing-4.jpg",
-      "/images/drawing-5.jpg"
-    ]
-  },
-  {
-    id: 8,
-    title: { en: "Product Visualization", tr: "Ürün Görselleştirme" },
-    category: { en: "3D Rendering", tr: "3D Görselleştirme" },
-    image: "/images/Product-Visualization-1.jpg",
-    featured: false,
-    description: {
-      en: "High-quality product renders focusing on material realism, lighting, and composition for commercial and conceptual designs.",
-      tr: "Ticari ve konsept tasarımlar için malzeme gerçekçiliği, aydınlatma ve kompozisyona odaklanan yüksek kaliteli ürün renderları."
-    },
-    gallery: [
-      "/images/Product-Visualization-1.jpg",
-      "/images/Product-Visualization-2.jpg",
-      "/images/Product-Visualization-3.jpg",
-      "/images/Product-Visualization-4.jpg",
-      "/images/Product-Visualization-5.jpg",
-      "/images/Product-Visualization-6.jpg",
-      "/images/Product-Visualization-7.jpg",
-      "/images/Product-Visualization-8.jpg",
-      "/images/Product-Visualization-9.jpg",
-      "/images/Product-Visualization-11.jpg"
-    ]
-  },
-  {
-    id: 11,
-    title: { en: "Lighting Studies", tr: "Aydınlatma Çalışmaları" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/Product-Visualization-10.jpg",
-    featured: false,
-    description: {
-      en: "Experimental renders exploring complex lighting setups and organic material properties.",
-      tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
-    },
-    gallery: [
-      "/images/Product-Visualization-10.jpg",
-      "/images/Product-Visualization-7.jpg",
-      "/images/Product-Visualization-8.jpg"
-    ]
-  },
-  {
-    id: 12,
-    title: { en: "TİNT MİMARLIK", tr: "TİNT MİMARLIK" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/Interior-Visualizaton-1.jpg",
-    featured: false,
-    description: {
-      en: "A collaborative architectural visualization project for TİNT MİMARLIK, showcasing modern design concepts and high-end rendering techniques.",
-      tr: "TİNT MİMARLIK için modern tasarım konseptlerini ve üst düzey render tekniklerini sergileyen işbirlikçi bir mimari görselleştirme projesi."
-    },
-    gallery: [
-      "/images/Interior-Visualizaton-1.jpg"
-    ]
-  },
-  {
-    id: 15,
-    title: { en: "Donut - Day", tr: "Donut - Gündüz" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/Donut-1.jpg",
-    featured: false,
-    description: {
-      en: "A classic 3D modeling study of a donut, exploring procedural textures and realistic food rendering in daylight conditions.",
-      tr: "Gün ışığı koşullarında prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
-    },
-    gallery: [
-      "/images/Donut-1.jpg"
-    ]
-  },
-  {
-    id: 16,
-    title: { en: "SELDA GÜMÜŞDOĞRAYAN MİMARLIK", tr: "SELDA GÜMÜŞDOĞRAYAN MİMARLIK" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Interior-Visualizaton-2.jpg",
-    featured: false,
-    description: {
-      en: "Interior visualization project for SELDA GÜMÜŞDOĞRAYAN MİMARLIK, focusing on elegant living spaces and sophisticated material palettes.",
-      tr: "SELDA GÜMÜŞDOĞRAYAN MİMARLIK için zarif yaşam alanlarına ve sofistike malzeme paletlerine odaklanan iç mekan görselleştirme projesi."
-    },
-    gallery: [
-      "/images/Interior-Visualizaton-2.jpg"
     ]
   }
 ];
@@ -368,7 +223,7 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
             {/* Project Image */}
             <img 
               src={project.image} 
-              alt={t(project.title.en, project.title.tr)}
+              alt=""
               className="absolute inset-0 w-full h-full object-cover opacity-70 saturate-50 group-hover:opacity-20 group-hover:saturate-0 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
@@ -497,7 +352,7 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
                         >
                           <img 
                             src={img} 
-                            alt={`${t(selectedProject.title.en, selectedProject.title.tr)} render ${i + 1}`}
+                            alt=""
                             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
                             referrerPolicy="no-referrer"
                           />
