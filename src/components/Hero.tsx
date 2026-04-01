@@ -5,12 +5,12 @@ import { useLanguage } from "../context/LanguageContext";
 
 const CUBE_FACES = [
   {
-    title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
+    title: { en: "İncek Villa Project", tr: "İncek Villa Proje" },
     image: "/images/Incek-Villa-1.jpg",
   },
   {
     title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
-    image: "/images/gokalp-kilic-day-interior-1.jpg",
+    image: "/images/Beytepe-Living-Room-Day-1.jpg",
   },
   {
     title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
@@ -18,7 +18,7 @@ const CUBE_FACES = [
   },
   {
     title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
-    image: "/images/gokalp-kilic-sand-bowl-try7.jpg",
+    image: "/images/Sand-Bowl-Study-1.jpg",
   }
 ];
 
