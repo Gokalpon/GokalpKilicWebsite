@@ -28,27 +28,6 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 2,
-    title: { en: "Residence Concept Design (Night)", tr: "Rezidans Konsept Tasarımı (Gece)" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-res02-rn0.jpg",
-    featured: false,
-    description: {
-      en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
-      tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
-    },
-    gallery: [
-      "/images/gokalp-kilic-res02-rn0.jpg",
-      "/images/gokalp-kilic-res02-rn1.jpg",
-      "/images/gokalp-kilic-res02-rn2.jpg",
-      "/images/gokalp-kilic-res02-rn3.jpg",
-      "/images/gokalp-kilic-res02-rn4.jpg",
-      "/images/gokalp-kilic-res02-rn6.jpg",
-      "/images/gokalp-kilic-res02-rn-int1.jpg",
-      "/images/gokalp-kilic-res02-rn-int2.jpg"
-    ]
-  },
-  {
     id: 4,
     title: { en: "Beytepe Living Room (Night)", tr: "Beytepe Oturma Odası (Gece)" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
@@ -70,14 +49,50 @@ export const PROJECTS = [
     ]
   },
   {
+    id: 9,
+    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/gokalp-kilic-sand-bowl-try7.jpg",
+    featured: false,
+    description: {
+      en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
+      tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
+    },
+    gallery: [
+      "/images/gokalp-kilic-sand-bowl-try7.jpg",
+      "/images/gokalp-kilic-sand-bowl-try8.jpg"
+    ]
+  },
+  {
+    id: 2,
+    title: { en: "Residence Concept Design (Night)", tr: "Rezidans Konsept Tasarımı (Gece)" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-res02-rn0.jpg",
+    featured: false,
+    description: {
+      en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
+      tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
+    },
+    gallery: [
+      "/images/gokalp-kilic-res02-rn0.jpg",
+      "/images/gokalp-kilic-res02-rn1.jpg",
+      "/images/gokalp-kilic-res02-rn2.jpg",
+      "/images/gokalp-kilic-res02-rn3.jpg",
+      "/images/gokalp-kilic-res02-rn4.jpg",
+      "/images/gokalp-kilic-res02-rn6.jpg",
+      "/images/gokalp-kilic-res02-rn-int1.jpg",
+      "/images/gokalp-kilic-res02-rn-int2.jpg"
+    ]
+  },
+  {
     id: 5,
-    title: { en: "Concept Villa Collection", tr: "Konsept Villa Koleksiyonu" },
+    title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
     image: "/images/gokalp-kilic-c-23-foto.jpg",
     featured: false,
     description: {
-      en: "A collection of modern villa concepts exploring different architectural styles and natural settings. Each design focuses on unique geometry and material harmony.",
-      tr: "Farklı mimari stilleri ve doğal ortamları araştıran modern villa konseptlerinden oluşan bir koleksiyon. Her tasarım benzersiz geometriye ve malzeme uyumuna odaklanır."
+      en: "A modern villa concept in Gölbaşı, exploring architectural harmony with nature. The design features unique geometry and a focus on material integration.",
+      tr: "Gölbaşı'nda doğa ile mimari uyumu araştıran modern bir villa konsepti. Tasarım, benzersiz bir geometriye ve malzeme entegrasyonuna odaklanıyor."
     },
     gallery: [
       "/images/gokalp-kilic-c-19-photo.jpg",
@@ -85,6 +100,27 @@ export const PROJECTS = [
       "/images/gokalp-kilic-c-27-foto.jpg",
       "/images/gokalp-kilic-c-32-foto.jpg",
       "/images/gokalp-kilic-c-33-foto.jpg"
+    ]
+  },
+  {
+    id: 3,
+    title: { en: "Beytepe Living Room (Day)", tr: "Beytepe Oturma Odası (Gündüz)" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/gokalp-kilic-day-interior-1.jpg",
+    featured: false,
+    description: {
+      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
+      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
+    },
+    gallery: [
+      "/images/gokalp-kilic-day-interior-1.jpg",
+      "/images/gokalp-kilic-day-interior-2.jpg",
+      "/images/gokalp-kilic-day-interior-3.jpg",
+      "/images/gokalp-kilic-day-interior-4.jpg",
+      "/images/gokalp-kilic-day-interior-close-1.jpg",
+      "/images/gokalp-kilic-day-interior-close-2.jpg",
+      "/images/gokalp-kilic-day-interior-close-3.jpg",
+      "/images/gokalp-kilic-day-interior-close-4.jpg"
     ]
   },
   {
@@ -139,21 +175,19 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 9,
-    title: { en: "Lighting & Material Studies", tr: "Aydınlatma ve Malzeme Çalışmaları" },
+    id: 11,
+    title: { en: "Lighting Studies", tr: "Aydınlatma Çalışmaları" },
     category: { en: "3D Art", tr: "3D Sanat" },
     image: "/images/gokalp-kilic-light-cylinder-angle-4.jpg",
     featured: false,
     description: {
-      en: "Experimental renders exploring complex lighting setups and organic material properties, including sand and glass simulations.",
-      tr: "Kum ve cam simülasyonları dahil olmak üzere karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
+      en: "Experimental renders exploring complex lighting setups and organic material properties.",
+      tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
     },
     gallery: [
       "/images/gokalp-kilic-light-cylinder-angle-4.jpg",
       "/images/gokalp-kilic-light-cylinder-angle5.jpg",
-      "/images/gokalp-kilic-light-cylinder-try9.jpg",
-      "/images/gokalp-kilic-sand-bowl-try7.jpg",
-      "/images/gokalp-kilic-sand-bowl-try8.jpg"
+      "/images/gokalp-kilic-light-cylinder-try9.jpg"
     ]
   },
   {
@@ -172,7 +206,13 @@ export const PROJECTS = [
       "/images/gokalp-kilic-render-3.jpg",
       "/images/gokalp-kilic-render-4.jpg",
       "/images/gokalp-kilic-render-5.jpg",
-      "/images/gokalp-kilic-render-try-2.jpg"
+      "/images/gokalp-kilic-render-try-2.jpg",
+      "/images/gokalp-kilic-rend-er1.jpg",
+      "/images/gokalp-kilic-rend-er1-b.jpg",
+      "/images/gokalp-kilic-rend-er2.jpg",
+      "/images/gokalp-kilic-rend-er2-b.jpg",
+      "/images/gokalp-kilic-rend-er3.jpg",
+      "/images/gokalp-kilic-rend-er-5.jpg"
     ]
   }
 ];

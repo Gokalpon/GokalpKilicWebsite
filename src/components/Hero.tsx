@@ -9,16 +9,16 @@ const CUBE_FACES = [
     image: "/images/gokalp-kilic-res02-r0.jpg",
   },
   {
-    title: { en: "Residence Concept Design (Night)", tr: "Rezidans Konsept Tasarımı (Gece)" },
-    image: "/images/gokalp-kilic-res02-rn0.jpg",
-  },
-  {
     title: { en: "Beytepe Living Room (Night)", tr: "Beytepe Oturma Odası (Gece)" },
     image: "/images/gokalp-kilic-night-interior-1.jpg",
   },
   {
-    title: { en: "Concept Villa Collection", tr: "Konsept Villa Koleksiyonu" },
-    image: "/images/gokalp-kilic-c-23-foto.jpg",
+    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
+    image: "/images/gokalp-kilic-sand-bowl-try7.jpg",
+  },
+  {
+    title: { en: "Residence Concept Design (Night)", tr: "Rezidans Konsept Tasarımı (Gece)" },
+    image: "/images/gokalp-kilic-res02-rn0.jpg",
   }
 ];
 
