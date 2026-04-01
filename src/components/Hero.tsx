@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { cn } from "../lib/utils";
 import { useLanguage } from "../context/LanguageContext";
@@ -13,21 +13,47 @@ const CUBE_FACES = [
     image: "/images/Beytepe-Living-Room-Day-1.jpg",
   },
   {
-    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
-    image: "/images/Beytepe-Living-Room-Night-1.jpg",
+    title: { en: "Residence Concept Design - Day", tr: "Rezidans Konsept Tasarımı - Gündüz" },
+    image: "/images/gokalp-kilic-res02-r0.jpg",
+  },
+  {
+    title: { en: "Product Visualization", tr: "Ürün Görselleştirme" },
+    image: "/images/Product-Visualizaton-1.jpg",
+  },
+  {
+    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
+    image: "/images/Low-Poly-Aircraft-1.jpg",
   },
   {
     title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
     image: "/images/gokalp-kilic-res02-rn0.jpg",
-  },
-  {
-    title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
-    image: "/images/Golbasi-Villa-2021-1.jpg",
   }
 ];
 
+const ImageWithFallback = ({ src, alt, className, ...props }: any) => {
+  const [imgSrc, setImgSrc] = useState(src);
+  const [hasError, setHasError] = useState(false);
+
+  return (
+    <img
+      {...props}
+      src={imgSrc}
+      alt={alt}
+      className={className}
+      onError={() => {
+        if (!hasError) {
+          setHasError(true);
+          setImgSrc(`https://picsum.photos/seed/${src.split('/').pop() || 'fallback'}/1200/800`);
+        }
+      }}
+      referrerPolicy="no-referrer"
+    />
+  );
+};
+
 export function Hero() {
   const { t } = useLanguage();
+  const [currentFaceIndex, setCurrentFaceIndex] = useState(0); // For tracking current face if needed
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -90,11 +116,10 @@ export function Hero() {
                   transform: `rotateY(${angle}deg) translateZ(var(--carousel-z, 45vw))`,
                 }}
               >
-                <img 
+                <ImageWithFallback 
                   src={face.image} 
                   alt=""
                   className="absolute inset-0 w-full h-full object-cover opacity-60 transition-all duration-700"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
                 <h2 className="relative z-10 font-display font-bold text-xl md:text-4xl text-center px-4 md:px-6 tracking-[0.1em] md:tracking-[0.2em] uppercase leading-tight">

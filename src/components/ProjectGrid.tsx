@@ -51,15 +51,15 @@ export const PROJECTS = [
     id: 4,
     title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Beytepe-Living-Room-Night-1.jpg",
+    image: "/images/Beytepe-Living-Room-Night.jpg",
     featured: false,
     description: {
       en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
       tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
     },
     gallery: [
+      "/images/Beytepe-Living-Room-Night.jpg",
       "/images/Beytepe-Living-Room-Night-1.jpg",
-      "/images/Beytepe-Living-Room-Night-2.jpg",
       "/images/Beytepe-Living-Room-Night-3.jpg",
       "/images/Beytepe-Living-Room-Night-4.jpg",
       "/images/Beytepe-Living-Room-Night-5.jpg",
@@ -99,6 +99,54 @@ export const PROJECTS = [
       "/images/Incek-Villa-3.jpg",
       "/images/Incek-Villa-4.jpg"
     ]
+  },
+  {
+    id: 18,
+    title: { en: "İncek Loft - Day", tr: "İncek Loft - Gündüz" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Incek-Loft-Day-1.jpg",
+    featured: false,
+    description: {
+      en: "Interior design and visualization for İncek Loft apartment, showcasing the bright and airy daylight atmosphere.",
+      tr: "İncek Loft dairesi için iç mekan tasarımı ve görselleştirme, aydınlık ve ferah gün ışığı atmosferini sergiliyor."
+    },
+    gallery: ["/images/Incek-Loft-Day-1.jpg"]
+  },
+  {
+    id: 19,
+    title: { en: "İncek Loft - Night", tr: "İncek Loft - Gece" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Incek-Loft-Night-1.jpg",
+    featured: false,
+    description: {
+      en: "The night version of the İncek Loft interior, emphasizing sophisticated artificial lighting and a cozy evening mood.",
+      tr: "İncek Loft iç mekanının gece versiyonu, sofistike yapay aydınlatmayı ve samimi bir akşam havasını vurguluyor."
+    },
+    gallery: ["/images/Incek-Loft-Night-1.jpg"]
+  },
+  {
+    id: 20,
+    title: { en: "İncek Loft - Kids Room", tr: "İncek Loft - Çocuk Odası" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Incek-Loft-Kids-1.jpg",
+    featured: false,
+    description: {
+      en: "A creative and functional kids' room design within the İncek Loft project, focusing on playful elements and efficient space usage.",
+      tr: "İncek Loft projesi kapsamında, eğlenceli unsurlara ve verimli alan kullanımına odaklanan yaratıcı ve fonksiyonel bir çocuk odası tasarımı."
+    },
+    gallery: ["/images/Incek-Loft-Kids-1.jpg"]
+  },
+  {
+    id: 21,
+    title: { en: "İncek Loft - Kitchen", tr: "İncek Loft - Mutfak" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Incek-Loft-Kitchen-1.jpg",
+    featured: false,
+    description: {
+      en: "Modern kitchen design for İncek Loft, combining high-end appliances with sleek cabinetry and ergonomic layout.",
+      tr: "İncek Loft için modern mutfak tasarımı, üst düzey cihazları şık dolaplar ve ergonomik yerleşimle birleştiriyor."
+    },
+    gallery: ["/images/Incek-Loft-Kitchen-1.jpg"]
   },
   {
     id: 2,
@@ -228,6 +276,22 @@ export const PROJECTS = [
     ]
   },
   {
+    id: 13,
+    title: { en: "Lighting Studies", tr: "Aydınlatma Çalışmaları" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/Lighting-Study-1.jpg",
+    featured: false,
+    description: {
+      en: "A series of experimental lighting studies exploring global illumination, volumetric effects, and material interactions in various environments.",
+      tr: "Çeşitli ortamlarda küresel aydınlatma, hacimsel etkiler ve malzeme etkileşimlerini araştıran bir dizi deneysel aydınlatma çalışması."
+    },
+    gallery: [
+      "/images/Lighting-Study-1.jpg",
+      "/images/Lighting-Study-2.jpg",
+      "/images/Lighting-Study-3.jpg"
+    ]
+  },
+  {
     id: 12,
     title: { en: "Donut Study", tr: "Donut Çalışması" },
     category: { en: "3D Art", tr: "3D Sanat" },
@@ -242,6 +306,28 @@ export const PROJECTS = [
     ]
   }
 ];
+
+const ImageWithFallback = ({ src, alt, className, ...props }: any) => {
+  const [imgSrc, setImgSrc] = useState(src);
+  const [hasError, setHasError] = useState(false);
+
+  return (
+    <img
+      {...props}
+      src={imgSrc}
+      alt={alt}
+      className={className}
+      onError={() => {
+        if (!hasError) {
+          setHasError(true);
+          // Use a placeholder if the local image fails
+          setImgSrc(`https://picsum.photos/seed/${src.split('/').pop() || 'fallback'}/1200/800`);
+        }
+      }}
+      referrerPolicy="no-referrer"
+    />
+  );
+};
 
 interface ProjectGridProps {
   limit?: number;
@@ -322,11 +408,10 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
             </div>
 
             {/* Project Image */}
-            <img 
+            <ImageWithFallback 
               src={project.image} 
               alt=""
               className="absolute inset-0 w-full h-full object-cover opacity-70 saturate-50 group-hover:opacity-20 group-hover:saturate-0 transition-all duration-700"
-              referrerPolicy="no-referrer"
             />
 
             {/* Overlay */}
@@ -387,16 +472,19 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
                 {/* Carousel Section */}
                 <div className="relative aspect-video w-full group">
                   <AnimatePresence mode="wait">
-                    <motion.img 
+                    <motion.div
                       key={activeImageIndex}
-                      src={selectedProject.gallery[activeImageIndex]}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.5 }}
-                      className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
-                    />
+                      className="w-full h-full"
+                    >
+                      <ImageWithFallback 
+                        src={selectedProject.gallery[activeImageIndex]}
+                        className="w-full h-full object-cover"
+                      />
+                    </motion.div>
                   </AnimatePresence>
                   
                   {/* Carousel Controls */}
@@ -451,11 +539,10 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
                           className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 group cursor-zoom-in"
                           onClick={() => setLightboxImage(img)}
                         >
-                          <img 
+                          <ImageWithFallback 
                             src={img} 
                             alt=""
                             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                            referrerPolicy="no-referrer"
                           />
                           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                             <Maximize2 className="text-white" size={32} />
@@ -481,13 +568,12 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
             onClick={() => setLightboxImage(null)}
             className="fixed inset-0 z-[2000] flex items-center justify-center p-4 md:p-20 bg-black/95 cursor-zoom-out"
           >
-            <motion.img 
+          <ImageWithFallback 
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               src={lightboxImage}
               className="max-w-full max-h-full object-contain rounded-lg"
-              referrerPolicy="no-referrer"
             />
             <button 
               className="absolute top-10 right-10 p-4 text-white/40 hover:text-white transition-colors"
