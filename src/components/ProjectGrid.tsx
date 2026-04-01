@@ -289,13 +289,6 @@ export const PROJECTS = [
       "/images/Interior-Visualization-2.jpg"
     ]
   }
-];kilic-24-1-2-3.jpg",
-      "/images/gokalp-kilic-24-1-2-4.jpg",
-      "/images/gokalp-kilic-24-1-2-5.jpg",
-      "/images/gokalp-kilic-24-1-2-6.jpg",
-      "/images/gokalp-kilic-try2.jpg"
-    ]
-  }
 ];
 
 interface ProjectGridProps {
