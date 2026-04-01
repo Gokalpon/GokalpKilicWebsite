@@ -23,8 +23,8 @@ export const PROJECTS = [
       "/images/gokalp-kilic-res02-r3.jpg",
       "/images/gokalp-kilic-res02-r5.jpg",
       "/images/gokalp-kilic-res02-r6.jpg",
-      "/images/gokalp-kilic-res02-r7.jpg",
-      "/images/gokalp-kilic-res02-r8.jpg"
+      "/images/gokalp-kilic-res02-r-int1.jpg",
+      "/images/gokalp-kilic-res02-r-int2.jpg"
     ]
   },
   {
@@ -111,6 +111,7 @@ export const PROJECTS = [
       "/images/gokalp-kilic-res02-rn2.jpg",
       "/images/gokalp-kilic-res02-rn3.jpg",
       "/images/gokalp-kilic-res02-rn4.jpg",
+      "/images/gokalp-kilic-res02-rn5.jpg",
       "/images/gokalp-kilic-res02-rn6.jpg",
       "/images/gokalp-kilic-res02-rn-int1.jpg",
       "/images/gokalp-kilic-res02-rn-int2.jpg"
@@ -237,28 +238,23 @@ export const PROJECTS = [
       tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
     },
     gallery: [
-      "/images/Product-Visualization-10.jpg"
+      "/images/Product-Visualization-10.jpg",
+      "/images/Product-Visualization-7.jpg",
+      "/images/Product-Visualization-8.jpg"
     ]
   },
   {
     id: 12,
     title: { en: "TİNT MİMARLIK", tr: "TİNT MİMARLIK" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-insta-1-wide.jpg",
+    image: "/images/Interior-Visualizaton-1.jpg",
     featured: false,
     description: {
       en: "A collaborative architectural visualization project for TİNT MİMARLIK, showcasing modern design concepts and high-end rendering techniques.",
       tr: "TİNT MİMARLIK için modern tasarım konseptlerini ve üst düzey render tekniklerini sergileyen işbirlikçi bir mimari görselleştirme projesi."
     },
     gallery: [
-      "/images/gokalp-kilic-insta-1-wide.jpg",
-      "/images/gokalp-kilic-insta-2-2.jpg",
-      "/images/gokalp-kilic-insta-3-wide.jpg",
-      "/images/gokalp-kilic-24-1-2-3.jpg",
-      "/images/gokalp-kilic-24-1-2-4.jpg",
-      "/images/gokalp-kilic-24-1-2-5.jpg",
-      "/images/gokalp-kilic-24-1-2-6.jpg",
-      "/images/gokalp-kilic-try2.jpg"
+      "/images/Interior-Visualizaton-1.jpg"
     ]
   },
   {
@@ -279,15 +275,14 @@ export const PROJECTS = [
     id: 16,
     title: { en: "SELDA GÜMÜŞDOĞRAYAN MİMARLIK", tr: "SELDA GÜMÜŞDOĞRAYAN MİMARLIK" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Interior-Visualization-1.jpg",
+    image: "/images/Interior-Visualizaton-2.jpg",
     featured: false,
     description: {
       en: "Interior visualization project for SELDA GÜMÜŞDOĞRAYAN MİMARLIK, focusing on elegant living spaces and sophisticated material palettes.",
       tr: "SELDA GÜMÜŞDOĞRAYAN MİMARLIK için zarif yaşam alanlarına ve sofistike malzeme paletlerine odaklanan iç mekan görselleştirme projesi."
     },
     gallery: [
-      "/images/Interior-Visualization-1.jpg",
-      "/images/Interior-Visualization-2.jpg"
+      "/images/Interior-Visualizaton-2.jpg"
     ]
   }
 ];
