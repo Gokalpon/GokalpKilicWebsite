@@ -8,7 +8,7 @@ import { useLanguage } from "../context/LanguageContext";
 export const PROJECTS = [
   {
     id: 1,
-    title: { en: "Residence Concept Design (Day)", tr: "Rezidans Konsept Tasarımı (Gündüz)" },
+    title: { en: "Residence Concept Design - Day", tr: "Rezidans Konsept Tasarımı - Gündüz" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
     image: "/images/gokalp-kilic-res02-r0.jpg",
     featured: true,
@@ -28,40 +28,82 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 4,
-    title: { en: "Beytepe Living Room (Night)", tr: "Beytepe Oturma Odası (Gece)" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/gokalp-kilic-night-interior-close-1.jpg",
+    id: 10,
+    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-rend-er1.jpg",
     featured: false,
     description: {
-      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
-      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
+      en: "A modern villa project in Çayyolu, Lodumu. The design focuses on contemporary architecture, luxury living spaces, and seamless indoor-outdoor integration with high-end materials and lighting.",
+      tr: "Çayyolu, Lodumu'da modern bir villa projesi. Tasarım, çağdaş mimariye, lüks yaşam alanlarına ve üst düzey malzemeler ve aydınlatma ile kesintisiz iç-dış mekan entegrasyonuna odaklanıyor."
     },
     gallery: [
-      "/images/gokalp-kilic-night-interior-close-1.jpg",
-      "/images/gokalp-kilic-night-interior-close-2.jpg",
-      "/images/gokalp-kilic-night-interior-close-3.jpg",
-      "/images/gokalp-kilic-night-interior-close-4.jpg"
+      "/images/gokalp-kilic-rend-er1.jpg",
+      "/images/gokalp-kilic-rend-er1-b.jpg",
+      "/images/gokalp-kilic-rend-er2.jpg",
+      "/images/gokalp-kilic-rend-er2-b.jpg",
+      "/images/gokalp-kilic-rend-er3.jpg",
+      "/images/gokalp-kilic-rend-er-5.jpg",
+      "/images/gokalp-kilic-render-try-2.jpg",
+      "/images/gokalp-kilic-render-v1-4.jpg",
+      "/images/gokalp-kilic-render-v2-4.jpg",
+      "/images/gokalp-kilic-render-pre-cycles-10frame.jpg"
     ]
   },
   {
-    id: 9,
-    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/gokalp-kilic-sand-bowl-try7.jpg",
+    id: 13,
+    title: { en: "Character Head Design", tr: "Karakter Baş Tasarımı" },
+    category: { en: "3D Modeling", tr: "3D Modelleme" },
+    image: "/images/Character-Head-Design-1.jpg",
     featured: false,
     description: {
-      en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
-      tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
+      en: "A stylized character head design focusing on expressive features and clean topology for animation and game art.",
+      tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
     },
     gallery: [
-      "/images/gokalp-kilic-sand-bowl-try7.jpg",
-      "/images/gokalp-kilic-sand-bowl-try8.jpg"
+      "/images/Character-Head-Design-1.jpg",
+      "/images/Character-Head-Design-2.jpg"
+    ]
+  },
+  {
+    id: 14,
+    title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/Incek-Villa-1.jpg",
+    featured: false,
+    description: {
+      en: "A modern residential villa project in İncek, featuring contemporary architectural lines and integrated landscape design.",
+      tr: "İncek'te çağdaş mimari hatlara ve entegre peyzaj tasarımına sahip modern bir konut villa projesi."
+    },
+    gallery: [
+      "/images/Incek-Villa-1.jpg",
+      "/images/Incek-Villa-2.jpg",
+      "/images/Incek-Villa-3.jpg",
+      "/images/Incek-Villa-4.jpg"
+    ]
+  },
+  {
+    id: 3,
+    title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/gokalp-kilic-day-interior-1.jpg",
+    featured: false,
+    description: {
+      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
+      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
+    },
+    gallery: [
+      "/images/gokalp-kilic-day-interior-1.jpg",
+      "/images/gokalp-kilic-day-interior-3.jpg",
+      "/images/gokalp-kilic-day-interior-close-1.jpg",
+      "/images/gokalp-kilic-day-interior-close-2.jpg",
+      "/images/gokalp-kilic-day-interior-close-3.jpg",
+      "/images/gokalp-kilic-day-interior-close-4.jpg"
     ]
   },
   {
     id: 2,
-    title: { en: "Residence Concept Design (Night)", tr: "Rezidans Konsept Tasarımı (Gece)" },
+    title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
     image: "/images/gokalp-kilic-res02-rn0.jpg",
     featured: false,
@@ -81,6 +123,38 @@ export const PROJECTS = [
     ]
   },
   {
+    id: 9,
+    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/gokalp-kilic-sand-bowl-try7.jpg",
+    featured: false,
+    description: {
+      en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
+      tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
+    },
+    gallery: [
+      "/images/gokalp-kilic-sand-bowl-try7.jpg",
+      "/images/gokalp-kilic-sand-bowl-try8.jpg"
+    ]
+  },
+  {
+    id: 4,
+    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/gokalp-kilic-night-interior-close-1.jpg",
+    featured: false,
+    description: {
+      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
+      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
+    },
+    gallery: [
+      "/images/gokalp-kilic-night-interior-close-1.jpg",
+      "/images/gokalp-kilic-night-interior-close-2.jpg",
+      "/images/gokalp-kilic-night-interior-close-3.jpg",
+      "/images/gokalp-kilic-night-interior-close-4.jpg"
+    ]
+  },
+  {
     id: 5,
     title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
@@ -96,25 +170,6 @@ export const PROJECTS = [
       "/images/gokalp-kilic-c-27-foto.jpg",
       "/images/gokalp-kilic-c-32-foto.jpg",
       "/images/gokalp-kilic-c-33-foto.jpg"
-    ]
-  },
-  {
-    id: 3,
-    title: { en: "Beytepe Living Room (Day)", tr: "Beytepe Oturma Odası (Gündüz)" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/gokalp-kilic-day-interior-1.jpg",
-    featured: false,
-    description: {
-      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
-      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
-    },
-    gallery: [
-      "/images/gokalp-kilic-day-interior-1.jpg",
-      "/images/gokalp-kilic-day-interior-3.jpg",
-      "/images/gokalp-kilic-day-interior-close-1.jpg",
-      "/images/gokalp-kilic-day-interior-close-2.jpg",
-      "/images/gokalp-kilic-day-interior-close-3.jpg",
-      "/images/gokalp-kilic-day-interior-close-4.jpg"
     ]
   },
   {
@@ -185,30 +240,56 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 10,
-    title: { en: "Architectural Renders", tr: "Mimari Renderlar" },
+    id: 12,
+    title: { en: "Architectural Renders - Collection", tr: "Mimari Render Koleksiyonu" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-rend-er1.jpg",
+    image: "/images/gokalp-kilic-insta-1-wide.jpg",
     featured: false,
     description: {
       en: "A collection of various architectural renders showcasing different environments, lighting conditions, and structural concepts.",
       tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli mimari renderlardan oluşan bir koleksiyon."
     },
     gallery: [
-      "/images/gokalp-kilic-rend-er1.jpg",
-      "/images/gokalp-kilic-rend-er1-b.jpg",
-      "/images/gokalp-kilic-rend-er2.jpg",
-      "/images/gokalp-kilic-rend-er2-b.jpg",
-      "/images/gokalp-kilic-rend-er3.jpg",
-      "/images/gokalp-kilic-rend-er-5.jpg",
-      "/images/gokalp-kilic-render-try-2.jpg",
-      "/images/gokalp-kilic-render-v1-4.jpg",
-      "/images/gokalp-kilic-render-v2-4.jpg",
-      "/images/gokalp-kilic-render-pre-cycles-10frame.jpg",
       "/images/gokalp-kilic-insta-1-wide.jpg",
       "/images/gokalp-kilic-insta-2-2.jpg",
       "/images/gokalp-kilic-insta-3-wide.jpg",
       "/images/gokalp-kilic-24-1-2-3.jpg",
+      "/images/gokalp-kilic-24-1-2-4.jpg",
+      "/images/gokalp-kilic-24-1-2-5.jpg",
+      "/images/gokalp-kilic-24-1-2-6.jpg",
+      "/images/gokalp-kilic-try2.jpg"
+    ]
+  },
+  {
+    id: 15,
+    title: { en: "Donut Study", tr: "Donut Çalışması" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/Donut-1.jpg",
+    featured: false,
+    description: {
+      en: "A classic 3D modeling study of a donut, exploring procedural textures and realistic food rendering.",
+      tr: "Prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
+    },
+    gallery: [
+      "/images/Donut-1.jpg"
+    ]
+  },
+  {
+    id: 16,
+    title: { en: "Interior Visualization Studies", tr: "İç Mekan Görselleştirme Çalışmaları" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Interior-Visualization-1.jpg",
+    featured: false,
+    description: {
+      en: "A series of interior visualization studies exploring different lighting moods and furniture arrangements.",
+      tr: "Farklı aydınlatma modlarını ve mobilya düzenlemelerini araştıran bir dizi iç mekan görselleştirme çalışması."
+    },
+    gallery: [
+      "/images/Interior-Visualization-1.jpg",
+      "/images/Interior-Visualization-2.jpg"
+    ]
+  }
+];kilic-24-1-2-3.jpg",
       "/images/gokalp-kilic-24-1-2-4.jpg",
       "/images/gokalp-kilic-24-1-2-5.jpg",
       "/images/gokalp-kilic-24-1-2-6.jpg",

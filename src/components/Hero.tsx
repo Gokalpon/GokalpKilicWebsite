@@ -5,20 +5,20 @@ import { useLanguage } from "../context/LanguageContext";
 
 const CUBE_FACES = [
   {
-    title: { en: "Residence Concept Design (Day)", tr: "Rezidans Konsept Tasarımı (Gündüz)" },
-    image: "/images/gokalp-kilic-res02-r0.jpg",
+    title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
+    image: "/images/Incek-Villa-1.jpg",
   },
   {
-    title: { en: "Beytepe Living Room (Night)", tr: "Beytepe Oturma Odası (Gece)" },
-    image: "/images/gokalp-kilic-night-interior-close-1.jpg",
+    title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
+    image: "/images/gokalp-kilic-day-interior-1.jpg",
+  },
+  {
+    title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
+    image: "/images/gokalp-kilic-res02-rn0.jpg",
   },
   {
     title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
     image: "/images/gokalp-kilic-sand-bowl-try7.jpg",
-  },
-  {
-    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
-    image: "/images/gokalp-kilic-plan-e-render-a1.jpg",
   }
 ];
 
