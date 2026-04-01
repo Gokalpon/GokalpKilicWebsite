@@ -5,24 +5,20 @@ import { useLanguage } from "../context/LanguageContext";
 
 const CUBE_FACES = [
   {
-    title: { en: "Luxury Living Interior", tr: "Lüks Yaşam İç Mekan" },
-    image: "/images/gokalp-kilic-day-interior-1.jpg",
-    transform: "rotateX(0deg) translateZ(25vh)"
-  },
-  {
-    title: { en: "Modern Night Villa", tr: "Modern Gece Villası" },
-    image: "/images/gokalp-kilic-c-23-foto.jpg",
-    transform: "rotateX(-90deg) translateZ(25vh)"
-  },
-  {
-    title: { en: "High-rise Concept", tr: "Gökdelen Konsepti" },
+    title: { en: "Residence Concept Design (Day)", tr: "Rezidans Konsept Tasarımı (Gündüz)" },
     image: "/images/gokalp-kilic-res02-r0.jpg",
-    transform: "rotateX(-180deg) translateZ(25vh)"
   },
   {
-    title: { en: "Urban Residential Complex", tr: "Kentsel Konut Kompleksi" },
-    image: "/images/gokalp-kilic-res02-r6.jpg",
-    transform: "rotateX(90deg) translateZ(25vh)"
+    title: { en: "Residence Concept Design (Night)", tr: "Rezidans Konsept Tasarımı (Gece)" },
+    image: "/images/gokalp-kilic-res02-rn0.jpg",
+  },
+  {
+    title: { en: "Beytepe Living Room (Night)", tr: "Beytepe Oturma Odası (Gece)" },
+    image: "/images/gokalp-kilic-night-interior-1.jpg",
+  },
+  {
+    title: { en: "Concept Villa Collection", tr: "Konsept Villa Koleksiyonu" },
+    image: "/images/gokalp-kilic-c-23-foto.jpg",
   }
 ];
 

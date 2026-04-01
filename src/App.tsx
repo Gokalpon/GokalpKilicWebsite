@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { useState, useEffect } from "react";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { ProjectGrid } from "./components/ProjectGrid";
@@ -13,8 +14,16 @@ import { LiquidEther } from "./components/LiquidEther";
 import { CustomCursor } from "./components/CustomCursor";
 import { Preloader } from "./components/Preloader";
 import { LanguageProvider } from "./context/LanguageContext";
+import { motion, AnimatePresence } from "motion/react";
 
 export default function App() {
+  const [view, setView] = useState<"home" | "projects">("home");
+
+  // Scroll to top when view changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [view]);
+
   return (
     <LanguageProvider>
       <main className="bg-bg text-white selection:bg-accent-cyan selection:text-white relative cursor-none">
@@ -33,12 +42,37 @@ export default function App() {
         </div>
 
         <div className="relative z-10">
-          <Navbar />
-          <Hero />
-          <ProjectGrid />
-          <About />
-          <Contact />
-          <Footer />
+          <Navbar onHomeClick={() => setView("home")} onProjectsClick={() => setView("projects")} />
+          
+          <AnimatePresence mode="wait">
+            {view === "home" ? (
+              <motion.div
+                key="home"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Hero />
+                <ProjectGrid limit={3} onShowAll={() => setView("projects")} />
+                <About />
+                <Contact />
+                <Footer />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="projects"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="pt-20"
+              >
+                <ProjectGrid />
+                <Footer />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </main>
     </LanguageProvider>

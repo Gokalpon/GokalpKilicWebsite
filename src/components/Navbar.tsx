@@ -3,13 +3,18 @@ import { cn } from "../lib/utils";
 import { Magnetic } from "./Magnetic";
 import { useLanguage } from "../context/LanguageContext";
 
-export function Navbar() {
+interface NavbarProps {
+  onHomeClick: () => void;
+  onProjectsClick: () => void;
+}
+
+export function Navbar({ onHomeClick, onProjectsClick }: NavbarProps) {
   const { language, setLanguage, t } = useLanguage();
 
   const navItems = [
-    { name: "Projects", tr: "Projeler" },
-    { name: "About", tr: "Hakkımda" },
-    { name: "Contact", tr: "İletişim" }
+    { name: "Projects", tr: "Projeler", onClick: onProjectsClick },
+    { name: "About", tr: "Hakkımda", href: "#about" },
+    { name: "Contact", tr: "İletişim", href: "#contact" }
   ];
 
   return (
@@ -19,7 +24,12 @@ export function Navbar() {
       className="fixed top-0 left-0 w-full z-50 p-4 md:p-10 flex justify-between items-center mix-blend-difference"
     >
       <div className="flex items-center gap-6">
-        <span className="font-display font-bold text-lg md:text-2xl tracking-tighter uppercase">Gökalp Kılıç</span>
+        <button 
+          onClick={onHomeClick}
+          className="font-display font-bold text-lg md:text-2xl tracking-tighter uppercase cursor-pointer hover:opacity-50 transition-opacity"
+        >
+          Gökalp Kılıç
+        </button>
         
         {/* Language Toggle */}
         <div className="flex items-center gap-2 bg-white/10 rounded-full p-1 backdrop-blur-md">
@@ -46,13 +56,23 @@ export function Navbar() {
       
       <div className="hidden md:flex gap-12">
         {navItems.map((item) => (
-          <a 
-            key={item.name} 
-            href={`#${item.name.toLowerCase()}`}
-            className="font-display font-bold text-sm uppercase tracking-[0.2em] hover:opacity-50 transition-opacity"
-          >
-            {t(item.name, item.tr)}
-          </a>
+          item.onClick ? (
+            <button
+              key={item.name}
+              onClick={item.onClick}
+              className="font-display font-bold text-sm uppercase tracking-[0.2em] hover:opacity-50 transition-opacity cursor-pointer"
+            >
+              {t(item.name, item.tr)}
+            </button>
+          ) : (
+            <a 
+              key={item.name} 
+              href={item.href}
+              className="font-display font-bold text-sm uppercase tracking-[0.2em] hover:opacity-50 transition-opacity"
+            >
+              {t(item.name, item.tr)}
+            </a>
+          )
         ))}
       </div>
 
@@ -61,7 +81,7 @@ export function Navbar() {
           href="#contact"
           className="px-4 py-1.5 md:px-6 md:py-2 rounded-full border border-white/20 font-display font-bold text-[10px] md:text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300"
         >
-          {t("Hire Me", "İşe Al")}
+          {t("Hire Me", "Birlikte Çalışalım")}
         </a>
       </Magnetic>
     </motion.nav>

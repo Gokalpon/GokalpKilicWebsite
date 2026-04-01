@@ -5,110 +5,191 @@ import { AnimatedHeading } from "./AnimatedHeading";
 import { X, ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
-const PROJECTS = [
+export const PROJECTS = [
   {
     id: 1,
-    title: { en: "Luxury Living Interior", tr: "Lüks Yaşam İç Mekan" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/gokalp-kilic-day-interior-1.jpg",
+    title: { en: "Residence Concept Design (Day)", tr: "Rezidans Konsept Tasarımı (Gündüz)" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-res02-r0.jpg",
     featured: true,
     description: {
-      en: "A high-fidelity architectural visualization project focusing on modern luxury interiors. The design emphasizes open spaces, natural lighting, and premium materials to create a sophisticated living environment.",
-      tr: "Modern lüks iç mekanlara odaklanan yüksek doğrulukta bir mimari görselleştirme projesi. Tasarım, sofistike bir yaşam ortamı yaratmak için açık alanları, doğal aydınlatmayı ve birinci sınıf malzemeleri vurgular."
-    },
-    gallery: [
-      "/images/gokalp-kilic-day-interior-1.jpg",
-      "/images/gokalp-kilic-day-interior-2.jpg",
-      "/images/gokalp-kilic-day-interior-3.jpg",
-      "/images/gokalp-kilic-day-interior-4.jpg"
-    ]
-  },
-  {
-    id: 2,
-    title: { en: "Modern Night Villa", tr: "Modern Gece Villası" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-c-23-foto.jpg",
-    featured: false,
-    description: {
-      en: "An exploration of lighting and atmosphere in a residential context. This project showcases a modern villa design under night-time conditions, highlighting the interplay between artificial light and architectural forms.",
-      tr: "Konut bağlamında aydınlatma ve atmosferin keşfi. Bu proje, yapay ışık ve mimari formlar arasındaki etkileşimi vurgulayarak, gece koşullarında modern bir villa tasarımını sergiliyor."
-    },
-    gallery: [
-      "/images/gokalp-kilic-c-23-foto.jpg",
-      "/images/gokalp-kilic-c-23-foto-2.jpg",
-      "/images/gokalp-kilic-c-23-foto-3.jpg"
-    ]
-  },
-  {
-    id: 3,
-    title: { en: "High-rise Concept", tr: "Gökdelen Konsepti" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/gokalp-kilic-res02-r0.jpg",
-    featured: false,
-    description: {
-      en: "A conceptual high-rise building designed with a focus on parametric forms and urban integration. The project explores verticality and the use of glass and steel in contemporary skyscraper design.",
-      tr: "Parametrik formlara ve kentsel entegrasyona odaklanarak tasarlanmış kavramsal bir gökdelen binası. Proje, çağdaş gökdelen tasarımında dikeyliği ve cam ile çelik kullanımını araştırıyor."
+      en: "A high-fidelity architectural visualization project focusing on modern residence concepts. The design emphasizes verticality, parametric forms, and urban integration in daylight conditions.",
+      tr: "Modern rezidans konseptlerine odaklanan yüksek doğrulukta bir mimari görselleştirme projesi. Tasarım, gün ışığı koşullarında dikeyliği, parametrik formları ve kentsel entegrasyonu vurgular."
     },
     gallery: [
       "/images/gokalp-kilic-res02-r0.jpg",
       "/images/gokalp-kilic-res02-r1.jpg",
-      "/images/gokalp-kilic-res02-r2.jpg"
-    ]
-  },
-  {
-    id: 4,
-    title: { en: "Urban Residential Complex", tr: "Kentsel Konut Kompleksi" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/gokalp-kilic-res02-r6.jpg",
-    featured: false,
-    description: {
-      en: "A large-scale residential development project. The focus was on creating a cohesive urban fabric while providing diverse living spaces and communal areas for a vibrant community.",
-      tr: "Büyük ölçekli bir konut geliştirme projesi. Odak noktası, canlı bir topluluk için çeşitli yaşam alanları ve ortak alanlar sağlarken uyumlu bir kentsel doku oluşturmaktı."
-    },
-    gallery: [
+      "/images/gokalp-kilic-res02-r2.jpg",
+      "/images/gokalp-kilic-res02-r3.jpg",
+      "/images/gokalp-kilic-res02-r5.jpg",
       "/images/gokalp-kilic-res02-r6.jpg",
       "/images/gokalp-kilic-res02-r7.jpg",
       "/images/gokalp-kilic-res02-r8.jpg"
     ]
   },
   {
-    id: 5,
-    title: { en: "Product Design: Sand Bowl", tr: "Ürün Tasarımı: Kum Kasesi" },
-    category: { en: "3D Rendering", tr: "3D Render" },
-    image: "/images/gokalp-kilic-sand-bowl-try8.jpg",
+    id: 2,
+    title: { en: "Residence Concept Design (Night)", tr: "Rezidans Konsept Tasarımı (Gece)" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-res02-rn0.jpg",
     featured: false,
     description: {
-      en: "A stylized product design and rendering project. The 'Sand Bowl' explores organic textures and procedural material creation in Blender, resulting in a unique aesthetic piece.",
-      tr: "Stilize bir ürün tasarımı ve render projesi. 'Kum Kasesi', Blender'da organik dokuları ve prosedürel malzeme oluşturmayı keşfederek benzersiz bir estetik parça ortaya çıkarıyor."
+      en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
+      tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
     },
     gallery: [
-      "/images/gokalp-kilic-sand-bowl-try8.jpg",
-      "/images/gokalp-kilic-sand-bowl-try9.jpg"
+      "/images/gokalp-kilic-res02-rn0.jpg",
+      "/images/gokalp-kilic-res02-rn1.jpg",
+      "/images/gokalp-kilic-res02-rn2.jpg",
+      "/images/gokalp-kilic-res02-rn3.jpg",
+      "/images/gokalp-kilic-res02-rn4.jpg",
+      "/images/gokalp-kilic-res02-rn6.jpg",
+      "/images/gokalp-kilic-res02-rn-int1.jpg",
+      "/images/gokalp-kilic-res02-rn-int2.jpg"
+    ]
+  },
+  {
+    id: 4,
+    title: { en: "Beytepe Living Room (Night)", tr: "Beytepe Oturma Odası (Gece)" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/gokalp-kilic-night-interior-1.jpg",
+    featured: false,
+    description: {
+      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
+      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
+    },
+    gallery: [
+      "/images/gokalp-kilic-night-interior-1.jpg",
+      "/images/gokalp-kilic-night-interior-2.jpg",
+      "/images/gokalp-kilic-night-interior-3.jpg",
+      "/images/gokalp-kilic-night-interior-4.jpg",
+      "/images/gokalp-kilic-night-interior-close-1.jpg",
+      "/images/gokalp-kilic-night-interior-close-2.jpg",
+      "/images/gokalp-kilic-night-interior-close-3.jpg",
+      "/images/gokalp-kilic-night-interior-close-4.jpg"
+    ]
+  },
+  {
+    id: 5,
+    title: { en: "Concept Villa Collection", tr: "Konsept Villa Koleksiyonu" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-c-23-foto.jpg",
+    featured: false,
+    description: {
+      en: "A collection of modern villa concepts exploring different architectural styles and natural settings. Each design focuses on unique geometry and material harmony.",
+      tr: "Farklı mimari stilleri ve doğal ortamları araştıran modern villa konseptlerinden oluşan bir koleksiyon. Her tasarım benzersiz geometriye ve malzeme uyumuna odaklanır."
+    },
+    gallery: [
+      "/images/gokalp-kilic-c-19-photo.jpg",
+      "/images/gokalp-kilic-c-23-foto.jpg",
+      "/images/gokalp-kilic-c-27-foto.jpg",
+      "/images/gokalp-kilic-c-32-foto.jpg",
+      "/images/gokalp-kilic-c-33-foto.jpg"
     ]
   },
   {
     id: 6,
-    title: { en: "Concept Plane", tr: "Konsept Uçak" },
+    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
     category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/gokalp-kilic-plane-render-a1.jpg",
+    image: "/images/gokalp-kilic-plan-e-render-a1.jpg",
     featured: false,
     description: {
-      en: "A game-ready stylized aircraft model. This project demonstrates optimized 3D modeling workflows, focusing on silhouette, character, and efficient UV mapping for real-time applications.",
-      tr: "Oyuna hazır stilize bir uçak modeli. Bu proje, gerçek zamanlı uygulamalar için siluet, karakter ve verimli UV haritalamaya odaklanan optimize edilmiş 3D modelleme iş akışlarını göstermektedir."
+      en: "A detailed 3D model of a vintage aircraft, focused on technical accuracy and realistic material representation for real-time applications.",
+      tr: "Teknik doğruluk ve gerçek zamanlı uygulamalar için gerçekçi malzeme temsiline odaklanan, antika bir uçağın detaylı 3D modeli."
     },
     gallery: [
-      "/images/gokalp-kilic-plane-render-a1.jpg",
-      "/images/gokalp-kilic-plane-render-a2.jpg"
+      "/images/gokalp-kilic-plan-e-render-a1.jpg",
+      "/images/gokalp-kilic-plan-e-render-a2.jpg",
+      "/images/gokalp-kilic-plan-e-render-a3.jpg"
+    ]
+  },
+  {
+    id: 7,
+    title: { en: "Digital Portrait Gallery", tr: "Dijital Portre Galerisi" },
+    category: { en: "Digital Art", tr: "Dijital Sanat" },
+    image: "/images/gokalp-kilic-logan-hugh-jackman-drawing-by-gokalpon-by-gokalpon.jpg",
+    featured: false,
+    description: {
+      en: "A series of digital portraits and character studies, showcasing detailed sketching and shading techniques to capture the essence of iconic characters.",
+      tr: "İkonik karakterlerin özünü yakalamak için detaylı eskiz ve gölgeleme tekniklerini sergileyen bir dizi dijital portre ve karakter çalışması."
+    },
+    gallery: [
+      "/images/gokalp-kilic-logan-hugh-jackman-drawing-by-gokalpon-by-gokalpon.jpg",
+      "/images/gokalp-kilic-laurie.jpg",
+      "/images/gokalp-kilic-leonardo-dicaprio-by-gokalpon.jpg",
+      "/images/gokalp-kilic-drawing-mandalorian.jpg",
+      "/images/gokalp-kilic-drawing-wine.jpg"
+    ]
+  },
+  {
+    id: 8,
+    title: { en: "Product Visualization", tr: "Ürün Görselleştirme" },
+    category: { en: "3D Rendering", tr: "3D Görselleştirme" },
+    image: "/images/gokalp-kilic-coffee-cup-glass-4.jpg",
+    featured: false,
+    description: {
+      en: "High-quality product renders focusing on material realism, lighting, and composition for commercial and conceptual designs.",
+      tr: "Ticari ve konsept tasarımlar için malzeme gerçekçiliği, aydınlatma ve kompozisyona odaklanan yüksek kaliteli ürün renderları."
+    },
+    gallery: [
+      "/images/gokalp-kilic-coffee-cup-glass-4.jpg",
+      "/images/gokalp-kilic-coffee-cup-try-3.jpg",
+      "/images/gokalp-kilic-bloque-yoga-render.jpg",
+      "/images/gokalp-kilic-closet-render-try-5.jpg"
+    ]
+  },
+  {
+    id: 9,
+    title: { en: "Lighting & Material Studies", tr: "Aydınlatma ve Malzeme Çalışmaları" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/gokalp-kilic-light-cylinder-angle-4.jpg",
+    featured: false,
+    description: {
+      en: "Experimental renders exploring complex lighting setups and organic material properties, including sand and glass simulations.",
+      tr: "Kum ve cam simülasyonları dahil olmak üzere karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
+    },
+    gallery: [
+      "/images/gokalp-kilic-light-cylinder-angle-4.jpg",
+      "/images/gokalp-kilic-light-cylinder-angle5.jpg",
+      "/images/gokalp-kilic-light-cylinder-try9.jpg",
+      "/images/gokalp-kilic-sand-bowl-try7.jpg",
+      "/images/gokalp-kilic-sand-bowl-try8.jpg"
+    ]
+  },
+  {
+    id: 10,
+    title: { en: "Architectural Renders", tr: "Mimari Renderlar" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-render-1.jpg",
+    featured: false,
+    description: {
+      en: "A collection of various architectural renders showcasing different environments, lighting conditions, and structural concepts.",
+      tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli mimari renderlardan oluşan bir koleksiyon."
+    },
+    gallery: [
+      "/images/gokalp-kilic-render-1.jpg",
+      "/images/gokalp-kilic-render-2.jpg",
+      "/images/gokalp-kilic-render-3.jpg",
+      "/images/gokalp-kilic-render-4.jpg",
+      "/images/gokalp-kilic-render-5.jpg",
+      "/images/gokalp-kilic-render-try-2.jpg"
     ]
   }
 ];
 
-export function ProjectGrid() {
-  const { t } = useLanguage();
+interface ProjectGridProps {
+  limit?: number;
+  onShowAll?: () => void;
+}
+
+export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
+  const { t, language } = useLanguage();
   const container = useRef(null);
   const [selectedProject, setSelectedProject] = useState<typeof PROJECTS[0] | null>(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
+  const displayedProjects = limit ? PROJECTS.slice(0, limit) : PROJECTS;
 
   const { scrollYProgress } = useScroll({
     target: container,
@@ -141,15 +222,22 @@ export function ProjectGrid() {
       <div className="mb-20">
         <motion.h2 
           style={{ y }}
-          className="font-display font-bold text-[15vw] md:text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10"
+          className={cn(
+            "font-display font-bold leading-[0.8] uppercase tracking-tighter mb-10",
+            language === 'en' ? "text-[15vw] md:text-[10vw]" : "text-[12vw] md:text-[8vw]"
+          )}
         >
-          {t("Case", "Vaka")} <br /> {t("Studies", "Çalışmaları")}
+          {language === 'en' ? (
+            <>Case <br /> Studies</>
+          ) : (
+            "Projeler"
+          )}
         </motion.h2>
         <div className="h-px w-full bg-white/10" />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {PROJECTS.map((project) => (
+        {displayedProjects.map((project) => (
           <motion.div 
             key={project.id}
             initial={{ opacity: 0, y: 50 }}
@@ -197,6 +285,17 @@ export function ProjectGrid() {
           </motion.div>
         ))}
       </div>
+
+      {limit && PROJECTS.length > limit && (
+        <div className="mt-20 flex justify-center">
+          <button 
+            onClick={onShowAll}
+            className="px-12 py-6 rounded-full border border-white/10 hover:bg-white hover:text-black transition-all duration-500 font-display font-bold uppercase tracking-[0.3em] text-xs"
+          >
+            {t("More", "Daha Fazla")}
+          </button>
+        </div>
+      )}
 
       {/* Project Detail Modal */}
       <AnimatePresence>

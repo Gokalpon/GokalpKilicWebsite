@@ -48,17 +48,13 @@ export function AnimatedHeading({ text, className, delay = 0 }: AnimatedHeadingP
       viewport={{ once: true }}
     >
       {words.map((word, wordIndex) => (
-        <span key={wordIndex} className="inline-block whitespace-nowrap mr-[0.3em] mb-[0.1em]">
-          {Array.from(word).map((letter, letterIndex) => (
-            <motion.span
-              key={letterIndex}
-              variants={child}
-              className="inline-block"
-            >
-              {letter}
-            </motion.span>
-          ))}
-        </span>
+        <motion.span
+          key={wordIndex}
+          variants={child}
+          className="inline-block mr-[0.3em] mb-[0.1em]"
+        >
+          {word}
+        </motion.span>
       ))}
     </motion.h3>
   );

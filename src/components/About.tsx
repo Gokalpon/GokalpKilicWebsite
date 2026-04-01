@@ -57,7 +57,7 @@ const SKILLS = [
 ];
 
 export function About() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -73,9 +73,16 @@ export function About() {
         <div>
           <motion.h2 
             style={{ y }}
-            className="font-display font-bold text-[15vw] md:text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10"
+            className={cn(
+              "font-display font-bold leading-[0.8] uppercase tracking-tighter mb-10",
+              language === 'en' ? "text-[15vw] md:text-[10vw]" : "text-[12vw] md:text-[8vw]"
+            )}
           >
-            {t("About", "Hakkımda")} <br /> {t("Me", "Ben")}
+            {language === 'en' ? (
+              <>About <br /> Me</>
+            ) : (
+              "Hakkımda"
+            )}
           </motion.h2>
           <div className="space-y-8 font-sans font-light text-lg md:text-xl text-white/60 leading-relaxed">
             <div className="space-y-2">
