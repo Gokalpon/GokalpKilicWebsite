@@ -74,12 +74,15 @@ export function About() {
           <motion.h2 
             style={{ y }}
             className={cn(
-              "font-display font-bold leading-[0.8] uppercase tracking-tighter mb-10",
-              language === 'en' ? "text-[15vw] md:text-[10vw]" : "text-[12vw] md:text-[8vw]"
+              "font-display font-bold leading-none uppercase tracking-[-0.06em] mb-6",
+              "text-[12vw] md:text-[8vw]"
             )}
           >
             {language === 'en' ? (
-              <>About <br /> Me</>
+              <div className="flex flex-col -space-y-[2vw]">
+                <span className="leading-none">About</span>
+                <span className="leading-none">Me</span>
+              </div>
             ) : (
               "Hakkımda"
             )}

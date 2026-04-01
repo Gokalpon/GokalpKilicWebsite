@@ -10,15 +10,15 @@ const CUBE_FACES = [
   },
   {
     title: { en: "Beytepe Living Room (Night)", tr: "Beytepe Oturma Odası (Gece)" },
-    image: "/images/gokalp-kilic-night-interior-1.jpg",
+    image: "/images/gokalp-kilic-night-interior-close-1.jpg",
   },
   {
     title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
     image: "/images/gokalp-kilic-sand-bowl-try7.jpg",
   },
   {
-    title: { en: "Residence Concept Design (Night)", tr: "Rezidans Konsept Tasarımı (Gece)" },
-    image: "/images/gokalp-kilic-res02-rn0.jpg",
+    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
+    image: "/images/gokalp-kilic-plan-e-render-a1.jpg",
   }
 ];
 
@@ -89,7 +89,7 @@ export function Hero() {
                 <img 
                   src={face.image} 
                   alt={t(face.title.en, face.title.tr)}
-                  className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
+                  className="absolute inset-0 w-full h-full object-cover opacity-60 transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />

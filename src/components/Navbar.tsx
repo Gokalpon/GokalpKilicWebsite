@@ -14,7 +14,7 @@ export function Navbar({ onHomeClick, onProjectsClick }: NavbarProps) {
   const navItems = [
     { name: "Projects", tr: "Projeler", onClick: onProjectsClick },
     { name: "About", tr: "Hakkımda", href: "#about" },
-    { name: "Contact", tr: "İletişim", href: "#contact" }
+    { name: "Contact", tr: "İLETİŞİM", href: "#contact" }
   ];
 
   return (

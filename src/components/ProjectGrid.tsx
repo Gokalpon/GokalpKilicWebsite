@@ -31,17 +31,13 @@ export const PROJECTS = [
     id: 4,
     title: { en: "Beytepe Living Room (Night)", tr: "Beytepe Oturma Odası (Gece)" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/gokalp-kilic-night-interior-1.jpg",
+    image: "/images/gokalp-kilic-night-interior-close-1.jpg",
     featured: false,
     description: {
       en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
       tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
     },
     gallery: [
-      "/images/gokalp-kilic-night-interior-1.jpg",
-      "/images/gokalp-kilic-night-interior-2.jpg",
-      "/images/gokalp-kilic-night-interior-3.jpg",
-      "/images/gokalp-kilic-night-interior-4.jpg",
       "/images/gokalp-kilic-night-interior-close-1.jpg",
       "/images/gokalp-kilic-night-interior-close-2.jpg",
       "/images/gokalp-kilic-night-interior-close-3.jpg",
@@ -114,9 +110,7 @@ export const PROJECTS = [
     },
     gallery: [
       "/images/gokalp-kilic-day-interior-1.jpg",
-      "/images/gokalp-kilic-day-interior-2.jpg",
       "/images/gokalp-kilic-day-interior-3.jpg",
-      "/images/gokalp-kilic-day-interior-4.jpg",
       "/images/gokalp-kilic-day-interior-close-1.jpg",
       "/images/gokalp-kilic-day-interior-close-2.jpg",
       "/images/gokalp-kilic-day-interior-close-3.jpg",
@@ -169,7 +163,7 @@ export const PROJECTS = [
     },
     gallery: [
       "/images/gokalp-kilic-coffee-cup-glass-4.jpg",
-      "/images/gokalp-kilic-coffee-cup-try-3.jpg",
+      "/images/gokalp-kilic-coffee-cup-try3.jpg",
       "/images/gokalp-kilic-bloque-yoga-render.jpg",
       "/images/gokalp-kilic-closet-render-try-5.jpg"
     ]
@@ -178,14 +172,14 @@ export const PROJECTS = [
     id: 11,
     title: { en: "Lighting Studies", tr: "Aydınlatma Çalışmaları" },
     category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/gokalp-kilic-light-cylinder-angle-4.jpg",
+    image: "/images/gokalp-kilic-light-cylinder-angle4.jpg",
     featured: false,
     description: {
       en: "Experimental renders exploring complex lighting setups and organic material properties.",
       tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
     },
     gallery: [
-      "/images/gokalp-kilic-light-cylinder-angle-4.jpg",
+      "/images/gokalp-kilic-light-cylinder-angle4.jpg",
       "/images/gokalp-kilic-light-cylinder-angle5.jpg",
       "/images/gokalp-kilic-light-cylinder-try9.jpg"
     ]
@@ -194,25 +188,31 @@ export const PROJECTS = [
     id: 10,
     title: { en: "Architectural Renders", tr: "Mimari Renderlar" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-render-1.jpg",
+    image: "/images/gokalp-kilic-rend-er1.jpg",
     featured: false,
     description: {
       en: "A collection of various architectural renders showcasing different environments, lighting conditions, and structural concepts.",
       tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli mimari renderlardan oluşan bir koleksiyon."
     },
     gallery: [
-      "/images/gokalp-kilic-render-1.jpg",
-      "/images/gokalp-kilic-render-2.jpg",
-      "/images/gokalp-kilic-render-3.jpg",
-      "/images/gokalp-kilic-render-4.jpg",
-      "/images/gokalp-kilic-render-5.jpg",
-      "/images/gokalp-kilic-render-try-2.jpg",
       "/images/gokalp-kilic-rend-er1.jpg",
       "/images/gokalp-kilic-rend-er1-b.jpg",
       "/images/gokalp-kilic-rend-er2.jpg",
       "/images/gokalp-kilic-rend-er2-b.jpg",
       "/images/gokalp-kilic-rend-er3.jpg",
-      "/images/gokalp-kilic-rend-er-5.jpg"
+      "/images/gokalp-kilic-rend-er-5.jpg",
+      "/images/gokalp-kilic-render-try-2.jpg",
+      "/images/gokalp-kilic-render-v1-4.jpg",
+      "/images/gokalp-kilic-render-v2-4.jpg",
+      "/images/gokalp-kilic-render-pre-cycles-10frame.jpg",
+      "/images/gokalp-kilic-insta-1-wide.jpg",
+      "/images/gokalp-kilic-insta-2-2.jpg",
+      "/images/gokalp-kilic-insta-3-wide.jpg",
+      "/images/gokalp-kilic-24-1-2-3.jpg",
+      "/images/gokalp-kilic-24-1-2-4.jpg",
+      "/images/gokalp-kilic-24-1-2-5.jpg",
+      "/images/gokalp-kilic-24-1-2-6.jpg",
+      "/images/gokalp-kilic-try2.jpg"
     ]
   }
 ];
@@ -263,15 +263,11 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
         <motion.h2 
           style={{ y }}
           className={cn(
-            "font-display font-bold leading-[0.8] uppercase tracking-tighter mb-10",
-            language === 'en' ? "text-[15vw] md:text-[10vw]" : "text-[12vw] md:text-[8vw]"
+            "font-display font-bold leading-none uppercase tracking-[-0.06em] mb-6",
+            "text-[12vw] md:text-[8vw]"
           )}
         >
-          {language === 'en' ? (
-            <>Case <br /> Studies</>
-          ) : (
-            "Projeler"
-          )}
+          {language === 'en' ? "Projects" : "Projeler"}
         </motion.h2>
         <div className="h-px w-full bg-white/10" />
       </div>

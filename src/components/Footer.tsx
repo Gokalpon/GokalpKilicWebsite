@@ -10,8 +10,11 @@ export function Footer() {
       <div className="max-w-[90rem] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-40">
           <div>
-            <h2 className="font-display font-bold text-[15vw] md:text-[10vw] leading-[0.8] uppercase tracking-tighter mb-10">
-              Gökalp <br /> Kılıç
+            <h2 className="font-display font-bold text-[12vw] md:text-[8vw] leading-none uppercase tracking-[-0.06em] mb-6">
+              <div className="flex flex-col -space-y-[2vw]">
+                <span className="leading-none">Gökalp</span>
+                <span className="leading-none">Kılıç</span>
+              </div>
             </h2>
             <p className="font-display font-bold text-sm uppercase tracking-[0.2em] text-white/40 max-w-sm whitespace-pre-line">
               {t(
@@ -49,7 +52,7 @@ export function Footer() {
             </div>
             <div>
               <h3 className="font-display font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] mb-6 md:mb-10 text-white/40">
-                {t("Contact", "İletişim")}
+                {t("Contact", "İLETİŞİM")}
               </h3>
               <ul className="space-y-4">
                 <li>
