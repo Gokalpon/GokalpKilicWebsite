@@ -7,28 +7,11 @@ import { useLanguage } from "../context/LanguageContext";
 
 export const PROJECTS = [
   {
-    id: 2,
-    title: { en: "RESIDENCE CONCEPT DESIGN - NIGHT", tr: "RESIDENCE CONCEPT DESIGN - NIGHT" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/residence-concept-design-night-r1.jpg",
-    featured: true,
-    description: {
-      en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
-      tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
-    },
-    gallery: [
-      "/images/residence-concept-design-night-r1.jpg", "/images/residence-concept-design-night-r2.jpg", 
-      "/images/residence-concept-design-night-r3.jpg", "/images/residence-concept-design-night-r4.jpg", 
-      "/images/residence-concept-design-night-r5.jpg", "/images/residence-concept-design-night-r6.jpg", 
-      "/images/residence-concept-design-night-r7.jpg", "/images/residence-concept-design-night-r-int1.jpg"
-    ]
-  },
-  {
     id: 1,
     title: { en: "RESIDENCE CONCEPT DESIGN - DAY", tr: "RESIDENCE CONCEPT DESIGN - DAY" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
     image: "/images/residence-concept-design-day-m1.jpg",
-    featured: false,
+    featured: true,
     description: {
       en: "A high-fidelity architectural visualization project focusing on modern residence concepts. The design emphasizes verticality, parametric forms, and urban integration in daylight conditions.",
       tr: "Modern rezidans konseptlerine odaklanan yüksek doğrulukta bir mimari görselleştirme projesi. Tasarım, gün ışığı koşullarında dikeyliği, parametrik formları ve kentsel entegrasyonu vurgular."
@@ -38,23 +21,6 @@ export const PROJECTS = [
       "/images/residence-concept-design-day-m3.jpg", "/images/residence-concept-design-day-m4.jpg", 
       "/images/residence-concept-design-day-m5.jpg", "/images/residence-concept-design-day-m6.jpg", 
       "/images/residence-concept-design-day-m-int1.jpg", "/images/residence-concept-design-day-m-int2.jpg"
-    ]
-  },
-  {
-    id: 4,
-    title: { en: "BEYTEPE LIVING ROOM - NIGHT", tr: "BEYTEPE LIVING ROOM - NIGHT" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/beytepe-living-room-night-1.jpg",
-    featured: false,
-    description: {
-      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
-      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
-    },
-    gallery: [
-      "/images/beytepe-living-room-night-1.jpg", "/images/beytepe-living-room-night-2.jpg", 
-      "/images/beytepe-living-room-night-3.jpg", "/images/beytepe-living-room-night-4.jpg", 
-      "/images/beytepe-living-room-night-5.jpg", "/images/beytepe-living-room-night-6.jpg", 
-      "/images/beytepe-living-room-night-7.jpg"
     ]
   },
   {
@@ -75,17 +41,49 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 12,
-    title: { en: "ARCHITECTURAL RENDERS - COLLECTION", tr: "ARCHITECTURAL RENDERS - COLLECTION" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/interior-visualization-1.jpg",
+    id: 13,
+    title: { en: "CHARACTER HEAD DESIGN", tr: "CHARACTER HEAD DESIGN" },
+    category: { en: "3D Modeling", tr: "3D Modelleme" },
+    image: "/images/character-head-design-1.jpg",
     featured: false,
     description: {
-      en: "A collection of various interior and architectural visualizations showcasing different environments, lighting conditions, and structural concepts.",
-      tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli iç mekan ve mimari görselleştirmelerden oluşan bir koleksiyon."
+      en: "A stylized character head design focusing on expressive features and clean topology for animation and game art.",
+      tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
+    },
+    gallery: ["/images/character-head-design-1.jpg", "/images/character-head-design-2.jpg"]
+  },
+  {
+    id: 2,
+    title: { en: "RESIDENCE CONCEPT DESIGN - NIGHT", tr: "RESIDENCE CONCEPT DESIGN - NIGHT" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/residence-concept-design-night-r1.jpg",
+    featured: false,
+    description: {
+      en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
+      tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
     },
     gallery: [
-      "/images/interior-visualization-1.jpg", "/images/interior-visualization-2.jpg"
+      "/images/residence-concept-design-night-r1.jpg", "/images/residence-concept-design-night-r2.jpg", 
+      "/images/residence-concept-design-night-r3.jpg", "/images/residence-concept-design-night-r4.jpg", 
+      "/images/residence-concept-design-night-r5.jpg", "/images/residence-concept-design-night-r6.jpg", 
+      "/images/residence-concept-design-night-r7.jpg", "/images/residence-concept-design-night-r-int1.jpg"
+    ]
+  },
+  {
+    id: 4,
+    title: { en: "BEYTEPE LIVING ROOM - NIGHT", tr: "BEYTEPE LIVING ROOM - NIGHT" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/beytepe-living-room-night-1.jpg",
+    featured: false,
+    description: {
+      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
+      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
+    },
+    gallery: [
+      "/images/beytepe-living-room-night-1.jpg", "/images/beytepe-living-room-night-2.jpg", 
+      "/images/beytepe-living-room-night-3.jpg", "/images/beytepe-living-room-night-4.jpg", 
+      "/images/beytepe-living-room-night-5.jpg", "/images/beytepe-living-room-night-6.jpg", 
+      "/images/beytepe-living-room-night-7.jpg"
     ]
   },
   {
@@ -166,18 +164,6 @@ export const PROJECTS = [
       tr: "Prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
     },
     gallery: ["/images/donut-study-1.jpg", "/images/Donut-Video.mp4"]
-  },
-  {
-    id: 13,
-    title: { en: "CHARACTER HEAD DESIGN", tr: "CHARACTER HEAD DESIGN" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/character-head-design-1.jpg",
-    featured: false,
-    description: {
-      en: "A stylized character head design focusing on expressive features and clean topology for animation and game art.",
-      tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
-    },
-    gallery: ["/images/character-head-design-1.jpg", "/images/character-head-design-2.jpg"]
   }
 ];
 

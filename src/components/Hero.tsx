@@ -9,8 +9,12 @@ const CUBE_FACES = [
     image: "/images/sand-bowl-study-1.jpg",
   },
   {
-    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
-    image: "/images/beytepe-living-room-night-1.jpg",
+    title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
+    image: "/images/beytepe-living-room-day-1.jpg",
+  },
+  {
+    title: { en: "Residence Concept Design - Day", tr: "Konut Konsept Tasarımı - Gündüz" },
+    image: "/images/residence-concept-design-day-m1.jpg",
   },
   {
     title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
@@ -70,7 +74,7 @@ export function Hero() {
         <motion.div 
           animate={{ rotateY: 360 }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="relative w-[85vw] md:w-[70vh] h-[35vh] md:h-[40vh] [transform-style:preserve-3d] [--carousel-z:45vw] md:[--carousel-z:50vh]"
+          className="relative w-[85vw] md:w-[70vh] h-[35vh] md:h-[40vh] [transform-style:preserve-3d] [--carousel-z:2vw] md:[--carousel-z:3vh]"
         >
           {CUBE_FACES.map((face, index) => {
             const angle = (index / CUBE_FACES.length) * 360;
@@ -79,7 +83,7 @@ export function Hero() {
                 key={index}
                 className="absolute inset-0 [transform-style:preserve-3d] [backface-visibility:hidden] flex items-center justify-center rounded-[24px] md:rounded-[32px] overflow-hidden bg-white/5 backdrop-blur-md border border-white/10"
                 style={{ 
-                  transform: `rotateY(${angle}deg) translateZ(var(--carousel-z, 45vw))`,
+                  transform: `rotateY(${angle}deg) translateZ(var(--carousel-z))`,
                 }}
               >
                 <img 
