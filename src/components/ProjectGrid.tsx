@@ -23,48 +23,8 @@ export const PROJECTS = [
       "/images/gokalp-kilic-res02-r3.jpg",
       "/images/gokalp-kilic-res02-r5.jpg",
       "/images/gokalp-kilic-res02-r6.jpg",
-      "/images/gokalp-kilic-res02-r-int1.jpg",
-      "/images/gokalp-kilic-res02-r-int2.jpg"
-    ]
-  },
-  {
-    id: 3,
-    title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Beytepe-Living-Room-Day-1.jpg",
-    featured: false,
-    description: {
-      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
-      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
-    },
-    gallery: [
-      "/images/Beytepe-Living-Room-Day-1.jpg",
-      "/images/Beytepe-Living-Room-Day-2.jpg",
-      "/images/Beytepe-Living-Room-Day-3.jpg",
-      "/images/Beytepe-Living-Room-Day-4.jpg",
-      "/images/Beytepe-Living-Room-Day-5.jpg",
-      "/images/Beytepe-Living-Room-Day-6.jpg",
-      "/images/Beytepe-Living-Room-Day-7.jpg"
-    ]
-  },
-  {
-    id: 4,
-    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Beytepe-Living-Room-Night.jpg",
-    featured: false,
-    description: {
-      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
-      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
-    },
-    gallery: [
-      "/images/Beytepe-Living-Room-Night.jpg",
-      "/images/Beytepe-Living-Room-Night-1.jpg",
-      "/images/Beytepe-Living-Room-Night-3.jpg",
-      "/images/Beytepe-Living-Room-Night-4.jpg",
-      "/images/Beytepe-Living-Room-Night-5.jpg",
-      "/images/Beytepe-Living-Room-Night-6.jpg",
-      "/images/Beytepe-Living-Room-Night-7.jpg"
+      "/images/gokalp-kilic-res02-r7.jpg",
+      "/images/gokalp-kilic-res02-r8.jpg"
     ]
   },
   {
@@ -79,8 +39,31 @@ export const PROJECTS = [
     },
     gallery: [
       "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
+      "/images/gokalp-kilic-rend-er1.jpg",
+      "/images/gokalp-kilic-rend-er1-b.jpg",
+      "/images/gokalp-kilic-rend-er2.jpg",
+      "/images/gokalp-kilic-rend-er2-b.jpg",
+      "/images/gokalp-kilic-rend-er3.jpg",
+      "/images/gokalp-kilic-rend-er-5.jpg",
+      "/images/gokalp-kilic-render-try-2.jpg",
+      "/images/gokalp-kilic-render-v1-4.jpg",
+      "/images/gokalp-kilic-render-v2-4.jpg",
+      "/images/gokalp-kilic-render-pre-cycles-10frame.jpg"
+    ]
+  },
+  {
+    id: 13,
+    title: { en: "Character Head Design", tr: "Karakter Baş Tasarımı" },
+    category: { en: "3D Modeling", tr: "3D Modelleme" },
+    image: "/images/Character-Head-Design-1.jpg",
+    featured: false,
+    description: {
+      en: "A stylized character head design focusing on expressive features and clean topology for animation and game art.",
+      tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
+    },
+    gallery: [
+      "/images/Character-Head-Design-1.jpg",
+      "/images/Character-Head-Design-2.jpg"
     ]
   },
   {
@@ -101,52 +84,24 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 18,
-    title: { en: "İncek Loft - Day", tr: "İncek Loft - Gündüz" },
+    id: 3,
+    title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Incek-Loft-Day-1.jpg",
+    image: "/images/Beytepe-Living Room-Day-1.jpg",
     featured: false,
     description: {
-      en: "Interior design and visualization for İncek Loft apartment, showcasing the bright and airy daylight atmosphere.",
-      tr: "İncek Loft dairesi için iç mekan tasarımı ve görselleştirme, aydınlık ve ferah gün ışığı atmosferini sergiliyor."
+      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
+      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
     },
-    gallery: ["/images/Incek-Loft-Day-1.jpg"]
-  },
-  {
-    id: 19,
-    title: { en: "İncek Loft - Night", tr: "İncek Loft - Gece" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Incek-Loft-Night-1.jpg",
-    featured: false,
-    description: {
-      en: "The night version of the İncek Loft interior, emphasizing sophisticated artificial lighting and a cozy evening mood.",
-      tr: "İncek Loft iç mekanının gece versiyonu, sofistike yapay aydınlatmayı ve samimi bir akşam havasını vurguluyor."
-    },
-    gallery: ["/images/Incek-Loft-Night-1.jpg"]
-  },
-  {
-    id: 20,
-    title: { en: "İncek Loft - Kids Room", tr: "İncek Loft - Çocuk Odası" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Incek-Loft-Kids-1.jpg",
-    featured: false,
-    description: {
-      en: "A creative and functional kids' room design within the İncek Loft project, focusing on playful elements and efficient space usage.",
-      tr: "İncek Loft projesi kapsamında, eğlenceli unsurlara ve verimli alan kullanımına odaklanan yaratıcı ve fonksiyonel bir çocuk odası tasarımı."
-    },
-    gallery: ["/images/Incek-Loft-Kids-1.jpg"]
-  },
-  {
-    id: 21,
-    title: { en: "İncek Loft - Kitchen", tr: "İncek Loft - Mutfak" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Incek-Loft-Kitchen-1.jpg",
-    featured: false,
-    description: {
-      en: "Modern kitchen design for İncek Loft, combining high-end appliances with sleek cabinetry and ergonomic layout.",
-      tr: "İncek Loft için modern mutfak tasarımı, üst düzey cihazları şık dolaplar ve ergonomik yerleşimle birleştiriyor."
-    },
-    gallery: ["/images/Incek-Loft-Kitchen-1.jpg"]
+    gallery: [
+      "/images/Beytepe-Living Room-Day-1.jpg",
+      "/images/Beytepe-Living Room-Day-2.jpg",
+      "/images/Beytepe-Living Room-Day-3.jpg",
+      "/images/Beytepe-Living Room-Day-4.jpg",
+      "/images/Beytepe-Living Room-Day-5.jpg",
+      "/images/Beytepe-Living Room-Day-6.jpg",
+      "/images/Beytepe-Living Room-Day-7.jpg"
+    ]
   },
   {
     id: 2,
@@ -164,170 +119,182 @@ export const PROJECTS = [
       "/images/gokalp-kilic-res02-rn2.jpg",
       "/images/gokalp-kilic-res02-rn3.jpg",
       "/images/gokalp-kilic-res02-rn4.jpg",
-      "/images/gokalp-kilic-res02-rn5.jpg",
       "/images/gokalp-kilic-res02-rn6.jpg",
       "/images/gokalp-kilic-res02-rn-int1.jpg",
       "/images/gokalp-kilic-res02-rn-int2.jpg"
     ]
   },
   {
-    id: 5,
-    title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/Golbasi-Villa-2021-1.jpg",
-    featured: false,
-    description: {
-      en: "A modern villa concept in Gölbaşı, exploring architectural harmony with nature. The design features unique geometry and a focus on material integration.",
-      tr: "Gölbaşı'nda doğa ile mimari uyumu araştıran modern bir villa konsepti. Tasarım, benzersiz bir geometriye ve malzeme entegrasyonuna odaklanıyor."
-    },
-    gallery: [
-      "/images/Golbasi-Villa-2021-1.jpg",
-      "/images/Golbasi-Villa-2021-2.jpg",
-      "/images/Golbasi-Villa-2021-3.jpg",
-      "/images/Golbasi-Villa-2021-4.jpg",
-      "/images/Golbasi-Villa-2021-5.jpg"
-    ]
-  },
-  {
-    id: 6,
-    title: { en: "Product Visualization", tr: "Ürün Görselleştirme" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/Product-Visualizaton-1.jpg",
-    featured: false,
-    description: {
-      en: "A collection of high-fidelity product visualizations, focusing on material realism, studio lighting, and commercial aesthetics.",
-      tr: "Malzeme gerçekçiliği, stüdyo aydınlatması ve ticari estetiğe odaklanan yüksek doğrulukta ürün görselleştirmelerinden oluşan bir koleksiyon."
-    },
-    gallery: [
-      "/images/Product-Visualizaton-1.jpg",
-      "/images/Product-Visualizaton-2.jpg",
-      "/images/Product-Visualizaton-3.jpg",
-      "/images/Product-Visualizaton-4.jpg",
-      "/images/Product-Visualizaton-5.jpg",
-      "/images/Product-Visualizaton-6.jpg",
-      "/images/Product-Visualizaton-7.jpg",
-      "/images/Product-Visualizaton-8.jpg",
-      "/images/Product-Visualizaton-9.jpg",
-      "/images/Product-Visualizaton-11.jpg"
-    ]
-  },
-  {
-    id: 7,
-    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/Low-Poly-Aircraft-1.jpg",
-    featured: false,
-    description: {
-      en: "A low-poly 3D model of a vintage aircraft, designed for game environments. Focuses on silhouette, efficient topology, and stylized textures.",
-      tr: "Oyun ortamları için tasarlanmış antika bir uçağın düşük poligonlu 3D modeli. Siluet, verimli topoloji ve stilize dokulara odaklanır."
-    },
-    gallery: [
-      "/images/Low-Poly-Aircraft-1.jpg",
-      "/images/Low-Poly-Aircraft-2.jpg",
-      "/images/Low-Poly-Aircraft-3.jpg"
-    ]
-  },
-  {
-    id: 8,
-    title: { en: "Digital Portrait Gallery", tr: "Dijital Portre Galerisi" },
-    category: { en: "Digital Art", tr: "Dijital Sanat" },
-    image: "/images/drawing-1.jpg",
-    featured: false,
-    description: {
-      en: "A series of digital portraits and character studies, exploring different styles from realistic to stylized character design.",
-      tr: "Gerçekçiden stilize karakter tasarımına kadar farklı stilleri araştıran bir dizi dijital portre ve karakter çalışması."
-    },
-    gallery: [
-      "/images/drawing-1.jpg",
-      "/images/drawing-2.jpg",
-      "/images/drawing-3.jpg",
-      "/images/drawing-4.jpg",
-      "/images/drawing-5.jpg"
-    ]
-  },
-  {
     id: 9,
     title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
     category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/Sand-Bowl-Study-1.jpg",
+    image: "/images/gokalp-kilic-sand-bowl-try7.jpg",
     featured: false,
     description: {
       en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
       tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
     },
     gallery: [
-      "/images/Sand-Bowl-Study-1.jpg",
-      "/images/Sand-Bowl-Study-2.jpg"
+      "/images/gokalp-kilic-sand-bowl-try7.jpg",
+      "/images/gokalp-kilic-sand-bowl-try8.jpg"
+    ]
+  },
+  {
+    id: 4,
+    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Beytepe-Living Room-Night-1.jpg",
+    featured: false,
+    description: {
+      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
+      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
+    },
+    gallery: [
+      "/images/Beytepe-Living Room-Night-1.jpg",
+      "/images/Beytepe-Living Room-Night-2.jpg",
+      "/images/Beytepe-Living Room-Night-3.jpg",
+      "/images/Beytepe-Living Room-Night-4.jpg",
+      "/images/Beytepe-Living Room-Night-5.jpg",
+      "/images/Beytepe-Living Room-Night-6.jpg",
+      "/images/Beytepe-Living Room-Night-7.jpg"
+    ]
+  },
+  {
+    id: 5,
+    title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-c-23-foto.jpg",
+    featured: false,
+    description: {
+      en: "A modern villa concept in Gölbaşı, exploring architectural harmony with nature. The design features unique geometry and a focus on material integration.",
+      tr: "Gölbaşı'nda doğa ile mimari uyumu araştıran modern bir villa konsepti. Tasarım, benzersiz bir geometriye ve malzeme entegrasyonuna odaklanıyor."
+    },
+    gallery: [
+      "/images/gokalp-kilic-c-19-photo.jpg",
+      "/images/gokalp-kilic-c-23-foto.jpg",
+      "/images/gokalp-kilic-c-27-foto.jpg",
+      "/images/gokalp-kilic-c-32-foto.jpg",
+      "/images/gokalp-kilic-c-33-foto.jpg"
+    ]
+  },
+  {
+    id: 6,
+    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
+    category: { en: "3D Modeling", tr: "3D Modelleme" },
+    image: "/images/gokalp-kilic-plan-e-render-a1.jpg",
+    featured: false,
+    description: {
+      en: "A detailed 3D model of a vintage aircraft, focused on technical accuracy and realistic material representation for real-time applications.",
+      tr: "Teknik doğruluk ve gerçek zamanlı uygulamalar için gerçekçi malzeme temsiline odaklanan, antika bir uçağın detaylı 3D modeli."
+    },
+    gallery: [
+      "/images/gokalp-kilic-plan-e-render-a1.jpg",
+      "/images/gokalp-kilic-plan-e-render-a2.jpg",
+      "/images/gokalp-kilic-plan-e-render-a3.jpg"
+    ]
+  },
+  {
+    id: 7,
+    title: { en: "Digital Portrait Gallery", tr: "Dijital Portre Galerisi" },
+    category: { en: "Digital Art", tr: "Dijital Sanat" },
+    image: "/images/gokalp-kilic-logan-hugh-jackman-drawing-by-gokalpon-by-gokalpon.jpg",
+    featured: false,
+    description: {
+      en: "A series of digital portraits and character studies, showcasing detailed sketching and shading techniques to capture the essence of iconic characters.",
+      tr: "İkonik karakterlerin özünü yakalamak için detaylı eskiz ve gölgeleme tekniklerini sergileyen bir dizi dijital portre ve karakter çalışması."
+    },
+    gallery: [
+      "/images/gokalp-kilic-logan-hugh-jackman-drawing-by-gokalpon-by-gokalpon.jpg",
+      "/images/gokalp-kilic-laurie.jpg",
+      "/images/gokalp-kilic-leonardo-dicaprio-by-gokalpon.jpg",
+      "/images/gokalp-kilic-drawing-mandalorian.jpg",
+      "/images/gokalp-kilic-drawing-wine.jpg"
+    ]
+  },
+  {
+    id: 8,
+    title: { en: "Product Visualization", tr: "Ürün Görselleştirme" },
+    category: { en: "3D Rendering", tr: "3D Görselleştirme" },
+    image: "/images/gokalp-kilic-coffee-cup-glass-4.jpg",
+    featured: false,
+    description: {
+      en: "High-quality product renders focusing on material realism, lighting, and composition for commercial and conceptual designs.",
+      tr: "Ticari ve konsept tasarımlar için malzeme gerçekçiliği, aydınlatma ve kompozisyona odaklanan yüksek kaliteli ürün renderları."
+    },
+    gallery: [
+      "/images/gokalp-kilic-coffee-cup-glass-4.jpg",
+      "/images/gokalp-kilic-coffee-cup-try3.jpg",
+      "/images/gokalp-kilic-bloque-yoga-render.jpg",
+      "/images/gokalp-kilic-closet-render-try-5.jpg"
     ]
   },
   {
     id: 11,
-    title: { en: "Character Head Design", tr: "Karakter Baş Tasarımı" },
-    category: { en: "Character Art", tr: "Karakter Sanatı" },
-    image: "/images/Character-Head-Design-1.jpg",
-    featured: false,
-    description: {
-      en: "A detailed character head study, focusing on facial anatomy, expression, and stylized character features.",
-      tr: "Yüz anatomisi, ifade ve stilize karakter özelliklerine odaklanan detaylı bir karakter başı çalışması."
-    },
-    gallery: [
-      "/images/Character-Head-Design-1.jpg",
-      "/images/Character-Head-Design-2.jpg"
-    ]
-  },
-  {
-    id: 13,
     title: { en: "Lighting Studies", tr: "Aydınlatma Çalışmaları" },
     category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/Lighting-Study-1.jpg",
+    image: "/images/gokalp-kilic-light-cylinder-angle4.jpg",
     featured: false,
     description: {
-      en: "A series of experimental lighting studies exploring global illumination, volumetric effects, and material interactions in various environments.",
-      tr: "Çeşitli ortamlarda küresel aydınlatma, hacimsel etkiler ve malzeme etkileşimlerini araştıran bir dizi deneysel aydınlatma çalışması."
+      en: "Experimental renders exploring complex lighting setups and organic material properties.",
+      tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
     },
     gallery: [
-      "/images/Lighting-Study-1.jpg",
-      "/images/Lighting-Study-2.jpg",
-      "/images/Lighting-Study-3.jpg"
+      "/images/gokalp-kilic-light-cylinder-angle4.jpg",
+      "/images/gokalp-kilic-light-cylinder-angle5.jpg",
+      "/images/gokalp-kilic-light-cylinder-try9.jpg"
     ]
   },
   {
     id: 12,
+    title: { en: "Architectural Renders - Collection", tr: "Mimari Render Koleksiyonu" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-insta-1-wide.jpg",
+    featured: false,
+    description: {
+      en: "A collection of various architectural renders showcasing different environments, lighting conditions, and structural concepts.",
+      tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli mimari renderlardan oluşan bir koleksiyon."
+    },
+    gallery: [
+      "/images/gokalp-kilic-insta-1-wide.jpg",
+      "/images/gokalp-kilic-insta-2-2.jpg",
+      "/images/gokalp-kilic-insta-3-wide.jpg",
+      "/images/gokalp-kilic-24-1-2-3.jpg",
+      "/images/gokalp-kilic-24-1-2-4.jpg",
+      "/images/gokalp-kilic-24-1-2-5.jpg",
+      "/images/gokalp-kilic-24-1-2-6.jpg",
+      "/images/gokalp-kilic-try2.jpg"
+    ]
+  },
+  {
+    id: 15,
     title: { en: "Donut Study", tr: "Donut Çalışması" },
     category: { en: "3D Art", tr: "3D Sanat" },
     image: "/images/Donut-1.jpg",
     featured: false,
     description: {
-      en: "A classic 3D modeling exercise, focusing on procedural textures, lighting, and rendering techniques.",
-      tr: "Prosedürel dokulara, aydınlatmaya ve render tekniklerine odaklanan klasik bir 3D modelleme egzersizi."
+      en: "A classic 3D modeling study of a donut, exploring procedural textures and realistic food rendering.",
+      tr: "Prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
     },
     gallery: [
       "/images/Donut-1.jpg"
     ]
+  },
+  {
+    id: 16,
+    title: { en: "Interior Visualization Studies", tr: "İç Mekan Görselleştirme Çalışmaları" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Interior-Visualization-1.jpg",
+    featured: false,
+    description: {
+      en: "A series of interior visualization studies exploring different lighting moods and furniture arrangements.",
+      tr: "Farklı aydınlatma modlarını ve mobilya düzenlemelerini araştıran bir dizi iç mekan görselleştirme çalışması."
+    },
+    gallery: [
+      "/images/Interior-Visualization-1.jpg",
+      "/images/Interior-Visualization-2.jpg"
+    ]
   }
 ];
-
-const ImageWithFallback = ({ src, alt, className, ...props }: any) => {
-  const [imgSrc, setImgSrc] = useState(src);
-  const [hasError, setHasError] = useState(false);
-
-  return (
-    <img
-      {...props}
-      src={imgSrc}
-      alt={alt}
-      className={className}
-      onError={() => {
-        if (!hasError) {
-          setHasError(true);
-          // Use a placeholder if the local image fails
-          setImgSrc(`https://picsum.photos/seed/${src.split('/').pop() || 'fallback'}/1200/800`);
-        }
-      }}
-      referrerPolicy="no-referrer"
-    />
-  );
-};
 
 interface ProjectGridProps {
   limit?: number;
@@ -408,10 +375,11 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
             </div>
 
             {/* Project Image */}
-            <ImageWithFallback 
+            <img 
               src={project.image} 
-              alt=""
+              alt={t(project.title.en, project.title.tr)}
               className="absolute inset-0 w-full h-full object-cover opacity-70 saturate-50 group-hover:opacity-20 group-hover:saturate-0 transition-all duration-700"
+              referrerPolicy="no-referrer"
             />
 
             {/* Overlay */}
@@ -472,19 +440,16 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
                 {/* Carousel Section */}
                 <div className="relative aspect-video w-full group">
                   <AnimatePresence mode="wait">
-                    <motion.div
+                    <motion.img 
                       key={activeImageIndex}
+                      src={selectedProject.gallery[activeImageIndex]}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.5 }}
-                      className="w-full h-full"
-                    >
-                      <ImageWithFallback 
-                        src={selectedProject.gallery[activeImageIndex]}
-                        className="w-full h-full object-cover"
-                      />
-                    </motion.div>
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
                   </AnimatePresence>
                   
                   {/* Carousel Controls */}
@@ -539,10 +504,11 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
                           className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 group cursor-zoom-in"
                           onClick={() => setLightboxImage(img)}
                         >
-                          <ImageWithFallback 
+                          <img 
                             src={img} 
-                            alt=""
+                            alt={`${t(selectedProject.title.en, selectedProject.title.tr)} render ${i + 1}`}
                             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                            referrerPolicy="no-referrer"
                           />
                           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                             <Maximize2 className="text-white" size={32} />
@@ -568,12 +534,13 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
             onClick={() => setLightboxImage(null)}
             className="fixed inset-0 z-[2000] flex items-center justify-center p-4 md:p-20 bg-black/95 cursor-zoom-out"
           >
-          <ImageWithFallback 
+            <motion.img 
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               src={lightboxImage}
               className="max-w-full max-h-full object-contain rounded-lg"
+              referrerPolicy="no-referrer"
             />
             <button 
               className="absolute top-10 right-10 p-4 text-white/40 hover:text-white transition-colors"
