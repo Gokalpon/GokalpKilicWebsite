@@ -10,77 +10,43 @@ export const PROJECTS = [
     id: 1,
     title: { en: "Residence Concept Design - Day", tr: "Rezidans Konsept Tasarımı - Gündüz" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-res02-r0.jpg",
+    image: "/images/gokalp-kilic-res02-m1.jpg",
     featured: true,
     description: {
       en: "A high-fidelity architectural visualization project focusing on modern residence concepts. The design emphasizes verticality, parametric forms, and urban integration in daylight conditions.",
       tr: "Modern rezidans konseptlerine odaklanan yüksek doğrulukta bir mimari görselleştirme projesi. Tasarım, gün ışığı koşullarında dikeyliği, parametrik formları ve kentsel entegrasyonu vurgular."
     },
     gallery: [
-      "/images/gokalp-kilic-res02-r0.jpg",
+      "/images/gokalp-kilic-res02-m1.jpg",
+      "/images/gokalp-kilic-res02-m2.jpg",
+      "/images/gokalp-kilic-res02-m3.jpg",
+      "/images/gokalp-kilic-res02-m4.jpg",
+      "/images/gokalp-kilic-res02-m5.jpg",
+      "/images/gokalp-kilic-res02-m6.jpg",
+      "/images/gokalp-kilic-res02-m-int1.jpg",
+      "/images/gokalp-kilic-res02-m-int2.jpg"
+    ]
+  },
+  {
+    id: 2,
+    title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-res02-r1.jpg",
+    featured: false,
+    description: {
+      en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
+      tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
+    },
+    gallery: [
       "/images/gokalp-kilic-res02-r1.jpg",
       "/images/gokalp-kilic-res02-r2.jpg",
       "/images/gokalp-kilic-res02-r3.jpg",
+      "/images/gokalp-kilic-res02-r4.jpg",
       "/images/gokalp-kilic-res02-r5.jpg",
       "/images/gokalp-kilic-res02-r6.jpg",
       "/images/gokalp-kilic-res02-r7.jpg",
-      "/images/gokalp-kilic-res02-r8.jpg"
-    ]
-  },
-  {
-    id: 10,
-    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
-    featured: false,
-    description: {
-      en: "A modern villa project in Çayyolu, Lodumu. The design focuses on contemporary architecture, luxury living spaces, and seamless indoor-outdoor integration with high-end materials and lighting.",
-      tr: "Çayyolu, Lodumu'da modern bir villa projesi. Tasarım, çağdaş mimariye, lüks yaşam alanlarına ve üst düzey malzemeler ve aydınlatma ile kesintisiz iç-dış mekan entegrasyonuna odaklanıyor."
-    },
-    gallery: [
-      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
-      "/images/gokalp-kilic-rend-er1.jpg",
-      "/images/gokalp-kilic-rend-er1-b.jpg",
-      "/images/gokalp-kilic-rend-er2.jpg",
-      "/images/gokalp-kilic-rend-er2-b.jpg",
-      "/images/gokalp-kilic-rend-er3.jpg",
-      "/images/gokalp-kilic-rend-er-5.jpg",
-      "/images/gokalp-kilic-render-try-2.jpg",
-      "/images/gokalp-kilic-render-v1-4.jpg",
-      "/images/gokalp-kilic-render-v2-4.jpg",
-      "/images/gokalp-kilic-render-pre-cycles-10frame.jpg"
-    ]
-  },
-  {
-    id: 13,
-    title: { en: "Character Head Design", tr: "Karakter Baş Tasarımı" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/Character-Head-Design-1.jpg",
-    featured: false,
-    description: {
-      en: "A stylized character head design focusing on expressive features and clean topology for animation and game art.",
-      tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
-    },
-    gallery: [
-      "/images/Character-Head-Design-1.jpg",
-      "/images/Character-Head-Design-2.jpg"
-    ]
-  },
-  {
-    id: 14,
-    title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/Incek-Villa-1.jpg",
-    featured: false,
-    description: {
-      en: "A modern residential villa project in İncek, featuring contemporary architectural lines and integrated landscape design.",
-      tr: "İncek'te çağdaş mimari hatlara ve entegre peyzaj tasarımına sahip modern bir konut villa projesi."
-    },
-    gallery: [
-      "/images/Incek-Villa-1.jpg",
-      "/images/Incek-Villa-2.jpg",
-      "/images/Incek-Villa-3.jpg",
-      "/images/Incek-Villa-4.jpg"
+      "/images/gokalp-kilic-res02-r-int1.jpg",
+      "/images/gokalp-kilic-res02-r-int2.jpg"
     ]
   },
   {
@@ -101,42 +67,6 @@ export const PROJECTS = [
       "/images/Beytepe-Living Room-Day-5.jpg",
       "/images/Beytepe-Living Room-Day-6.jpg",
       "/images/Beytepe-Living Room-Day-7.jpg"
-    ]
-  },
-  {
-    id: 2,
-    title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-res02-rn0.jpg",
-    featured: false,
-    description: {
-      en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
-      tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
-    },
-    gallery: [
-      "/images/gokalp-kilic-res02-rn0.jpg",
-      "/images/gokalp-kilic-res02-rn1.jpg",
-      "/images/gokalp-kilic-res02-rn2.jpg",
-      "/images/gokalp-kilic-res02-rn3.jpg",
-      "/images/gokalp-kilic-res02-rn4.jpg",
-      "/images/gokalp-kilic-res02-rn6.jpg",
-      "/images/gokalp-kilic-res02-rn-int1.jpg",
-      "/images/gokalp-kilic-res02-rn-int2.jpg"
-    ]
-  },
-  {
-    id: 9,
-    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/gokalp-kilic-sand-bowl-try7.jpg",
-    featured: false,
-    description: {
-      en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
-      tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
-    },
-    gallery: [
-      "/images/gokalp-kilic-sand-bowl-try7.jpg",
-      "/images/gokalp-kilic-sand-bowl-try8.jpg"
     ]
   },
   {
@@ -163,106 +93,153 @@ export const PROJECTS = [
     id: 5,
     title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-c-23-foto.jpg",
+    image: "/images/Golbasi-Villa-202-1-1.jpg",
     featured: false,
     description: {
       en: "A modern villa concept in Gölbaşı, exploring architectural harmony with nature. The design features unique geometry and a focus on material integration.",
       tr: "Gölbaşı'nda doğa ile mimari uyumu araştıran modern bir villa konsepti. Tasarım, benzersiz bir geometriye ve malzeme entegrasyonuna odaklanıyor."
     },
     gallery: [
-      "/images/gokalp-kilic-c-19-photo.jpg",
-      "/images/gokalp-kilic-c-23-foto.jpg",
-      "/images/gokalp-kilic-c-27-foto.jpg",
-      "/images/gokalp-kilic-c-32-foto.jpg",
-      "/images/gokalp-kilic-c-33-foto.jpg"
+      "/images/Golbasi-Villa-202-1-1.jpg",
+      "/images/Golbasi-Villa-202-1-2.jpg",
+      "/images/Golbasi-Villa-202-1-3.jpg",
+      "/images/Golbasi-Villa-202-1-4.jpg",
+      "/images/Golbasi-Villa-202-1-5.jpg"
     ]
   },
   {
     id: 6,
     title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
     category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/gokalp-kilic-plan-e-render-a1.jpg",
+    image: "/images/Low-Poly-Aircraft-1.jpg",
     featured: false,
     description: {
       en: "A detailed 3D model of a vintage aircraft, focused on technical accuracy and realistic material representation for real-time applications.",
       tr: "Teknik doğruluk ve gerçek zamanlı uygulamalar için gerçekçi malzeme temsiline odaklanan, antika bir uçağın detaylı 3D modeli."
     },
     gallery: [
-      "/images/gokalp-kilic-plan-e-render-a1.jpg",
-      "/images/gokalp-kilic-plan-e-render-a2.jpg",
-      "/images/gokalp-kilic-plan-e-render-a3.jpg"
+      "/images/Low-Poly-Aircraft-1.jpg",
+      "/images/Low-Poly-Aircraft-2.jpg",
+      "/images/Low-Poly-Aircraft-3.jpg"
     ]
   },
   {
     id: 7,
     title: { en: "Digital Portrait Gallery", tr: "Dijital Portre Galerisi" },
     category: { en: "Digital Art", tr: "Dijital Sanat" },
-    image: "/images/gokalp-kilic-logan-hugh-jackman-drawing-by-gokalpon-by-gokalpon.jpg",
+    image: "/images/drawing-1.jpg",
     featured: false,
     description: {
       en: "A series of digital portraits and character studies, showcasing detailed sketching and shading techniques to capture the essence of iconic characters.",
       tr: "İkonik karakterlerin özünü yakalamak için detaylı eskiz ve gölgeleme tekniklerini sergileyen bir dizi dijital portre ve karakter çalışması."
     },
     gallery: [
-      "/images/gokalp-kilic-logan-hugh-jackman-drawing-by-gokalpon-by-gokalpon.jpg",
-      "/images/gokalp-kilic-laurie.jpg",
-      "/images/gokalp-kilic-leonardo-dicaprio-by-gokalpon.jpg",
-      "/images/gokalp-kilic-drawing-mandalorian.jpg",
-      "/images/gokalp-kilic-drawing-wine.jpg"
+      "/images/drawing-1.jpg",
+      "/images/drawing-2.jpg",
+      "/images/drawing-3.jpg",
+      "/images/drawing-4.jpg",
+      "/images/drawing-5.jpg"
     ]
   },
   {
     id: 8,
     title: { en: "Product Visualization", tr: "Ürün Görselleştirme" },
     category: { en: "3D Rendering", tr: "3D Görselleştirme" },
-    image: "/images/gokalp-kilic-coffee-cup-glass-4.jpg",
+    image: "/images/Product-Visualization-1.jpg",
     featured: false,
     description: {
       en: "High-quality product renders focusing on material realism, lighting, and composition for commercial and conceptual designs.",
       tr: "Ticari ve konsept tasarımlar için malzeme gerçekçiliği, aydınlatma ve kompozisyona odaklanan yüksek kaliteli ürün renderları."
     },
     gallery: [
-      "/images/gokalp-kilic-coffee-cup-glass-4.jpg",
-      "/images/gokalp-kilic-coffee-cup-try3.jpg",
-      "/images/gokalp-kilic-bloque-yoga-render.jpg",
-      "/images/gokalp-kilic-closet-render-try-5.jpg"
+      "/images/Product-Visualization-1.jpg",
+      "/images/Product-Visualization-2.jpg",
+      "/images/Product-Visualization-3.jpg",
+      "/images/Product-Visualization-4.jpg",
+      "/images/Product-Visualization-5.jpg",
+      "/images/Product-Visualization-6.jpg",
+      "/images/Product-Visualization-9.jpg",
+      "/images/Product-Visualization-11.jpg"
+    ]
+  },
+  {
+    id: 9,
+    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/Sand-Bowl Study-1.jpg",
+    featured: false,
+    description: {
+      en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
+      tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
+    },
+    gallery: [
+      "/images/Sand-Bowl Study-1.jpg",
+      "/images/Sand-Bowl Study-2.jpg"
+    ]
+  },
+  {
+    id: 10,
+    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+    featured: false,
+    description: {
+      en: "A modern villa project in Çayyolu, Lodumu. The design focuses on contemporary architecture, luxury living spaces, and seamless indoor-outdoor integration with high-end materials and lighting.",
+      tr: "Çayyolu, Lodumu'da modern bir villa projesi. Tasarım, çağdaş mimariye, lüks yaşam alanlarına ve üst düzey malzemeler ve aydınlatma ile kesintisiz iç-dış mekan entegrasyonuna odaklanıyor."
+    },
+    gallery: [
+      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
     ]
   },
   {
     id: 11,
     title: { en: "Lighting Studies", tr: "Aydınlatma Çalışmaları" },
     category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/gokalp-kilic-light-cylinder-angle4.jpg",
+    image: "/images/Product-Visualization-7.jpg",
     featured: false,
     description: {
       en: "Experimental renders exploring complex lighting setups and organic material properties.",
       tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
     },
     gallery: [
-      "/images/gokalp-kilic-light-cylinder-angle4.jpg",
-      "/images/gokalp-kilic-light-cylinder-angle5.jpg",
-      "/images/gokalp-kilic-light-cylinder-try9.jpg"
+      "/images/Product-Visualization-7.jpg",
+      "/images/Product-Visualization-8.jpg"
     ]
   },
   {
     id: 12,
     title: { en: "Architectural Renders - Collection", tr: "Mimari Render Koleksiyonu" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-insta-1-wide.jpg",
+    image: "/images/interior-Visualization-1.jpg",
     featured: false,
     description: {
       en: "A collection of various architectural renders showcasing different environments, lighting conditions, and structural concepts.",
       tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli mimari renderlardan oluşan bir koleksiyon."
     },
     gallery: [
-      "/images/gokalp-kilic-insta-1-wide.jpg",
-      "/images/gokalp-kilic-insta-2-2.jpg",
-      "/images/gokalp-kilic-insta-3-wide.jpg",
-      "/images/gokalp-kilic-24-1-2-3.jpg",
-      "/images/gokalp-kilic-24-1-2-4.jpg",
-      "/images/gokalp-kilic-24-1-2-5.jpg",
-      "/images/gokalp-kilic-24-1-2-6.jpg",
-      "/images/gokalp-kilic-try2.jpg"
+      "/images/interior-Visualization-1.jpg",
+      "/images/interior-Visualization-2.jpg",
+      "/images/Incek-Villa-1.jpg",
+      "/images/Incek-Villa-2.jpg",
+      "/images/Incek-Villa-3.jpg",
+      "/images/Incek-Villa-4.jpg"
+    ]
+  },
+  {
+    id: 13,
+    title: { en: "Character Head Design", tr: "Karakter Baş Tasarımı" },
+    category: { en: "3D Modeling", tr: "3D Modelleme" },
+    image: "/images/Character-Head Design-1.jpg",
+    featured: false,
+    description: {
+      en: "A stylized character head design focusing on expressive features and clean topology for animation and game art.",
+      tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
+    },
+    gallery: [
+      "/images/Character-Head Design-1.jpg",
+      "/images/Character-Head Design-2.jpg"
     ]
   },
   {
@@ -276,22 +253,8 @@ export const PROJECTS = [
       tr: "Prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
     },
     gallery: [
-      "/images/Donut-1.jpg"
-    ]
-  },
-  {
-    id: 16,
-    title: { en: "Interior Visualization Studies", tr: "İç Mekan Görselleştirme Çalışmaları" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Interior-Visualization-1.jpg",
-    featured: false,
-    description: {
-      en: "A series of interior visualization studies exploring different lighting moods and furniture arrangements.",
-      tr: "Farklı aydınlatma modlarını ve mobilya düzenlemelerini araştıran bir dizi iç mekan görselleştirme çalışması."
-    },
-    gallery: [
-      "/images/Interior-Visualization-1.jpg",
-      "/images/Interior-Visualization-2.jpg"
+      "/images/Donut-1.jpg",
+      "/images/Donut-Video.mp4"
     ]
   }
 ];
@@ -335,6 +298,8 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
     if (!selectedProject) return;
     setActiveImageIndex((prev) => (prev - 1 + selectedProject.gallery.length) % selectedProject.gallery.length);
   };
+
+  const isVideo = (url: string) => url.toLowerCase().endsWith('.mp4');
 
   return (
     <section ref={container} id="projects" className="py-20 md:py-40 px-6 md:px-10 max-w-[90rem] mx-auto">
@@ -440,16 +405,32 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
                 {/* Carousel Section */}
                 <div className="relative aspect-video w-full group">
                   <AnimatePresence mode="wait">
-                    <motion.img 
-                      key={activeImageIndex}
-                      src={selectedProject.gallery[activeImageIndex]}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.5 }}
-                      className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
-                    />
+                    {isVideo(selectedProject.gallery[activeImageIndex]) ? (
+                      <motion.video
+                        key={activeImageIndex}
+                        src={selectedProject.gallery[activeImageIndex]}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        controls
+                        autoPlay
+                        loop
+                        muted
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <motion.img 
+                        key={activeImageIndex}
+                        src={selectedProject.gallery[activeImageIndex]}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    )}
                   </AnimatePresence>
                   
                   {/* Carousel Controls */}
@@ -504,12 +485,21 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
                           className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 group cursor-zoom-in"
                           onClick={() => setLightboxImage(img)}
                         >
-                          <img 
-                            src={img} 
-                            alt={`${t(selectedProject.title.en, selectedProject.title.tr)} render ${i + 1}`}
-                            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                            referrerPolicy="no-referrer"
-                          />
+                          {isVideo(img) ? (
+                            <video 
+                              src={img} 
+                              className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                              muted
+                              playsInline
+                            />
+                          ) : (
+                            <img 
+                              src={img} 
+                              alt={`${t(selectedProject.title.en, selectedProject.title.tr)} render ${i + 1}`}
+                              className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                              referrerPolicy="no-referrer"
+                            />
+                          )}
                           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                             <Maximize2 className="text-white" size={32} />
                           </div>

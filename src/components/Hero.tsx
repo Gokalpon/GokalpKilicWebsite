@@ -5,8 +5,8 @@ import { useLanguage } from "../context/LanguageContext";
 
 const CUBE_FACES = [
   {
-    title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
-    image: "/images/Beytepe-Living Room-Day-1.jpg",
+    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
+    image: "/images/Sand-Bowl Study-1.jpg",
   },
   {
     title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
