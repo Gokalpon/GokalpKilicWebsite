@@ -166,19 +166,40 @@ export const PROJECTS = [
     gallery: ["/images/donut-study-1.jpg", "/images/Donut-Video.mp4"]
   },
   {
-    id: 17,
-    title: { en: "ÇAYYOLU LODUMU VILLA PROJECT", tr: "ÇAYYOLU LODUMU VILLA PROJESI" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+    id: 18,
+    title: { en: "PRODUCT VISUALIZATION", tr: "PRODUCT VISUALIZATION" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/product-visualization-1.jpg",
     featured: false,
     description: {
-      en: "A modern villa project in Çayyolu Lodumu area, featuring contemporary architectural design and high-quality exterior visualization.",
-      tr: "Çayyolu Lodumu bölgesinde çağdaş mimari tasarım ve yüksek kaliteli dış mekan görselleştirmesi içeren modern bir villa projesi."
+      en: "A product-focused visualization series exploring material definition, reflections, studio lighting, and presentation quality across multiple render setups.",
+      tr: "Malzeme tanımı, yansımalar, stüdyo ışığı ve sunum kalitesini farklı render kurulumlarıyla araştıran ürün odaklı bir görselleştirme serisi."
     },
     gallery: [
-      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
+      "/images/product-visualization-1.jpg",
+      "/images/product-visualization-2.jpg",
+      "/images/product-visualization-3.jpg",
+      "/images/product-visualization-4.jpg",
+      "/images/product-visualization-5.jpg",
+      "/images/product-visualization-6.jpg",
+      "/images/product-visualization-9.jpg",
+      "/images/product-visualization-11.jpg"
+    ]
+  },
+  {
+    id: 19,
+    title: { en: "VINTAGE AIRCRAFT MODEL", tr: "VINTAGE AIRCRAFT MODEL" },
+    category: { en: "3D Modeling", tr: "3D Modelleme" },
+    image: "/images/low-poly-aircraft-1.jpg",
+    featured: false,
+    description: {
+      en: "A stylized vintage aircraft model study focused on low-poly modeling, form readability, and clean presentation renders.",
+      tr: "Low-poly modelleme, form okunabilirliği ve temiz sunum renderlarına odaklanan stilize bir vintage uçak modelleme çalışması."
+    },
+    gallery: [
+      "/images/low-poly-aircraft-1.jpg",
+      "/images/low-poly-aircraft-2.jpg",
+      "/images/low-poly-aircraft-3.jpg"
     ]
   }
 ];
