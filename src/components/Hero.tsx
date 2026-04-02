@@ -5,19 +5,19 @@ import { useLanguage } from "../context/LanguageContext";
 
 const CUBE_FACES = [
   {
-    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
+    title: { en: "SAND BOWL STUDY", tr: "SAND BOWL STUDY" },
     image: "/images/Sand-Bowl Study-1.jpg",
   },
   {
-    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
+    title: { en: "BEYTEPE LIVING ROOM - NIGHT", tr: "BEYTEPE LIVING ROOM - NIGHT" },
     image: "/images/Beytepe-Living Room-Night-1.jpg",
   },
   {
-    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
+    title: { en: "ÇAYYOLU LODUMU VILLA PROJECT", tr: "ÇAYYOLU LODUMU VILLA PROJECT" },
     image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
   },
   {
-    title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
+    title: { en: "ARCHITECTURAL RENDERS - COLLECTION", tr: "ARCHITECTURAL RENDERS - COLLECTION" },
     image: "/images/Incek-Villa-1.jpg",
   }
 ];
