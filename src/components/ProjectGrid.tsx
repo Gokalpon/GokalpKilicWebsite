@@ -169,16 +169,16 @@ export const PROJECTS = [
     id: 17,
     title: { en: "ÇAYYOLU LODUMU VILLA PROJECT", tr: "ÇAYYOLU LODUMU VILLA PROJESI" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/cayyolu-lodumu-villa-project-1.jpg",
+    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
     featured: false,
     description: {
       en: "A modern villa project in Çayyolu Lodumu area, featuring contemporary architectural design and high-quality exterior visualization.",
       tr: "Çayyolu Lodumu bölgesinde çağdaş mimari tasarım ve yüksek kaliteli dış mekan görselleştirmesi içeren modern bir villa projesi."
     },
     gallery: [
-      "/images/cayyolu-lodumu-villa-project-1.jpg",
-      "/images/cayyolu-lodumu-villa-project-2.jpg",
-      "/images/cayyolu-lodumu-villa-project-3.jpg"
+      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
     ]
   }
 ];
