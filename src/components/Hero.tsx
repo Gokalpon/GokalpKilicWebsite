@@ -5,20 +5,20 @@ import { useLanguage } from "../context/LanguageContext";
 
 const CUBE_FACES = [
   {
-    title: { en: "SAND BOWL STUDY", tr: "SAND BOWL STUDY" },
+    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
     image: "/images/sand-bowl-study-1.jpg",
   },
   {
-    title: { en: "BEYTEPE LIVING ROOM - NIGHT", tr: "BEYTEPE LIVING ROOM - NIGHT" },
+    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
     image: "/images/beytepe-living-room-night-1.jpg",
   },
   {
-    title: { en: "ÇAYYOLU LODUMU VILLA PROJECT", tr: "ÇAYYOLU LODUMU VILLA PROJECT" },
+    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
     image: "/images/cayyolu-lodumu-villa-project-1.jpg",
   },
   {
-    title: { en: "ARCHITECTURAL RENDERS - COLLECTION", tr: "ARCHITECTURAL RENDERS - COLLECTION" },
-    image: "/images/incek-villa-1.jpg",
+    title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
+    image: "/images/incek-villa-project-1.jpg",
   }
 ];
 
@@ -40,7 +40,7 @@ export function Hero() {
   ];
 
   return (
-    <section ref={container} className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section ref={container} className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
       {/* Background Text Cycling */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden z-10">
         <div className="relative w-full text-center">
@@ -70,18 +70,18 @@ export function Hero() {
       </div>
 
       {/* Spherical Carousel */}
-      <div className="relative w-full h-full flex items-center justify-center perspective-2000 z-20">
+      <div className="relative w-full h-full flex items-center justify-center [perspective:2000px] z-20">
         <motion.div 
           animate={{ rotateY: 360 }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="relative w-[85vw] md:w-[70vh] h-[35vh] md:h-[40vh] preserve-3d [--carousel-z:45vw] md:[--carousel-z:50vh]"
+          className="relative w-[85vw] md:w-[70vh] h-[35vh] md:h-[40vh] [transform-style:preserve-3d] [--carousel-z:45vw] md:[--carousel-z:50vh]"
         >
           {CUBE_FACES.map((face, index) => {
             const angle = (index / CUBE_FACES.length) * 360;
             return (
               <div 
                 key={index}
-                className="absolute inset-0 preserve-3d backface-hidden flex items-center justify-center rounded-[24px] md:rounded-[32px] overflow-hidden glass border border-white/10"
+                className="absolute inset-0 [transform-style:preserve-3d] [backface-visibility:hidden] flex items-center justify-center rounded-[24px] md:rounded-[32px] overflow-hidden bg-white/5 backdrop-blur-md border border-white/10"
                 style={{ 
                   transform: `rotateY(${angle}deg) translateZ(var(--carousel-z, 45vw))`,
                 }}
@@ -89,11 +89,13 @@ export function Hero() {
                 <img 
                   src={face.image} 
                   alt={t(face.title.en, face.title.tr)}
-                  className="absolute inset-0 w-full h-full object-cover opacity-60 transition-all duration-700"
-                  referrerPolicy="no-referrer"
+                  className="absolute inset-0 w-full h-full object-cover opacity-70 transition-all duration-700"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
-                <h2 className="relative z-10 font-display font-bold text-xl md:text-4xl text-center px-4 md:px-6 tracking-[0.1em] md:tracking-[0.2em] uppercase leading-tight">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80" />
+                <h2 className="relative z-10 font-display font-bold text-xl md:text-4xl text-center px-4 md:px-6 tracking-[0.1em] md:tracking-[0.2em] uppercase leading-tight text-white">
                   {t(face.title.en, face.title.tr)}
                 </h2>
               </div>

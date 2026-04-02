@@ -10,35 +10,34 @@ export const PROJECTS = [
     id: 2,
     title: { en: "RESIDENCE CONCEPT DESIGN - NIGHT", tr: "RESIDENCE CONCEPT DESIGN - NIGHT" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-res02-r1.jpg",
+    image: "/images/residence-concept-design-night-r1.jpg",
     featured: true,
     description: {
       en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
       tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
     },
     gallery: [
-      "/images/gokalp-kilic-res02-r1.jpg", "/images/gokalp-kilic-res02-r2.jpg", 
-      "/images/gokalp-kilic-res02-r3.jpg", "/images/gokalp-kilic-res02-r4.jpg", 
-      "/images/gokalp-kilic-res02-r5.jpg", "/images/gokalp-kilic-res02-r6.jpg", 
-      "/images/gokalp-kilic-res02-r7.jpg", "/images/gokalp-kilic-res02-r-int1.jpg", 
-      "/images/gokalp-kilic-res02-r-int2.jpg"
+      "/images/residence-concept-design-night-r1.jpg", "/images/residence-concept-design-night-r2.jpg", 
+      "/images/residence-concept-design-night-r3.jpg", "/images/residence-concept-design-night-r4.jpg", 
+      "/images/residence-concept-design-night-r5.jpg", "/images/residence-concept-design-night-r6.jpg", 
+      "/images/residence-concept-design-night-r7.jpg", "/images/residence-concept-design-night-r-int1.jpg"
     ]
   },
   {
     id: 1,
     title: { en: "RESIDENCE CONCEPT DESIGN - DAY", tr: "RESIDENCE CONCEPT DESIGN - DAY" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-res02-m1.jpg",
+    image: "/images/residence-concept-design-day-m1.jpg",
     featured: false,
     description: {
       en: "A high-fidelity architectural visualization project focusing on modern residence concepts. The design emphasizes verticality, parametric forms, and urban integration in daylight conditions.",
       tr: "Modern rezidans konseptlerine odaklanan yüksek doğrulukta bir mimari görselleştirme projesi. Tasarım, gün ışığı koşullarında dikeyliği, parametrik formları ve kentsel entegrasyonu vurgular."
     },
     gallery: [
-      "/images/gokalp-kilic-res02-m1.jpg", "/images/gokalp-kilic-res02-m2.jpg", 
-      "/images/gokalp-kilic-res02-m3.jpg", "/images/gokalp-kilic-res02-m4.jpg", 
-      "/images/gokalp-kilic-res02-m5.jpg", "/images/gokalp-kilic-res02-m6.jpg", 
-      "/images/gokalp-kilic-res02-m-int1.jpg", "/images/gokalp-kilic-res02-m-int2.jpg"
+      "/images/residence-concept-design-day-m1.jpg", "/images/residence-concept-design-day-m2.jpg", 
+      "/images/residence-concept-design-day-m3.jpg", "/images/residence-concept-design-day-m4.jpg", 
+      "/images/residence-concept-design-day-m5.jpg", "/images/residence-concept-design-day-m6.jpg", 
+      "/images/residence-concept-design-day-m-int1.jpg", "/images/residence-concept-design-day-m-int2.jpg"
     ]
   },
   {
@@ -79,15 +78,15 @@ export const PROJECTS = [
     id: 12,
     title: { en: "ARCHITECTURAL RENDERS - COLLECTION", tr: "ARCHITECTURAL RENDERS - COLLECTION" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/incek-villa-1.jpg",
+    image: "/images/incek-villa-project-1.jpg",
     featured: false,
     description: {
       en: "A collection of various architectural renders showcasing different environments, lighting conditions, and structural concepts.",
       tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli mimari renderlardan oluşan bir koleksiyon."
     },
     gallery: [
-      "/images/incek-villa-1.jpg", "/images/incek-villa-2.jpg", 
-      "/images/incek-villa-3.jpg", "/images/incek-villa-4.jpg",
+      "/images/incek-villa-project-1.jpg", "/images/incek-villa-project-2.jpg", 
+      "/images/incek-villa-project-3.jpg", "/images/incek-villa-project-4.jpg",
       "/images/interior-visualization-1.jpg", "/images/interior-visualization-2.jpg"
     ]
   },
@@ -95,16 +94,16 @@ export const PROJECTS = [
     id: 5,
     title: { en: "GÖLBAŞI VILLA CONCEPT 2021", tr: "GÖLBAŞI VILLA CONCEPT 2021" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/golbasi-villa-2021-1.jpg",
+    image: "/images/golbasi-villa-concept-2021-1.jpg",
     featured: false,
     description: {
       en: "A modern villa concept in Gölbaşı, exploring architectural harmony with nature. The design features unique geometry and a focus on material integration.",
       tr: "Gölbaşı'nda doğa ile mimari uyumu araştıran modern bir villa konsepti. Tasarım, benzersiz bir geometriye ve malzeme entegrasyonuna odaklanıyor."
     },
     gallery: [
-      "/images/golbasi-villa-2021-1.jpg", "/images/golbasi-villa-2021-2.jpg", 
-      "/images/golbasi-villa-2021-3.jpg", "/images/golbasi-villa-2021-4.jpg", 
-      "/images/golbasi-villa-2021-5.jpg"
+      "/images/golbasi-villa-concept-2021-1.jpg", "/images/golbasi-villa-concept-2021-2.jpg", 
+      "/images/golbasi-villa-concept-2021-3.jpg", "/images/golbasi-villa-concept-2021-4.jpg", 
+      "/images/golbasi-villa-concept-2021-5.jpg"
     ]
   },
   {
@@ -156,13 +155,13 @@ export const PROJECTS = [
     id: 11,
     title: { en: "LIGHTING STUDIES", tr: "LIGHTING STUDIES" },
     category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/product-visualization-7.jpg",
+    image: "/images/lighting-studies-1.jpg",
     featured: false,
     description: {
       en: "Experimental renders exploring complex lighting setups and organic material properties.",
       tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
     },
-    gallery: ["/images/product-visualization-7.jpg", "/images/product-visualization-8.jpg"]
+    gallery: ["/images/lighting-studies-1.jpg", "/images/lighting-studies-2.jpg"]
   },
   {
     id: 6,
@@ -180,25 +179,25 @@ export const PROJECTS = [
     id: 7,
     title: { en: "DIGITAL PORTRAIT GALLERY", tr: "DIGITAL PORTRAIT GALLERY" },
     category: { en: "Digital Art", tr: "Dijital Sanat" },
-    image: "/images/drawing-1.jpg",
+    image: "/images/digital-portrait-gallery-1.jpg",
     featured: false,
     description: {
       en: "A series of digital portraits and character studies, showcasing detailed sketching and shading techniques to capture the essence of iconic characters.",
       tr: "İkonik karakterlerin özünü yakalamak için detaylı eskiz ve gölgeleme tekniklerini sergileyen bir dizi dijital portre ve karakter çalışması."
     },
-    gallery: ["/images/drawing-1.jpg", "/images/drawing-2.jpg", "/images/drawing-3.jpg", "/images/drawing-4.jpg", "/images/drawing-5.jpg"]
+    gallery: ["/images/digital-portrait-gallery-1.jpg", "/images/digital-portrait-gallery-2.jpg", "/images/digital-portrait-gallery-3.jpg", "/images/digital-portrait-gallery-4.jpg", "/images/digital-portrait-gallery-5.jpg"]
   },
   {
     id: 15,
     title: { en: "DONUT STUDY", tr: "DONUT STUDY" },
     category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/donut-1.jpg",
+    image: "/images/donut-study-1.jpg",
     featured: false,
     description: {
       en: "A classic 3D modeling study of a donut, exploring procedural textures and realistic food rendering.",
       tr: "Prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
     },
-    gallery: ["/images/donut-1.jpg", "/images/Donut-Video.mp4"]
+    gallery: ["/images/donut-study-1.jpg", "/images/Donut-Video.mp4"]
   },
   {
     id: 13,
