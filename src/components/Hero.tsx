@@ -13,10 +13,6 @@ const CUBE_FACES = [
     image: "/images/beytepe-living-room-night-1.jpg",
   },
   {
-    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
-    image: "/images/cayyolu-lodumu-villa-project-1.jpg",
-  },
-  {
     title: { en: "İncek Villa Project", tr: "İncek Villa Projesi" },
     image: "/images/incek-villa-project-1.jpg",
   }

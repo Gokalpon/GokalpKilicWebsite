@@ -7,92 +7,11 @@ import { useLanguage } from "../context/LanguageContext";
 
 export const PROJECTS = [
   {
-    id: 1,
-    title: { en: "VINTAGE AIRCRAFT MODEL", tr: "VINTAGE AIRCRAFT MODEL" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/low-poly-aircraft-1.jpg",
-    featured: true,
-    description: {
-      en: "A detailed 3D model of a vintage aircraft, focused on technical accuracy and realistic material representation for real-time applications.",
-      tr: "Teknik doğruluk ve gerçek zamanlı uygulamalar için gerçekçi malzeme temsiline odaklanan, antika bir uçağın detaylı 3D modeli."
-    },
-    gallery: ["/images/low-poly-aircraft-1.jpg", "/images/low-poly-aircraft-2.jpg", "/images/low-poly-aircraft-3.jpg"]
-  },
-  {
     id: 2,
-    title: { en: "DIGITAL PORTRAIT GALLERY", tr: "DIGITAL PORTRAIT GALLERY" },
-    category: { en: "Digital Art", tr: "Dijital Sanat" },
-    image: "/images/digital-portrait-gallery-1.jpg",
-    featured: false,
-    description: {
-      en: "A series of digital portraits and character studies, showcasing detailed sketching and shading techniques to capture the essence of iconic characters.",
-      tr: "İkonik karakterlerin özünü yakalamak için detaylı eskiz ve gölgeleme tekniklerini sergileyen bir dizi dijital portre ve karakter çalışması."
-    },
-    gallery: ["/images/digital-portrait-gallery-1.jpg", "/images/digital-portrait-gallery-2.jpg", "/images/digital-portrait-gallery-3.jpg", "/images/digital-portrait-gallery-4.jpg", "/images/digital-portrait-gallery-5.jpg"]
-  },
-  {
-    id: 3,
-    title: { en: "PRODUCT VISUALIZATION", tr: "PRODUCT VISUALIZATION" },
-    category: { en: "3D Rendering", tr: "3D Görselleştirme" },
-    image: "/images/product-visualization-1.jpg",
-    featured: false,
-    description: {
-      en: "High-quality product renders focusing on material realism, lighting, and composition for commercial and conceptual designs.",
-      tr: "Ticari ve konsept tasarımlar için malzeme gerçekçiliği, aydınlatma ve kompozisyona odaklanan yüksek kaliteli ürün renderları."
-    },
-    gallery: [
-      "/images/product-visualization-1.jpg", "/images/product-visualization-2.jpg", 
-      "/images/product-visualization-3.jpg", "/images/product-visualization-4.jpg", 
-      "/images/product-visualization-5.jpg", "/images/product-visualization-6.jpg", 
-      "/images/product-visualization-9.jpg", "/images/product-visualization-11.jpg"
-    ]
-  },
-  {
-    id: 4,
-    title: { en: "LIGHTING STUDIES", tr: "LIGHTING STUDIES" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/lighting-studies-1.jpg",
-    featured: false,
-    description: {
-      en: "Experimental renders exploring complex lighting setups and organic material properties.",
-      tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
-    },
-    gallery: ["/images/lighting-studies-1.jpg", "/images/lighting-studies-2.jpg"]
-  },
-  {
-    id: 5,
-    title: { en: "ARCHITECTURAL RENDERS - COLLECTION", tr: "ARCHITECTURAL RENDERS - COLLECTION" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/incek-villa-project-1.jpg",
-    featured: false,
-    description: {
-      en: "A collection of various architectural renders showcasing different environments, lighting conditions, and structural concepts.",
-      tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli mimari renderlardan oluşan bir koleksiyon."
-    },
-    gallery: [
-      "/images/incek-villa-project-1.jpg", "/images/incek-villa-project-2.jpg", 
-      "/images/incek-villa-project-3.jpg", "/images/incek-villa-project-4.jpg",
-      "/images/interior-visualization-1.jpg", "/images/interior-visualization-2.jpg"
-    ]
-  },
-  {
-    id: 6,
-    title: { en: "DONUT STUDY", tr: "DONUT STUDY" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/donut-study-1.jpg",
-    featured: false,
-    description: {
-      en: "A classic 3D modeling study of a donut, exploring procedural textures and realistic food rendering.",
-      tr: "Prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
-    },
-    gallery: ["/images/donut-study-1.jpg", "/images/Donut-Video.mp4"]
-  },
-  {
-    id: 7,
     title: { en: "RESIDENCE CONCEPT DESIGN - NIGHT", tr: "RESIDENCE CONCEPT DESIGN - NIGHT" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
     image: "/images/residence-concept-design-night-r1.jpg",
-    featured: false,
+    featured: true,
     description: {
       en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
       tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
@@ -105,7 +24,7 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 8,
+    id: 1,
     title: { en: "RESIDENCE CONCEPT DESIGN - DAY", tr: "RESIDENCE CONCEPT DESIGN - DAY" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
     image: "/images/residence-concept-design-day-m1.jpg",
@@ -122,7 +41,7 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 9,
+    id: 4,
     title: { en: "BEYTEPE LIVING ROOM - NIGHT", tr: "BEYTEPE LIVING ROOM - NIGHT" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
     image: "/images/beytepe-living-room-night-1.jpg",
@@ -139,7 +58,7 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 10,
+    id: 3,
     title: { en: "BEYTEPE LIVING ROOM - DAY", tr: "BEYTEPE LIVING ROOM - DAY" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
     image: "/images/beytepe-living-room-day-1.jpg",
@@ -156,7 +75,36 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 11,
+    id: 12,
+    title: { en: "ARCHITECTURAL RENDERS - COLLECTION", tr: "ARCHITECTURAL RENDERS - COLLECTION" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/interior-visualization-1.jpg",
+    featured: false,
+    description: {
+      en: "A collection of various interior and architectural visualizations showcasing different environments, lighting conditions, and structural concepts.",
+      tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli iç mekan ve mimari görselleştirmelerden oluşan bir koleksiyon."
+    },
+    gallery: [
+      "/images/interior-visualization-1.jpg", "/images/interior-visualization-2.jpg"
+    ]
+  },
+  {
+    id: 16,
+    title: { en: "İNCEK VILLA PROJECT", tr: "İNCEK VILLA PROJESI" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/incek-villa-project-1.jpg",
+    featured: false,
+    description: {
+      en: "A modern villa project in İncek, focusing on contemporary architecture and high-end exterior visualization.",
+      tr: "İncek'te modern bir villa projesi; çağdaş mimari ve üst düzey dış mekan görselleştirmesine odaklanıyor."
+    },
+    gallery: [
+      "/images/incek-villa-project-1.jpg", "/images/incek-villa-project-2.jpg", 
+      "/images/incek-villa-project-3.jpg", "/images/incek-villa-project-4.jpg"
+    ]
+  },
+  {
+    id: 5,
     title: { en: "GÖLBAŞI VILLA CONCEPT 2021", tr: "GÖLBAŞI VILLA CONCEPT 2021" },
     category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
     image: "/images/golbasi-villa-concept-2021-1.jpg",
@@ -172,20 +120,52 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 12,
-    title: { en: "ÇAYYOLU LODUMU VILLA PROJECT", tr: "ÇAYYOLU LODUMU VILLA PROJECT" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/cayyolu-lodumu-villa-project-1.jpg",
+    id: 9,
+    title: { en: "SAND BOWL STUDY", tr: "SAND BOWL STUDY" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/sand-bowl-study-1.jpg",
     featured: false,
     description: {
-      en: "A modern villa project in Çayyolu, Lodumu. The design focuses on contemporary architecture, luxury living spaces, and seamless indoor-outdoor integration with high-end materials and lighting.",
-      tr: "Çayyolu, Lodumu'da modern bir villa projesi. Tasarım, çağdaş mimariye, lüks yaşam alanlarına ve üst düzey malzemeler ve aydınlatma ile kesintisiz iç-dış mekan entegrasyonuna odaklanıyor."
+      en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
+      tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
     },
-    gallery: [
-      "/images/cayyolu-lodumu-villa-project-1.jpg", 
-      "/images/cayyolu-lodumu-villa-project-2.jpg", 
-      "/images/cayyolu-lodumu-villa-project-3.jpg"
-    ]
+    gallery: ["/images/sand-bowl-study-1.jpg", "/images/sand-bowl-study-2.jpg"]
+  },
+  {
+    id: 11,
+    title: { en: "LIGHTING STUDIES", tr: "LIGHTING STUDIES" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/lighting-studies-1.jpg",
+    featured: false,
+    description: {
+      en: "Experimental renders exploring complex lighting setups and organic material properties.",
+      tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
+    },
+    gallery: ["/images/lighting-studies-1.jpg", "/images/lighting-studies-2.jpg"]
+  },
+  {
+    id: 7,
+    title: { en: "DIGITAL PORTRAIT GALLERY", tr: "DIGITAL PORTRAIT GALLERY" },
+    category: { en: "Digital Art", tr: "Dijital Sanat" },
+    image: "/images/digital-portrait-gallery-1.jpg",
+    featured: false,
+    description: {
+      en: "A series of digital portraits and character studies, showcasing detailed sketching and shading techniques to capture the essence of iconic characters.",
+      tr: "İkonik karakterlerin özünü yakalamak için detaylı eskiz ve gölgeleme tekniklerini sergileyen bir dizi dijital portre ve karakter çalışması."
+    },
+    gallery: ["/images/digital-portrait-gallery-1.jpg", "/images/digital-portrait-gallery-2.jpg", "/images/digital-portrait-gallery-3.jpg", "/images/digital-portrait-gallery-4.jpg", "/images/digital-portrait-gallery-5.jpg"]
+  },
+  {
+    id: 15,
+    title: { en: "DONUT STUDY", tr: "DONUT STUDY" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/donut-study-1.jpg",
+    featured: false,
+    description: {
+      en: "A classic 3D modeling study of a donut, exploring procedural textures and realistic food rendering.",
+      tr: "Prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
+    },
+    gallery: ["/images/donut-study-1.jpg", "/images/Donut-Video.mp4"]
   },
   {
     id: 13,
@@ -198,33 +178,6 @@ export const PROJECTS = [
       tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
     },
     gallery: ["/images/character-head-design-1.jpg", "/images/character-head-design-2.jpg"]
-  },
-  {
-    id: 14,
-    title: { en: "SAND BOWL STUDY", tr: "SAND BOWL STUDY" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/sand-bowl-study-1.jpg",
-    featured: false,
-    description: {
-      en: "An experimental 3D study exploring sand simulations and lighting within a glass bowl. Focuses on material physics and atmospheric rendering.",
-      tr: "Cam bir kase içindeki kum simülasyonlarını ve aydınlatmayı araştıran deneysel bir 3D çalışma. Malzeme fiziğine ve atmosferik render almaya odaklanır."
-    },
-    gallery: ["/images/sand-bowl-study-1.jpg", "/images/sand-bowl-study-2.jpg"]
-  },
-  {
-    id: 15,
-    title: { en: "İNCEK VILLA PROJECT", tr: "İNCEK VILLA PROJECT" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/incek-villa-project-1.jpg",
-    featured: false,
-    description: {
-      en: "A modern villa project in İncek, showcasing contemporary architectural design with clean lines and sophisticated material choices.",
-      tr: "İncek'te modern bir villa projesi, temiz çizgiler ve sofistike malzeme seçimleriyle çağdaş mimari tasarımı sergiliyor."
-    },
-    gallery: [
-      "/images/incek-villa-project-1.jpg", "/images/incek-villa-project-2.jpg", 
-      "/images/incek-villa-project-3.jpg", "/images/incek-villa-project-4.jpg"
-    ]
   }
 ];
 
