@@ -7,139 +7,37 @@ import { useLanguage } from "../context/LanguageContext";
 
 export const PROJECTS = [
   {
-    id: 2,
-    title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-res02-r1.jpg",
-    featured: true,
+    id: 6,
+    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
+    category: { en: "3D Modeling", tr: "3D Modelleme" },
+    image: "/images/Low-Poly-Aircraft-1.jpg",
+    featured: false,
     description: {
-      en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
-      tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
+      en: "A detailed 3D model of a vintage aircraft, focused on technical accuracy and realistic material representation for real-time applications.",
+      tr: "Teknik doğruluk ve gerçek zamanlı uygulamalar için gerçekçi malzeme temsiline odaklanan, antika bir uçağın detaylı 3D modeli."
     },
     gallery: [
-      "/images/gokalp-kilic-res02-r1.jpg",
-      "/images/gokalp-kilic-res02-r2.jpg",
-      "/images/gokalp-kilic-res02-r3.jpg",
-      "/images/gokalp-kilic-res02-r4.jpg",
-      "/images/gokalp-kilic-res02-r5.jpg",
-      "/images/gokalp-kilic-res02-r6.jpg",
-      "/images/gokalp-kilic-res02-r7.jpg",
-      "/images/gokalp-kilic-res02-r-int1.jpg",
-      "/images/gokalp-kilic-res02-r-int2.jpg"
+      "/images/Low-Poly-Aircraft-1.jpg",
+      "/images/Low-Poly-Aircraft-2.jpg",
+      "/images/Low-Poly-Aircraft-3.jpg"
     ]
   },
   {
-    id: 1,
-    title: { en: "Residence Concept Design - Day", tr: "Rezidans Konsept Tasarımı - Gündüz" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/gokalp-kilic-res02-m1.jpg",
+    id: 7,
+    title: { en: "Digital Portrait Gallery", tr: "Dijital Portre Galerisi" },
+    category: { en: "Digital Art", tr: "Dijital Sanat" },
+    image: "/images/drawing-1.jpg",
     featured: false,
     description: {
-      en: "A high-fidelity architectural visualization project focusing on modern residence concepts. The design emphasizes verticality, parametric forms, and urban integration in daylight conditions.",
-      tr: "Modern rezidans konseptlerine odaklanan yüksek doğrulukta bir mimari görselleştirme projesi. Tasarım, gün ışığı koşullarında dikeyliği, parametrik formları ve kentsel entegrasyonu vurgular."
+      en: "A series of digital portraits and character studies, showcasing detailed sketching and shading techniques to capture the essence of iconic characters.",
+      tr: "İkonik karakterlerin özünü yakalamak için detaylı eskiz ve gölgeleme tekniklerini sergileyen bir dizi dijital portre ve karakter çalışması."
     },
     gallery: [
-      "/images/gokalp-kilic-res02-m1.jpg",
-      "/images/gokalp-kilic-res02-m2.jpg",
-      "/images/gokalp-kilic-res02-m3.jpg",
-      "/images/gokalp-kilic-res02-m4.jpg",
-      "/images/gokalp-kilic-res02-m5.jpg",
-      "/images/gokalp-kilic-res02-m6.jpg",
-      "/images/gokalp-kilic-res02-m-int1.jpg",
-      "/images/gokalp-kilic-res02-m-int2.jpg"
-    ]
-  },
-  {
-    id: 4,
-    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Beytepe-Living Room-Night-1.jpg",
-    featured: false,
-    description: {
-      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
-      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
-    },
-    gallery: [
-      "/images/Beytepe-Living Room-Night-1.jpg",
-      "/images/Beytepe-Living Room-Night-2.jpg",
-      "/images/Beytepe-Living Room-Night-3.jpg",
-      "/images/Beytepe-Living Room-Night-4.jpg",
-      "/images/Beytepe-Living Room-Night-5.jpg",
-      "/images/Beytepe-Living Room-Night-6.jpg",
-      "/images/Beytepe-Living Room-Night-7.jpg"
-    ]
-  },
-  {
-    id: 3,
-    title: { en: "Beytepe Living Room - Day", tr: "Beytepe Oturma Odası - Gündüz" },
-    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/Beytepe-Living Room-Day-1.jpg",
-    featured: false,
-    description: {
-      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
-      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
-    },
-    gallery: [
-      "/images/Beytepe-Living Room-Day-1.jpg",
-      "/images/Beytepe-Living Room-Day-2.jpg",
-      "/images/Beytepe-Living Room-Day-3.jpg",
-      "/images/Beytepe-Living Room-Day-4.jpg",
-      "/images/Beytepe-Living Room-Day-5.jpg",
-      "/images/Beytepe-Living Room-Day-6.jpg",
-      "/images/Beytepe-Living Room-Day-7.jpg"
-    ]
-  },
-  {
-    id: 12,
-    title: { en: "Architectural Renders - Collection", tr: "Mimari Render Koleksiyonu" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/interior-Visualization-1.jpg",
-    featured: false,
-    description: {
-      en: "A collection of various architectural renders showcasing different environments, lighting conditions, and structural concepts.",
-      tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli mimari renderlardan oluşan bir koleksiyon."
-    },
-    gallery: [
-      "/images/interior-Visualization-1.jpg",
-      "/images/interior-Visualization-2.jpg",
-      "/images/Incek-Villa-1.jpg",
-      "/images/Incek-Villa-2.jpg",
-      "/images/Incek-Villa-3.jpg",
-      "/images/Incek-Villa-4.jpg"
-    ]
-  },
-  {
-    id: 5,
-    title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/Golbasi-Villa-202-1-1.jpg",
-    featured: false,
-    description: {
-      en: "A modern villa concept in Gölbaşı, exploring architectural harmony with nature. The design features unique geometry and a focus on material integration.",
-      tr: "Gölbaşı'nda doğa ile mimari uyumu araştıran modern bir villa konsepti. Tasarım, benzersiz bir geometriye ve malzeme entegrasyonuna odaklanıyor."
-    },
-    gallery: [
-      "/images/Golbasi-Villa-202-1-1.jpg",
-      "/images/Golbasi-Villa-202-1-2.jpg",
-      "/images/Golbasi-Villa-202-1-3.jpg",
-      "/images/Golbasi-Villa-202-1-4.jpg",
-      "/images/Golbasi-Villa-202-1-5.jpg"
-    ]
-  },
-  {
-    id: 10,
-    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
-    featured: false,
-    description: {
-      en: "A modern villa project in Çayyolu, Lodumu. The design focuses on contemporary architecture, luxury living spaces, and seamless indoor-outdoor integration with high-end materials and lighting.",
-      tr: "Çayyolu, Lodumu'da modern bir villa projesi. Tasarım, çağdaş mimariye, lüks yaşam alanlarına ve üst düzey malzemeler ve aydınlatma ile kesintisiz iç-dış mekan entegrasyonuna odaklanıyor."
-    },
-    gallery: [
-      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
+      "/images/drawing-1.jpg",
+      "/images/drawing-2.jpg",
+      "/images/drawing-3.jpg",
+      "/images/drawing-4.jpg",
+      "/images/drawing-5.jpg"
     ]
   },
   {
@@ -179,37 +77,58 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 6,
-    title: { en: "Vintage Aircraft Model", tr: "Antika Uçak Modeli" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/Low-Poly-Aircraft-1.jpg",
+    id: 12,
+    title: { en: "Architectural Renders - Collection", tr: "Mimari Render Koleksiyonu" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/interior-Visualization-1.jpg",
     featured: false,
     description: {
-      en: "A detailed 3D model of a vintage aircraft, focused on technical accuracy and realistic material representation for real-time applications.",
-      tr: "Teknik doğruluk ve gerçek zamanlı uygulamalar için gerçekçi malzeme temsiline odaklanan, antika bir uçağın detaylı 3D modeli."
+      en: "A collection of various architectural renders showcasing different environments, lighting conditions, and structural concepts.",
+      tr: "Farklı ortamları, aydınlatma koşullarını ve yapısal konseptleri sergileyen çeşitli mimari renderlardan oluşan bir koleksiyon."
     },
     gallery: [
-      "/images/Low-Poly-Aircraft-1.jpg",
-      "/images/Low-Poly-Aircraft-2.jpg",
-      "/images/Low-Poly-Aircraft-3.jpg"
+      "/images/interior-Visualization-1.jpg",
+      "/images/interior-Visualization-2.jpg",
+      "/images/Incek-Villa-1.jpg",
+      "/images/Incek-Villa-2.jpg",
+      "/images/Incek-Villa-3.jpg",
+      "/images/Incek-Villa-4.jpg"
     ]
   },
   {
-    id: 7,
-    title: { en: "Digital Portrait Gallery", tr: "Dijital Portre Galerisi" },
-    category: { en: "Digital Art", tr: "Dijital Sanat" },
-    image: "/images/drawing-1.jpg",
+    id: 15,
+    title: { en: "Donut Study", tr: "Donut Çalışması" },
+    category: { en: "3D Art", tr: "3D Sanat" },
+    image: "/images/Donut-1.jpg",
     featured: false,
     description: {
-      en: "A series of digital portraits and character studies, showcasing detailed sketching and shading techniques to capture the essence of iconic characters.",
-      tr: "İkonik karakterlerin özünü yakalamak için detaylı eskiz ve gölgeleme tekniklerini sergileyen bir dizi dijital portre ve karakter çalışması."
+      en: "A classic 3D modeling study of a donut, exploring procedural textures and realistic food rendering.",
+      tr: "Prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
     },
     gallery: [
-      "/images/drawing-1.jpg",
-      "/images/drawing-2.jpg",
-      "/images/drawing-3.jpg",
-      "/images/drawing-4.jpg",
-      "/images/drawing-5.jpg"
+      "/images/Donut-1.jpg"
+    ]
+  },
+  {
+    id: 2,
+    title: { en: "Residence Concept Design - Night", tr: "Rezidans Konsept Tasarımı - Gece" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-res02-r1.jpg",
+    featured: true,
+    description: {
+      en: "The night version of the residence concept design, showcasing the building's artificial lighting and its atmospheric presence in the urban nightscape.",
+      tr: "Rezidans konsept tasarımının gece versiyonu, binanın yapay aydınlatmasını ve kentsel gece manzarasındaki atmosferik varlığını sergiliyor."
+    },
+    gallery: [
+      "/images/gokalp-kilic-res02-r1.jpg",
+      "/images/gokalp-kilic-res02-r2.jpg",
+      "/images/gokalp-kilic-res02-r3.jpg",
+      "/images/gokalp-kilic-res02-r4.jpg",
+      "/images/gokalp-kilic-res02-r5.jpg",
+      "/images/gokalp-kilic-res02-r6.jpg",
+      "/images/gokalp-kilic-res02-r7.jpg",
+      "/images/gokalp-kilic-res02-r-int1.jpg",
+      "/images/gokalp-kilic-res02-r-int2.jpg"
     ]
   },
   {
@@ -228,18 +147,78 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 15,
-    title: { en: "Donut Study", tr: "Donut Çalışması" },
-    category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/Donut-1.jpg",
+    id: 4,
+    title: { en: "Beytepe Living Room - Night", tr: "Beytepe Oturma Odası - Gece" },
+    category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
+    image: "/images/Beytepe-Living Room-Night-1.jpg",
     featured: false,
     description: {
-      en: "A classic 3D modeling study of a donut, exploring procedural textures and realistic food rendering.",
-      tr: "Prosedürel dokuları ve gerçekçi gıda renderlarını araştıran klasik bir donut 3D modelleme çalışması."
+      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
+      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
     },
     gallery: [
-      "/images/Donut-1.jpg",
-      "/images/Donut-Video.mp4"
+      "/images/Beytepe-Living Room-Night-1.jpg",
+      "/images/Beytepe-Living Room-Night-2.jpg",
+      "/images/Beytepe-Living Room-Night-3.jpg",
+      "/images/Beytepe-Living Room-Night-4.jpg",
+      "/images/Beytepe-Living Room-Night-5.jpg",
+      "/images/Beytepe-Living Room-Night-6.jpg",
+      "/images/Beytepe-Living Room-Night-7.jpg"
+    ]
+  },
+  {
+    id: 5,
+    title: { en: "Gölbaşı Villa Concept 2021", tr: "Gölbaşı Villa Konsepti 2021" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/Golbasi-Villa-202-1-1.jpg",
+    featured: false,
+    description: {
+      en: "A modern villa concept in Gölbaşı, exploring architectural harmony with nature. The design features unique geometry and a focus on material integration.",
+      tr: "Gölbaşı'nda doğa ile mimari uyumu araştıran modern bir villa konsepti. Tasarım, benzersiz bir geometriye ve malzeme entegrasyonuna odaklanıyor."
+    },
+    gallery: [
+      "/images/Golbasi-Villa-202-1-1.jpg",
+      "/images/Golbasi-Villa-202-1-2.jpg",
+      "/images/Golbasi-Villa-202-1-3.jpg",
+      "/images/Golbasi-Villa-202-1-4.jpg",
+      "/images/Golbasi-Villa-202-1-5.jpg"
+    ]
+  },
+  {
+    id: 1,
+    title: { en: "Residence Concept Design - Day", tr: "Rezidans Konsept Tasarımı - Gündüz" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/gokalp-kilic-res02-m1.jpg",
+    featured: false,
+    description: {
+      en: "A high-fidelity architectural visualization project focusing on modern residence concepts. The design emphasizes verticality, parametric forms, and urban integration in daylight conditions.",
+      tr: "Modern rezidans konseptlerine odaklanan yüksek doğrulukta bir mimari görselleştirme projesi. Tasarım, gün ışığı koşullarında dikeyliği, parametrik formları ve kentsel entegrasyonu vurgular."
+    },
+    gallery: [
+      "/images/gokalp-kilic-res02-m1.jpg",
+      "/images/gokalp-kilic-res02-m2.jpg",
+      "/images/gokalp-kilic-res02-m3.jpg",
+      "/images/gokalp-kilic-res02-m4.jpg",
+      "/images/gokalp-kilic-res02-m5.jpg",
+      "/images/gokalp-kilic-res02-m6.jpg",
+      "/images/gokalp-kilic-res02-m-int1.jpg",
+      "/images/gokalp-kilic-res02-m-int2.jpg"
+    ]
+  },
+  {
+    id: 10,
+    title: { en: "Çayyolu Lodumu Villa Project", tr: "Çayyolu Lodumu Villa Projesi" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+    featured: false,
+    description: {
+      en: "A modern villa project in Çayyolu, Lodumu. The design focuses on contemporary architecture, luxury living spaces, and seamless indoor-outdoor integration with high-end materials and lighting.",
+      tr: "Çayyolu, Lodumu'da modern bir villa projesi. Tasarım, çağdaş mimariye, lüks yaşam alanlarına ve üst düzey malzemeler ve aydınlatma ile kesintisiz iç-dış mekan entegrasyonuna odaklanıyor."
+    },
+    gallery: [
+      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
     ]
   },
   {
