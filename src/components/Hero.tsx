@@ -5,7 +5,7 @@ import { useLanguage } from "../context/LanguageContext";
 
 const CUBE_FACES = [
   {
-    title: { en: "Sand Bowl Study", tr: "Kum Kasesi Çalışması" },
+    title: { en: "Sand Bowl Concept", tr: "Kum Kasesi Konsepti" },
     image: "/images/sand-bowl-study-1.jpg",
   },
   {
@@ -74,7 +74,7 @@ export function Hero() {
         <motion.div 
           animate={{ rotateY: 360 }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="relative w-[85vw] md:w-[70vh] h-[35vh] md:h-[40vh] [transform-style:preserve-3d] [--carousel-z:2vw] md:[--carousel-z:3vh]"
+          className="relative w-[85vw] md:w-[70vh] h-[35vh] md:h-[40vh] [transform-style:preserve-3d] [--carousel-z:45vw] md:[--carousel-z:50vh]"
         >
           {CUBE_FACES.map((face, index) => {
             const angle = (index / CUBE_FACES.length) * 360;

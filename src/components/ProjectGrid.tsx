@@ -119,7 +119,7 @@ export const PROJECTS = [
   },
   {
     id: 9,
-    title: { en: "SAND BOWL STUDY", tr: "SAND BOWL STUDY" },
+    title: { en: "SAND BOWL CONCEPT", tr: "SAND BOWL CONCEPT" },
     category: { en: "3D Art", tr: "3D Sanat" },
     image: "/images/sand-bowl-study-1.jpg",
     featured: false,
@@ -292,12 +292,14 @@ export function ProjectGrid({ limit, onShowAll }: ProjectGridProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            onClick={() => setSelectedProject(null)}
             className="fixed inset-0 z-[1000] flex items-center justify-center p-4 md:p-10 bg-black/90 backdrop-blur-xl"
           >
             <motion.div 
               initial={{ y: 100, opacity: 0, scale: 0.95 }}
               animate={{ y: 0, opacity: 1, scale: 1 }}
               exit={{ y: 100, opacity: 0, scale: 0.95 }}
+              onClick={(e) => e.stopPropagation()}
               className="relative w-full max-w-6xl h-full max-h-[90vh] bg-black border border-white/10 rounded-[40px] overflow-hidden flex flex-col"
             >
               {/* Close Button */}
