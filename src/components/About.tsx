@@ -96,8 +96,8 @@ export function About() {
             </div>
             <p>
               {t(
-                "I graduated from the Architecture Department of Çankaya University in 2016. Following internships at İzka İnşaat and Rönesans Holding, I worked as an architect at Bek Proje, SELDA GÜMÜŞDOĞRAYAN MİMARLIK, and TİNT MİMARLIK, focusing on design, modeling, and visualization. My project experience ranges from individual villa designs to large-scale public developments, such as city hospitals.",
-                "2016 yılında Çankaya Üniversitesi Mimarlık Bölümü'nden mezun oldum. İzka İnşaat ve Rönesans Holding'deki stajlarımın ardından Bek Proje, SELDA GÜMÜŞDOĞRAYAN MİMARLIK ve TİNT MİMARLIK'ta mimar olarak çalıştım; tasarım, modelleme ve görselleştirme konularına odaklandım. Proje deneyimim, bireysel villa tasarımlarından şehir hastaneleri gibi büyük ölçekli kamu projelerine kadar uzanmaktadır."
+                "I graduated from the Architecture Department of Çankaya University in 2016. Following internships at İzka İnşaat and Rönesans Holding, I worked as an architect at Bek Proje, Selda Gümüşdoğrayan Mimarlık, and Tint Mimarlık, focusing on design, modeling, and visualization. My project experience ranges from individual villa designs to large-scale public developments, such as city hospitals.",
+                "2016 yılında Çankaya Üniversitesi Mimarlık Bölümü'nden mezun oldum. İzka İnşaat ve Rönesans Holding'deki stajlarımın ardından Bek Proje, Selda Gümüşdoğrayan Mimarlık ve Tint Mimarlık'ta mimar olarak çalıştım; tasarım, modelleme ve görselleştirme konularına odaklandım. Proje deneyimim, bireysel villa tasarımlarından şehir hastaneleri gibi büyük ölçekli kamu projelerine kadar uzanmaktadır."
               )}
             </p>
             
