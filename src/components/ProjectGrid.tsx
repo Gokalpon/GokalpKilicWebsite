@@ -24,20 +24,16 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 17,
-    title: { en: "ÇAYYOLU LODUMU VILLA PROJECT", tr: "ÇAYYOLU LODUMU VILLA PROJESI" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+    id: 13,
+    title: { en: "CHARACTER HEAD DESIGN", tr: "CHARACTER HEAD DESIGN" },
+    category: { en: "3D Modeling", tr: "3D Modelleme" },
+    image: "/images/character-head-design-1.jpg",
     featured: false,
     description: {
-      en: "A modern villa project in Çayyolu Lodumu area, featuring contemporary architectural design and high-quality exterior visualization.",
-      tr: "Çayyolu Lodumu bölgesinde çağdaş mimari tasarım ve yüksek kaliteli dış mekan görselleştirmesi içeren modern bir villa projesi."
+      en: "A stylized character head design focusing on expressive features and clean topology for animation and game art.",
+      tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
     },
-    gallery: [
-      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
-    ]
+    gallery: ["/images/character-head-design-1.jpg", "/images/character-head-design-2.jpg"]
   },
   {
     id: 3,
@@ -57,16 +53,20 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 13,
-    title: { en: "CHARACTER HEAD DESIGN", tr: "CHARACTER HEAD DESIGN" },
-    category: { en: "3D Modeling", tr: "3D Modelleme" },
-    image: "/images/character-head-design-1.jpg",
+    id: 17,
+    title: { en: "ÇAYYOLU LODUMU VILLA PROJECT", tr: "ÇAYYOLU LODUMU VILLA PROJESI" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
     featured: false,
     description: {
-      en: "A stylized character head design focusing on expressive features and clean topology for animation and game art.",
-      tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
+      en: "A modern villa project in Çayyolu Lodumu area, featuring contemporary architectural design and high-quality exterior visualization.",
+      tr: "Çayyolu Lodumu bölgesinde çağdaş mimari tasarım ve yüksek kaliteli dış mekan görselleştirmesi içeren modern bir villa projesi."
     },
-    gallery: ["/images/character-head-design-1.jpg", "/images/character-head-design-2.jpg"]
+    gallery: [
+      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
+    ]
   },
   {
     id: 2,
