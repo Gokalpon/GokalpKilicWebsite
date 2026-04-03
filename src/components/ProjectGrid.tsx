@@ -36,20 +36,20 @@ export const PROJECTS = [
     gallery: ["/images/character-head-design-1.jpg", "/images/character-head-design-2.jpg"]
   },
   {
-    id: 3,
-    title: { en: "BEYTEPE LIVING ROOM - DAY", tr: "BEYTEPE LIVING ROOM - DAY" },
+    id: 4,
+    title: { en: "BEYTEPE LIVING ROOM - NIGHT", tr: "BEYTEPE LIVING ROOM - NIGHT" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/beytepe-living-room-day-1.jpg",
+    image: "/images/beytepe-living-room-night-1.jpg",
     featured: false,
     description: {
-      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
-      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
+      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
+      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
     },
     gallery: [
-      "/images/beytepe-living-room-day-1.jpg", "/images/beytepe-living-room-day-2.jpg", 
-      "/images/beytepe-living-room-day-3.jpg", "/images/beytepe-living-room-day-4.jpg", 
-      "/images/beytepe-living-room-day-5.jpg", "/images/beytepe-living-room-day-6.jpg", 
-      "/images/beytepe-living-room-day-7.jpg"
+      "/images/beytepe-living-room-night-1.jpg", "/images/beytepe-living-room-night-2.jpg", 
+      "/images/beytepe-living-room-night-3.jpg", "/images/beytepe-living-room-night-4.jpg", 
+      "/images/beytepe-living-room-night-5.jpg", "/images/beytepe-living-room-night-6.jpg", 
+      "/images/beytepe-living-room-night-7.jpg"
     ]
   },
   {
@@ -86,20 +86,20 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 4,
-    title: { en: "BEYTEPE LIVING ROOM - NIGHT", tr: "BEYTEPE LIVING ROOM - NIGHT" },
+    id: 3,
+    title: { en: "BEYTEPE LIVING ROOM - DAY", tr: "BEYTEPE LIVING ROOM - DAY" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
-    image: "/images/beytepe-living-room-night-1.jpg",
+    image: "/images/beytepe-living-room-day-1.jpg",
     featured: false,
     description: {
-      en: "The night version of the Beytepe living room project, focusing on the warm interior lighting and the cozy atmosphere created by artificial light sources.",
-      tr: "Beytepe oturma odası projesinin gece versiyonu, sıcak iç aydınlatmaya ve yapay ışık kaynaklarının yarattığı samimi atmosfere odaklanıyor."
+      en: "A sophisticated interior design project for a living room in Beytepe. This daylight render highlights the natural lighting, premium materials, and modern aesthetic of the space.",
+      tr: "Beytepe'de bir oturma odası için sofistike bir iç tasarım projesi. Bu gün ışığı renderı, mekanın doğal aydınlatmasını, birinci sınıf malzemelerini ve modern estetiğini vurgular."
     },
     gallery: [
-      "/images/beytepe-living-room-night-1.jpg", "/images/beytepe-living-room-night-2.jpg", 
-      "/images/beytepe-living-room-night-3.jpg", "/images/beytepe-living-room-night-4.jpg", 
-      "/images/beytepe-living-room-night-5.jpg", "/images/beytepe-living-room-night-6.jpg", 
-      "/images/beytepe-living-room-night-7.jpg"
+      "/images/beytepe-living-room-day-1.jpg", "/images/beytepe-living-room-day-2.jpg", 
+      "/images/beytepe-living-room-day-3.jpg", "/images/beytepe-living-room-day-4.jpg", 
+      "/images/beytepe-living-room-day-5.jpg", "/images/beytepe-living-room-day-6.jpg", 
+      "/images/beytepe-living-room-day-7.jpg"
     ]
   },
   {
@@ -146,16 +146,25 @@ export const PROJECTS = [
     gallery: ["/images/sand-bowl-study-1.jpg", "/images/sand-bowl-study-2.jpg"]
   },
   {
-    id: 11,
-    title: { en: "LIGHTING STUDY", tr: "LIGHTING STUDY" },
+    id: 18,
+    title: { en: "PRODUCT VISUALIZATION", tr: "PRODUCT VISUALIZATION" },
     category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/lighting-studies-1.jpg",
+    image: "/images/Product-Visualization-1.jpg",
     featured: false,
     description: {
-      en: "Experimental renders exploring complex lighting setups and organic material properties.",
-      tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
+      en: "A product-focused visualization series exploring material definition, reflections, studio lighting, and presentation quality across multiple render setups.",
+      tr: "Malzeme tanımı, yansımalar, stüdyo ışığı ve sunum kalitesini farklı render kurulumlarıyla araştıran ürün odaklı bir görselleştirme serisi."
     },
-    gallery: ["/images/lighting-studies-1.jpg", "/images/lighting-studies-2.jpg"]
+    gallery: [
+      "/images/Product-Visualization-1.jpg",
+      "/images/Product-Visualization-2.jpg",
+      "/images/Product-Visualization-3.jpg",
+      "/images/Product-Visualization-4.jpg",
+      "/images/Product-Visualization-5.jpg",
+      "/images/Product-Visualization-6.jpg",
+      "/images/Product-Visualization-9.jpg",
+      "/images/product-visualization-10.jpg"
+    ]
   },
   {
     id: 7,
@@ -182,25 +191,16 @@ export const PROJECTS = [
     gallery: ["/images/donut-study-1.jpg", "/images/Donut-Video.mp4"]
   },
   {
-    id: 18,
-    title: { en: "PRODUCT VISUALIZATION", tr: "PRODUCT VISUALIZATION" },
+    id: 11,
+    title: { en: "LIGHTING STUDY", tr: "LIGHTING STUDY" },
     category: { en: "3D Art", tr: "3D Sanat" },
-    image: "/images/Product-Visualization-1.jpg",
+    image: "/images/lighting-studies-1.jpg",
     featured: false,
     description: {
-      en: "A product-focused visualization series exploring material definition, reflections, studio lighting, and presentation quality across multiple render setups.",
-      tr: "Malzeme tanımı, yansımalar, stüdyo ışığı ve sunum kalitesini farklı render kurulumlarıyla araştıran ürün odaklı bir görselleştirme serisi."
+      en: "Experimental renders exploring complex lighting setups and organic material properties.",
+      tr: "Karmaşık aydınlatma kurulumlarını ve organik malzeme özelliklerini araştıran deneysel renderlar."
     },
-    gallery: [
-      "/images/Product-Visualization-1.jpg",
-      "/images/Product-Visualization-2.jpg",
-      "/images/Product-Visualization-3.jpg",
-      "/images/Product-Visualization-4.jpg",
-      "/images/Product-Visualization-5.jpg",
-      "/images/Product-Visualization-6.jpg",
-      "/images/Product-Visualization-9.jpg",
-      "/images/product-visualization-10.jpg"
-    ]
+    gallery: ["/images/lighting-studies-1.jpg", "/images/lighting-studies-2.jpg"]
   },
   {
     id: 19,
