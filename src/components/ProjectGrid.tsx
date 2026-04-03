@@ -147,7 +147,7 @@ export const PROJECTS = [
   },
   {
     id: 11,
-    title: { en: "LIGHTING STUDIES", tr: "LIGHTING STUDIES" },
+    title: { en: "LIGHTING STUDY", tr: "LIGHTING STUDY" },
     category: { en: "3D Art", tr: "3D Sanat" },
     image: "/images/lighting-studies-1.jpg",
     featured: false,
@@ -199,7 +199,7 @@ export const PROJECTS = [
       "/images/Product-Visualization-5.jpg",
       "/images/Product-Visualization-6.jpg",
       "/images/Product-Visualization-9.jpg",
-      "/images/Product-Visualization-11.jpg"
+      "/images/product-visualization-10.jpg"
     ]
   },
   {
