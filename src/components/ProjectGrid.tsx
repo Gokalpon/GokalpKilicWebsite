@@ -24,6 +24,22 @@ export const PROJECTS = [
     ]
   },
   {
+    id: 17,
+    title: { en: "ÇAYYOLU LODUMU VILLA PROJECT", tr: "ÇAYYOLU LODUMU VILLA PROJESI" },
+    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
+    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+    featured: false,
+    description: {
+      en: "A modern villa project in Çayyolu Lodumu area, featuring contemporary architectural design and high-quality exterior visualization.",
+      tr: "Çayyolu Lodumu bölgesinde çağdaş mimari tasarım ve yüksek kaliteli dış mekan görselleştirmesi içeren modern bir villa projesi."
+    },
+    gallery: [
+      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
+      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
+    ]
+  },
+  {
     id: 3,
     title: { en: "BEYTEPE LIVING ROOM - DAY", tr: "BEYTEPE LIVING ROOM - DAY" },
     category: { en: "Interior Design", tr: "İç Mekan Tasarımı" },
@@ -51,22 +67,6 @@ export const PROJECTS = [
       tr: "Animasyon ve oyun sanatı için etkileyici özelliklere ve temiz topolojiye odaklanan stilize bir karakter başı tasarımı."
     },
     gallery: ["/images/character-head-design-1.jpg", "/images/character-head-design-2.jpg"]
-  },
-  {
-    id: 17,
-    title: { en: "ÇAYYOLU LODUMU VILLA PROJECT", tr: "ÇAYYOLU LODUMU VILLA PROJESI" },
-    category: { en: "Architectural Visualization", tr: "Mimari Görselleştirme" },
-    image: "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
-    featured: false,
-    description: {
-      en: "A modern villa project in Çayyolu Lodumu area, featuring contemporary architectural design and high-quality exterior visualization.",
-      tr: "Çayyolu Lodumu bölgesinde çağdaş mimari tasarım ve yüksek kaliteli dış mekan görselleştirmesi içeren modern bir villa projesi."
-    },
-    gallery: [
-      "/images/Cayyolu-Lodumu-Villa-Project-1.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-2.jpg",
-      "/images/Cayyolu-Lodumu-Villa-Project-3.jpg"
-    ]
   },
   {
     id: 2,
@@ -198,13 +198,13 @@ export const PROJECTS = [
       "/images/Product-Visualization-4.jpg",
       "/images/Product-Visualization-5.jpg",
       "/images/Product-Visualization-6.jpg",
-      "/images/product-visualization-9.jpg",
-      "/images/product-visualization-11.jpg"
+      "/images/Product-Visualization-9.jpg",
+      "/images/Product-Visualization-11.jpg"
     ]
   },
   {
     id: 19,
-    title: { en: "VINTAGE AIRCRAFT MODEL", tr: "VINTAGE AIRCRAFT MODEL" },
+    title: { en: "LOW POLY AIRCRAFT MODEL", tr: "LOW POLY AIRCRAFT MODEL" },
     category: { en: "3D Modeling", tr: "3D Modelleme" },
     image: "/images/Low-Poly-Aircraft-1.jpg",
     featured: false,
